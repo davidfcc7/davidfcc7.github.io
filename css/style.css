@@ -1,0 +1,27 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav{
+    background-color: rgb(21, 95, 138);
+    padding: 10px;
+    display: flex;
+    padding-right: 5px;
+    justify-content: flex-end;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    display: flex;
+    padding-right: 10px;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+nav li a:hover{
+    text-decoration: underline;
+}
