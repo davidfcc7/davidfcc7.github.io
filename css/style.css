@@ -26,9 +26,22 @@ nav li a{
 nav li a:hover{
     text-decoration: underline;
 }
-.seccion_portada{
+.container{
+    display: flex;
+    height: 100%;
+}
+.seccionPortada{
     display: flex;
     background-image: url("https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?cs=srgb&dl=pexels-neo-2653362.jpg&fm=jpg");
-    height: 500px;
+    height: 100%;
     background-size: cover;
+}
+.seccionPortada img{
+    padding: 40px;
+    border-radius: 200px;
+    display: block;
+    margin-left: 500px;
+}
+.textoPortada ul{
+    color: white;
 }
