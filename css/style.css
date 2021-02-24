@@ -26,8 +26,9 @@ nav li a{
 nav li a:hover{
     text-decoration: underline;
 }
+/*seccion foto de portada y nombre*/
 .seccionPortada{
-    display: flex;
+    display: grid;
     background-image: url("https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?cs=srgb&dl=pexels-neo-2653362.jpg&fm=jpg");
     height: 500px;
     background-size: cover;
@@ -36,8 +37,48 @@ nav li a:hover{
     padding: 40px;
     border-radius: 200px;
     display: block;
-    margin-left: 500px;
+    margin-left: 500px; 
 }
-.textoPortada ul{
+.seccionPortada ul{
     color: white;
+    text-align: center;
+    padding-block-end: 20px;
 }
+/*seccion descripcion*/
+.seccionDescripcion{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 31px;
+    text-align: center;
+    padding-right: 300px;
+    padding-left: 300px;
+    padding-top: 20px;
+    font-style: italic;
+    color: rgb(175, 175, 175);
+}
+.seccionDescripcion #frase{
+    margin-bottom: 0px;
+}
+.seccionDescripcion #separador{
+    margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
