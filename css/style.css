@@ -22,6 +22,13 @@ nav li a{
     color: white;
     text-decoration: none;
 }
+/*hove -> animacion al pasar la flecha del mouse*/
 nav li a:hover{
     text-decoration: underline;
+}
+.seccion_portada{
+    display: flex;
+    background-image: url("https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?cs=srgb&dl=pexels-neo-2653362.jpg&fm=jpg");
+    height: 500px;
+    background-size: cover;
 }
