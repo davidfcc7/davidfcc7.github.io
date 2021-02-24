@@ -26,14 +26,10 @@ nav li a{
 nav li a:hover{
     text-decoration: underline;
 }
-.container{
-    display: flex;
-    height: 100%;
-}
 .seccionPortada{
     display: flex;
     background-image: url("https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?cs=srgb&dl=pexels-neo-2653362.jpg&fm=jpg");
-    height: 100%;
+    height: 500px;
     background-size: cover;
 }
 .seccionPortada img{
