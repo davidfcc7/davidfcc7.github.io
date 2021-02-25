@@ -88,6 +88,9 @@ nav li a:hover{
 .seccionImagen{
     text-align: center;
 }
+.seccionImagen img{
+    height: 250px;
+}
 footer{
     background-color: var(--color-header-footer);
     padding: 30px;
