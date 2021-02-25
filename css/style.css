@@ -84,6 +84,7 @@ nav li a:hover{
 }
 .seccionProyecto img{
     height: 350px;
+    border-radius: 20px;
 }
 .seccionImagen{
     text-align: center;
