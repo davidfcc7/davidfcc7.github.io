@@ -32,7 +32,7 @@ nav li a:hover{
     background-image: url("https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?cs=srgb&dl=pexels-neo-2653362.jpg&fm=jpg");
     height: 500px;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
 }
 .seccionPortada img{
     padding: 40px;
@@ -65,17 +65,22 @@ nav li a:hover{
 }
 /*diseño seccion proyectos*/
 .seccionGeneralProyectos{
-    padding-top: 20px;
     display: flex;
+    margin-top: -70px;
+    padding-left: 50px;
 }
 .seccionProyectos{
-    padding: 10px;
+    padding: 10%;
+    text-align: center;
 }
-.seccionProyectos .seccionProyecto{
-    background-color: gray;
+.seccionProyecto{
+    box-shadow: 0 0 5px black;
 }
 .seccionProyecto img{
-    height: 200px;
+    height: 350px;
+}
+.seccionImagen{
+    text-align: center;
 }
 
 
