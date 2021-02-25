@@ -1,0 +1,25 @@
+@media (max-width: 600px){
+    .seccionPortada{
+        display: inherit;
+    }
+    .seccionPortada img{
+        display: inherit;
+        margin-left: 15%; 
+    }
+    .seccionDescripcion{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .seccionDescripcion #frase{
+        margin-left: 10%;
+    }
+    .seccionDescripcion #separador{
+        margin-top: -25px;
+        margin-bottom: 60px;
+    }
+    .seccionGeneralProyectos{
+        display: inherit;
+        padding-left: 10px;
+    }
+}
+

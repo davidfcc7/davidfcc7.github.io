@@ -43,7 +43,7 @@ nav li a:hover{
     padding: 40px;
     border-radius: 200px;
     display: block;
-    margin-left: 500px; 
+    margin-left: 38%; 
     height: 250px;
 }
 .seccionPortada ul{
@@ -64,6 +64,7 @@ nav li a:hover{
 }
 .seccionDescripcion #frase{
     margin-bottom: 0px;
+    margin-left: 8%;
 }
 .seccionDescripcion #separador{
     margin-top: 0px;
@@ -87,7 +88,7 @@ nav li a:hover{
 .seccionImagen{
     text-align: center;
 }
-.footer{
+footer{
     background-color: var(--color-header-footer);
     padding: 30px;
     display: flex;
