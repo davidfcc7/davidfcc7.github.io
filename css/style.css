@@ -67,7 +67,8 @@ nav li a:hover{
     margin-left: 8%;
 }
 .seccionDescripcion #separador{
-    margin-top: 0px;
+    margin-top: -10px;
+    margin-bottom: 60px;
 }
 /*diseño seccion proyectos*/
 .seccionGeneralProyectos{
