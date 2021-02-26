@@ -32,6 +32,22 @@ nav li a:hover{
     text-decoration: underline;
 }
 /*seccion foto de portada y nombre*/
+.containerPerfil{
+    max-width: 900px;
+    margin: auto;
+}
+.row{
+    display: flex;
+}
+.col-1{
+    width: 34%;
+}
+.col-2{
+    width: 67%;
+}
+.col-3{
+    width: 100%;
+}
 .seccionPortada{
     display: grid;
     background-image: url("https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?cs=srgb&dl=pexels-neo-2653362.jpg&fm=jpg");
@@ -39,7 +55,7 @@ nav li a:hover{
     background-size: cover;
     background-position: center top;
 }
-.seccionPortada img{
+.seccionPortadaImg img{
     padding: 40px;
     border-radius: 200px;
     display: block;
