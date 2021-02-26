@@ -3,7 +3,7 @@
     margin: auto;
 }
 .row{
-    display: flex;
+    display: inherit;
 }
 .col-1{
     width: 8.3%;
