@@ -1,0 +1,16 @@
+.containerPerfil{
+    max-width: 900px;
+    margin: auto;
+}
+.row{
+    display: flex;
+}
+.col-1{
+    width: 34%;
+}
+.col-2{
+    width: 67%;
+}
+.col-3{
+    width: 100%;
+}
