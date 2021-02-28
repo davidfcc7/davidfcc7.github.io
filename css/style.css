@@ -112,10 +112,21 @@ footer{
     box-shadow: var(--sombraDeCaja);
     background-color: white;
     padding: 60px;
-    margin: 10%;
-    text-align: center;
+    margin: 5%;
+    margin-inline: auto;
+    width: max-content;
+    text-align: -webkit-center;
 }
-.formularioContacto input{
+.data{
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px  solid black;
+    box-sizing: border-box;
+}
+.formularioContacto .mainBtn{
+    background-color: var(--color-header-footer);
+    color: white;
+    width: 100%;
     padding: 10px;
 }
 
