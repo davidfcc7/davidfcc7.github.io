@@ -40,17 +40,17 @@ nav li a:hover{
     background-size: cover;
     background-position: center top;
 }
-.seccionPortadaImg img{
+.seccionPortada img{
     padding: 40px;
     border-radius: 200px;
     display: block;
-    margin-left: 38%; 
+    margin-left: 37%; 
     height: 250px;
+    margin-bottom: -70px;
 }
 .seccionPortada ul{
     color: white;
     text-align: center;
-    padding-block-end: 20px;
 }
 /*--------------------seccion descripcion*/
 .seccionDescripcion{
