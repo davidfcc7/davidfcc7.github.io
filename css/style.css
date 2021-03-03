@@ -121,7 +121,7 @@ nav li a:hover{ /*hover -> animacion al pasar la flecha del mouse*/
 
 /*------------------------------------------------------------------------*/
 /*INICIO ESTILOS FOOTER*/
-.footer{
+footer{
     background-color: var(--color-header-footer);
     padding: 30px;
     display: flex;
