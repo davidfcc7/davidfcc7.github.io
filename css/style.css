@@ -11,6 +11,7 @@ body{
     margin: 0px;
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 nav{
     background-color: var(--color-header-footer);
@@ -65,9 +66,9 @@ nav li a:hover{ /*hover -> animacion al pasar la flecha del mouse*/
     font-family: Arial, Helvetica, sans-serif;
     font-size: 31px;
     text-align: center;
-    padding-right: 300px;
-    padding-left: 300px;
+    padding: 300px 300px;
     padding-top: 20px;
+    padding-bottom: 10px;
     font-style: italic;
     color: rgb(175, 175, 175);
 }

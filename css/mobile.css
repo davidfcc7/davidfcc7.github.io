@@ -29,7 +29,9 @@
         padding: 10px;
     }
     .seccionProyectos img{
-        height: 200px;
+        padding: 1px;
+        height: 150px;
+        text-align: center;
     }
 }
 
