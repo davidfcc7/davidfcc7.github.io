@@ -13,47 +13,78 @@
 </head>
 <body>
     <!--inicio navbar-->
-    <nav>
-        <div>
-            <ul>
-                <li><strong><a href="tel:+573058804870">3058804870</a></strong></li>
-                <li><strong><a href="mailto:davidfcc7@gmail.com">davidfcc7@gmail.com</a></strong></li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li><strong><a href="tel:+573058804870">3058804870</a></strong></li>
+                    <li><strong><a href="mailto:davidfcc7@gmail.com">davidfcc7@gmail.com</a></strong></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <!--fin navbar-->
-    <div class="container">
-        <!--inicio seccion imagen y portada-->
-        <div class="seccionPortada fadeIn">
-            <div class="row">
-                <div class="col-12">
-                    <div class="seccionPortadaImg">
-                        <img src="images/pp.jpg">
-                        <ul>
-                            <h1>David Felipe Caicedo Canchón</h1>
-                            <h3>Ingeniero de Sistemas</h3>
-                        </ul>
+
+    <!--inicio seccion imagen y portada-->
+    <main>
+        <section>
+            <div class="container">
+                <div class="seccionPortada fadeIn">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="seccionPortadaImg">
+                                <img src="images/pp.jpg">
+                                <ul>
+                                    <h1>David Felipe Caicedo Canchón</h1>
+                                    <h3>Ingeniero de Sistemas</h3>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12" id="columnaContact">
-                <div class="formularioContacto">
-                    <form action="">
-                        <input type="text" placeholder="Nombres y Apellidos" class="data"><br><br>
-                        <input type="number" placeholder="Teléfono" class="data"><br><br>
-                        <input type="email" placeholder="ejemplo@ejemplo.com" class="data"><br><br>
-                        <input type="text" placeholder="Deja Tu Mensaje" class="data"><br><br>
-                        <input id="btnEnviarContacto" type="submit" value="Enviar" class="mainBtn">
-                    </form>
+        </section>
+        <!--fin seccion imagen y portada-->
+
+        <!--inicio formulario-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12" id="columnaContact">
+                        <div class="formularioContacto">
+                            <form action="">
+                                <label for="nombre">
+                                    <span>Nombre Completo</span>
+                                    <input type="text" placeholder="nombre y apellido" name="nombre" id="nombre" autocomplete="name">
+                                </label>
+                                <label for="telefono">
+                                    <span>Telefono</span>
+                                    <input type="number" placeholder="telefono" name="telefono" id="telefono" autocomplete="phone">
+                                </label>
+                                <label for="correo">
+                                    <span>Email</span>
+                                    <input type="email" placeholder="ejemplo@ejemplo.com" name="correo" id="correo" autocomplete="email">
+                                </label>
+                                <label for="asunto">
+                                    <span>Asunto</span>
+                                    <input type="text" placeholder="Asunto" name="asunto" id="asunto" autocomplete="text">
+                                </label>
+                                <input type="submit" value="Enviar" id="btnEnviarContacto">
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!--fin seccion imagen y portada-->
+        </section>
+        <!--fin formulario-->
         <!--Inicio Footer-->
-        <footer></footer>
+        <section>
+            <footer>
+
+            </footer>
+        </section>
     </div>
+</main>
 <script src="js/code.js"></script>
 </body>
 </html>
