@@ -54,22 +54,41 @@
                         <div class="formularioContacto">
                             <form action="">
                                 <label for="nombre">
-                                    <span>Nombre Completo</span>
-                                    <input type="text" placeholder="nombre y apellido" name="nombre" id="nombre" autocomplete="name">
-                                </label>
+                                    <span>Nombre Completo</span><br><br>
+                                    <input type="text" placeholder="nombre y apellido" name="nombre" id="nombre" autocomplete="name" required>
+                                </label><br><br>
                                 <label for="telefono">
-                                    <span>Telefono</span>
-                                    <input type="number" placeholder="telefono" name="telefono" id="telefono" autocomplete="phone">
-                                </label>
+                                    <span>Telefono</span><br><br>
+                                    <input type="number" placeholder="telefono" name="telefono" id="telefono" autocomplete="phone" required>
+                                </label><br><br>
+                                <!--<label for="telefono">
+                                    <span>Experiencia en:</span><br><br>
+                                    <select name="work" id="experiencia">
+                                        <option value="select">--Seleccionar--</option>
+                                        <option value="Html5">Html5</option>
+                                        <option value="JavaScript">JavaScript</option>
+                                        <option value="Css">Css</option>
+                                    </select>
+                                </label><br><br>-->
+                                <label for="telefono">
+                                    <span>Experiencia en:</span><br><br>
+                                    <input list="experiencia">
+                                    <datalist id="experiencia">
+                                        <option value="Seleccionar"></option>
+                                        <option value="Html5"></option>
+                                        <option value="JavaScript"></option>
+                                        <option value="Css"></option>
+                                    </datalist>
+                                </label><br><br>
                                 <label for="correo">
-                                    <span>Email</span>
-                                    <input type="email" placeholder="ejemplo@ejemplo.com" name="correo" id="correo" autocomplete="email">
-                                </label>
+                                    <span>Email</span><br><br>
+                                    <input type="email" placeholder="ejemplo@ejemplo.com" name="correo" id="correo" autocomplete="email" required>
+                                </label><br><br>
                                 <label for="asunto">
-                                    <span>Asunto</span>
+                                    <span>Asunto</span><br><br>
                                     <input type="text" placeholder="Asunto" name="asunto" id="asunto" autocomplete="text">
-                                </label>
-                                <input type="submit" value="Enviar" id="btnEnviarContacto">
+                                </label><br><br>
+                                <input type="submit" value="Enviar" id="btnEnviarContacto" class="btnEnviar">
                             </form>
                         </div>
                     </div>

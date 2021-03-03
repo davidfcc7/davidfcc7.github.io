@@ -140,15 +140,15 @@ footer{
     width: max-content;
     text-align: -webkit-center;
 }
-.data{
+.formularioContacto input{
     padding: 10px;
-    border-radius: 2px;
-    border: 1px  solid black;
-    box-sizing: border-box;
 }
-.formularioContacto .mainBtn{
+.formularioContacto .btnEnviar{
+    width: 70%;
     background-color: var(--color-header-footer);
     color: white;
+}
+.formularioContacto #experiencia{
     width: 100%;
     padding: 10px;
 }
