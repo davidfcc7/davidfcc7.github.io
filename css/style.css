@@ -119,13 +119,18 @@ nav li a:hover{ /*hover -> animacion al pasar la flecha del mouse*/
 /*FIN ESTILOS SECCION PROYECTOS*/
 /*------------------------------------------------------------------------*/
 
-
-footer{
+/*------------------------------------------------------------------------*/
+/*INICIO ESTILOS FOOTER*/
+.footer{
     background-color: var(--color-header-footer);
     padding: 30px;
     display: flex;
 }
-/*-------------------pagina de contacto*/
+/*FIN ESTILOS FOOTER*/
+/*------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------*/
+/*INICIO PAGINA DE CONTACTO FORMULARIO*/
 .formularioContacto{
     box-shadow: var(--sombraDeCaja);
     background-color: white;
@@ -147,4 +152,5 @@ footer{
     width: 100%;
     padding: 10px;
 }
-
+/*FIN PAGINA DE CONTACTO FORMULARIO*/
+/*------------------------------------------------------------------------*/
