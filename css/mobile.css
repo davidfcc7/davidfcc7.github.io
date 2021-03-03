@@ -1,10 +1,13 @@
 @media (max-width: 600px){
     .seccionPortada{
         display: inherit;
+        height: 400px;
+        padding-top: inherit;
     }
     .seccionPortada img{
         display: inherit;
-        margin-left: 10%; 
+        margin-left: 5%;
+        height: 160px;
     }
     .seccionPortada ul{
         padding-top: 10px;
@@ -24,6 +27,9 @@
         display: inherit;
         padding-left: 5px;
         padding: 10px;
+    }
+    .seccionProyectos img{
+        height: 200px;
     }
 }
 
