@@ -4,7 +4,10 @@
     }
     .seccionPortada img{
         display: inherit;
-        margin-left: 15%; 
+        margin-left: 10%; 
+    }
+    .seccionPortada ul{
+        padding-top: 10px;
     }
     .seccionDescripcion{
         padding-right: 50px;
@@ -19,8 +22,8 @@
     }
     .seccionGeneralProyectos{
         display: inherit;
-        padding-left: 10px;
-        padding: 20px;
+        padding-left: 5px;
+        padding: 10px;
     }
 }
 
