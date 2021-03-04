@@ -1,4 +1,13 @@
-@media (max-width: 600px){
+@media screen and (max-width: 600px){
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .header{
+        display: inherit;
+        font-size: 15px;
+    }
     .seccionPortada{
         display: inherit;
         height: 400px;
@@ -6,8 +15,8 @@
     }
     .seccionPortada img{
         display: inherit;
-        margin-left: 5%;
-        height: 160px;
+        margin-left: 20%;
+        height: 200px;
     }
     .seccionPortada ul{
         padding-top: 10px;

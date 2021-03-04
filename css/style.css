@@ -6,22 +6,22 @@
 /*FIN VARIABLES*/
 
 /*------------------------------------------------------------------------*/
-body{
+*{
     padding: 0px;
     margin: 0px;
-    font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 nav{
     background-color: var(--color-header-footer);
-    padding: 10px;
+    padding: 25px;
     display: flex;
     padding-right: 5px;
     justify-content: flex-end;
 }
 nav ul{
     display: flex;
+    font-size: 15px;
 }
 nav li{
     display: flex;
@@ -44,13 +44,14 @@ nav li a:hover{ /*hover -> animacion al pasar la flecha del mouse*/
     height: 500px;
     background-size: cover;
     background-position: center top;
+    width: 100%;
 }
 .seccionPortada img{
     padding: 40px;
     border-radius: 200px;
     display: block;
     margin-left: 37%; 
-    height: 250px;
+    height: 300px;
     margin-bottom: -70px;
 }
 .seccionPortada ul{
@@ -98,6 +99,7 @@ nav li a:hover{ /*hover -> animacion al pasar la flecha del mouse*/
 }
 .seccionProyectos p{
     text-align: center;
+    padding: 10px;
 }
 .seccionProyectos img{
     height: 250px;
