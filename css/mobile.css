@@ -17,7 +17,7 @@
     }
     .seccionPortada img{
         display: inherit;
-        margin-left: 20%;
+        margin-left: 10%;
         height: 200px;
     }
     .seccionPortada ul{
@@ -29,15 +29,10 @@
     /*------------------------------------------------------------------------*/
     /*INICIO ESTILO MOBIL SECCION DESCRIPCION*/
     .seccionDescripcion{
-        padding-right: 50px;
-        padding-left: 50px;
-    }
-    .seccionDescripcion #frase{
-        margin-left: 10%;
-    }
-    .seccionDescripcion #separador{
-        margin-top: -25px;
-        margin-bottom: 60px;
+        flex-wrap: wrap;
+        padding: 10px 10px;
+        padding-top: 30px;
+        padding-bottom: 1px;
     }
     /*FIN ESTILO MOBIL SECCION DESCRIPCION*/
     /*------------------------------------------------------------------------*/
@@ -46,6 +41,7 @@
     /*INICIO ESTILO MOBIL SECCION PROYECTOS*/
     .seccionGeneralProyectos{
         display: block;
+        flex-wrap: wrap;
         padding-left: 5px;
         padding: 10px;
     }
