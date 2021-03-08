@@ -1,0 +1,16 @@
+.seccionPortada img{
+    margin-left: 30%;
+}
+.seccionDescripcion{
+    width: 100%;
+    padding: 150px 150px;
+    padding-top: 30px;
+    padding-bottom: 1px;
+}
+.seccionDescripcion #separador{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.seccionGeneralProyectos{
+    display: block;
+}
