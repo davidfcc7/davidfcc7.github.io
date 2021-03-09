@@ -17,4 +17,11 @@
     .seccionPortada p{
         font-size: 30px;
     }
+    .containerFooter{
+        display: flex;
+        margin-left: inherit;
+    }
+    .containerFooter img{
+        width: 5%;
+    }
 }

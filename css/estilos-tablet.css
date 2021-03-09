@@ -5,7 +5,8 @@
         margin: 0;
     }
     nav .header{
-        font-size: 150%;
+        display: flex;
+        font-size: 100%;
     }
     .seccionPortada{
         background-image: url("https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?cs=srgb&dl=pexels-neo-2653362.jpg&fm=jpg");
