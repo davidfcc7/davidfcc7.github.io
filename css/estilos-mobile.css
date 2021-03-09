@@ -52,7 +52,7 @@
         display: flex;
         margin: auto;
     }
-    .containerFooter img{
+    .containerFooter a img{
         width: 20%;
     }
 }

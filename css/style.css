@@ -104,7 +104,7 @@ nav li a:hover{ /*hover -> animacion al pasar la flecha del mouse*/
     padding: 5px;
 }
 .seccionProyectos input{
-    color: black;
+    color: rgb(255, 255, 255);
     background-color: var(--color-header-footer);
     font-size: 20px;
     padding: 10px;
@@ -122,7 +122,7 @@ nav li a:hover{ /*hover -> animacion al pasar la flecha del mouse*/
 /*INICIO ESTILOS FOOTER*/
 footer{
     background-color: var(--color-header-footer);
-    padding: 30px;
+    padding: 40px;
     display: flex;
 }
 /*FIN ESTILOS FOOTER*/
