@@ -75,8 +75,10 @@
         width: 20%;
         padding-bottom: 20px;
         padding-top: 20px;
+        margin: inherit;
     }
     .tecnologias img{
-        padding: 10%;
+        padding: 15%;
+        width: 48px;
     }
 }
