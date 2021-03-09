@@ -1,0 +1,46 @@
+@media (min-width:768px){
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    nav .header{
+        font-size: 150%;
+    }
+    .seccionPortada{
+        background-image: url("https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?cs=srgb&dl=pexels-neo-2653362.jpg&fm=jpg");
+        height: 500px;
+    }
+    .seccionPortada img{
+        height: 350px;
+    }
+    .seccionPortada h1{
+        font-size: 30px;
+    }
+    .seccionPortada p{
+        font-size: 25px;
+    }
+    .seccionDescripcion{
+        padding-top: 20px;
+    }
+    .seccionDescripcion #frase{
+        padding-top: 20px;
+        margin: auto;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .seccionGeneralProyectos{
+        display: flex;
+        margin: auto;
+    }
+    .seccionProyectos p{
+        font-size: 25px;
+    }
+    .containerFooter{
+        display: flex;
+        margin: auto;
+    }
+    .containerFooter img{
+        width: 7%;
+    }
+}
