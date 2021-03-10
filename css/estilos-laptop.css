@@ -25,4 +25,18 @@
         width: 10%;
         margin-left: inherit;
     }
+    /*CERTIFICADOS*/
+    .seccionCertificados{
+        margin: auto;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .certificados{
+        display: flex;
+    }
+    .certificados img{
+        margin: auto;
+        padding: 10px;
+        width: 30%;
+    }
 }
