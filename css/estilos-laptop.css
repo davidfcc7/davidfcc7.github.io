@@ -29,14 +29,14 @@
     .seccionCertificados{
         margin: auto;
         padding-bottom: 20px;
-        padding-top: 20px;
     }
     .certificados{
         display: flex;
+        align-items: center;
     }
     .certificados img{
-        margin: auto;
+        
         padding: 10px;
-        width: 30%;
+        width: 25%;
     }
 }
