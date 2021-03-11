@@ -56,30 +56,37 @@
         width: 7%;
         margin-left: inherit;
     }
+    /*DEBIAN.HTML*/
+    .containerDebian{
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    .iconosDebian{
+        justify-content: center;
+    }
+    .iconosDebian picture{
+        display: flex;
+        width: 25%;
+    }
+    .iconosDebian picture img{
+        padding: 15px;
+    }
     /*WORDPRESS.HTML*/
     .containerWordpress{
         margin: auto;
-        margin-left: 10%;
-        margin-right: 10%;
         text-align: center;
+        justify-content: center;
     }
-    .containerWordpress p{
-        text-align: center;
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-bottom: 30px;
-        padding-top: 30px;
+    .iconosWordpress{
+        justify-content: center;
     }
-    .tecnologias{
+    .iconosWordpress picture{
         display: flex;
         width: 20%;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        margin: inherit;
     }
-    .tecnologias img{
-        padding: 15%;
-        width: 48px;
+    .iconosWordpress picture img{
+        padding: 15px;
     }
     /*CERTIFICADOS*/
     .seccionCertificados{

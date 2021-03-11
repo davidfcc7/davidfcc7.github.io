@@ -45,4 +45,41 @@
         width: 10%;
         margin-left: inherit;
     }
+    /*DEBIAN.HTML*/
+    .containerDebian{
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    .iconosDebian{
+        justify-content: center;
+    }
+    .iconosDebian{
+        align-items: center;
+        margin-left: 20%;
+    }
+    .iconosDebian picture{
+        display: flex;
+        width: 20%;
+    }
+    .iconosDebian picture img{
+        padding: 15px;
+    }
+    /*WORDPRESS.HTML*/
+    .containerWordpress{
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    .iconosWordpress{
+        justify-content: center;
+        margin-left: 20%;
+    }
+    .iconosWordpress picture{
+        display: flex;
+        width: 20%;
+    }
+    .iconosWordpress picture img{
+        padding: 15px;
+    }
 }
