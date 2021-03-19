@@ -10,6 +10,7 @@
     --offWhite: #FAF8F7;
     --justWhite: #FFFFFF;
     --colorTitle: #FF9536;
+    --colorh2: #757575;
 }
 *{
     padding: 0;
@@ -72,9 +73,12 @@ header .header-buttom-float a{
 }
 main .main-section-first{
     background-color: var(--offWhite);
+    width: 100%;
+    padding-bottom: 10%;
 }
 main .main-img-bitcoin{
-    margin: 55px 57px 40px 68px;
+    padding: 20% 0 10% 0;
+    text-align: center;
 }
 main .main-content-title-bitcoin{
     text-align: center;
@@ -96,7 +100,7 @@ main .main-content-title-bitcoin h2{
     line-height: 18px;
     text-align: center;
     margin-bottom: 48px;
-    color: #757575;
+    color: var(--colorh2);
     ;
 }
 main .main-title-table{
@@ -114,8 +118,8 @@ main .main-title-table p{
 }
 main .main-table-bitcoin{
     display: flex;
-    margin-left: 62px;
-    margin-bottom: 16px;
+    margin: 0 auto 5%;
+    width: 62%;
 }
 main .main-table-bitcoin .main-table{
     padding-right: 22px;
@@ -139,7 +143,7 @@ main .main-table-bitcoin .main-table .main-table-tr-money{
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #757575;
+    color: var(--colorh2);
     margin-right: 10px;
 }
 main .main-table-arrow-right{
@@ -152,7 +156,8 @@ main .main-date-table{
     display: flex;
     padding: 8px;
     background-color: var(--softOrange);
-    margin: 0 74px 65px 73px;
+    margin: auto;
+    width: 63%;
 }
 main .main-date-table .main-strong{
     font-family: var(--fontText);
@@ -237,4 +242,168 @@ main .main-inter-section-black h2{
 }
 main .main-third-section{
     background-image: url(../assets/bitcoinbaby.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 290px;
+
 }
+main .main-third-section .main-title-third-section h1{
+    text-align: center;
+    color: var(--justWhite);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 26px;
+    margin: auto;
+    padding-top: 10%;
+}
+main .main-fourth-section{
+    background-color: var(--offWhite);
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+main .main-fourth-section .main-title{
+    margin: auto;
+    width: 90%;
+}
+main .main-fourth-section .main-title h1{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--warmBlack);
+}
+main .main-fourth-section .main-title h2{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--colorh2);
+    margin-top: 10%;
+}
+main .main-fourth-section .main-top-button p{
+    font-family: var(--fontText);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--bitcoinOrange);
+    border-radius: 8px;
+    margin: 11% auto;
+    width: 35%;
+    color: var(--justWhite);
+}
+main .main-fourth-section .main-content-price{
+    padding: 10px;
+    background-color: white;
+    margin: auto;
+    width: 60%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+main .main-fourth-section .main-content-price .main-title h2{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+main .main-fourth-section .main-content-price .main-price{
+    display: flex;
+    margin: auto;
+    width: 43%;
+}
+main .main-fourth-section .main-content-price .main-price #caracter{
+    font-family: var(--fontText);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+main .main-fourth-section .main-content-price .main-price #price{
+    font-family: var(--fontText);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -8%;
+    text-align: center;
+}
+main .main-fourth-section .main-content-price .main-text-price p{
+    margin-top: 5%;
+    font-family: var(--fontText);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: var(--colorh2);
+}
+main .main-fourth-section .main-content-price .main-bottom-button{
+    display: flex;
+    padding: 10px;
+    margin-top: 10%;
+    background-color: #FAF8F7;
+    border: 2px solid #F7931A;
+    border-radius: 4px;
+    width: 86%;
+    margin: 10% auto;
+}
+main .main-fourth-section .main-content-price .main-bottom-button p{
+    padding-right: 12px;
+    font-size: 14px;
+    color: var(--warmBlack);
+    font-weight: 700;
+    font-style: normal;
+    line-height: 18px;
+    text-align: center;
+}
+footer{
+    background-color: var(--bitcoinOrange);
+    display: flex;
+    width: 100%;
+}
+footer .footer-column-first{
+    display: grid;
+    padding: 10% 20% 10% 10%;
+}
+footer .footer-column-first a{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    padding: 8px;
+    color: var(--justWhite);
+    text-decoration: none;
+}
+footer .footer-column-second{
+    padding: 30px;
+}
+footer .footer-column-second img{
+    width: 40px;
+    height: 24px;
+}
+footer .footer-column-second p{
+    color: var(--softOrange);
+    font-size: 8px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 18px;
+    text-align: center;
+}
+
+
+
+
+
+
+
