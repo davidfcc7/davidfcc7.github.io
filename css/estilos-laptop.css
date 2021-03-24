@@ -76,4 +76,12 @@
     .iconosWordpress picture img{
         padding: 15px;
     }
+    .containerWordpress .imagenes_ux_wp .container .row{
+        display: flex;
+        padding-top: 3%;
+    }
+    .containerWordpress .imagenes_ux_wp img{
+        padding-right: 10px;
+        width: 100%;
+    }
 }

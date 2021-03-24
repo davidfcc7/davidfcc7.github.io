@@ -102,4 +102,12 @@
         padding: 10px;
         width: 100%;
     }
+    .containerWordpress .imagenes_ux_wp .container .row{
+        display: flex;
+        padding-top: 3%;
+    }
+    .containerWordpress .imagenes_ux_wp img{
+        padding-right: 10px;
+        width: 100%;
+    }
 }
