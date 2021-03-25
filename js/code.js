@@ -1,26 +1,42 @@
 var btn = document.getElementById("botonSaberMasWordpress");
-btn.addEventListener("click", eventoClickWordpress);
+if(btn){
+    btn.addEventListener("click", eventoClickWordpress);
+}
 
 var btn = document.getElementById("botonDiseño");
-btn.addEventListener("click", eventoClickDiseño);
+if(btn){
+    btn.addEventListener("click", eventoClickDiseño);
+}
 
 var btn = document.getElementById("botonTiempoLibre");
-btn.addEventListener("click", eventoClickTiempoLibre);
+if(btn){
+    btn.addEventListener("click", eventoClickTiempoLibre);
+}
 
 var btn = document.getElementById("botonSaberMasIa");
-btn.addEventListener("click", eventoClickIa);
+if(btn){
+    btn.addEventListener("click", eventoClickIa);
+}
 
 var btn = document.getElementById("botonFrontend");
-btn.addEventListener("click", eventoClickFrontend);
+if(btn){
+    btn.addEventListener("click", eventoClickFrontend);
+}
 
 var btn = document.getElementById("botonJavaScript");
-btn.addEventListener("click", eventoClickJavaScript);
+if(btn){
+    btn.addEventListener("click", eventoClickJavaScript);
+}
 
 var btn = document.getElementById("botonMovilBitcoin");
-btn.addEventListener("click", eventoClickMovilBitcoin);
+if(btn){
+    btn.addEventListener("click", eventoClickMovilBitcoin);
+}
 
 var btn = document.getElementById("botonClonGoogle");
-btn.addEventListener("click", eventoClickClonGoogle);
+if(btn){
+    btn.addEventListener("click", eventoClickClonGoogle);
+}
 
 function eventoClickWordpress ()
 {
