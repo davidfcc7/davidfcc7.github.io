@@ -25,6 +25,10 @@
         width: 10%;
         margin-left: inherit;
     }
+    /*PROYECTOS*/
+    .seccionProyectos img{
+        width: 70%;
+    }
     /*CERTIFICADOS*/
     .seccionCertificados{
         margin: auto;
