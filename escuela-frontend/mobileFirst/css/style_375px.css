@@ -1,0 +1,15 @@
+@media (min-width:375px){
+    main .main-table-bitcoin{
+        display: flex;
+        margin: 0 auto 5%;
+        width: 65%;
+    }
+    main .main-date-table{
+        margin: 0 0 0 18%;
+        width: 55%;
+    }
+    footer .footer-column-second{
+        margin: auto;
+        padding: 1% 0 0 1%;
+    }
+}

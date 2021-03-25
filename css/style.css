@@ -112,6 +112,11 @@ nav li a:hover{ /*hover -> animacion al pasar la flecha del mouse*/
     border-radius: 10px;
     text-align: center;
 }
+.seccionProyectos input:hover{
+    color: wheat;
+    background-color: black;
+    cursor: pointer;
+}
 .seccionPrincipal{
     padding-bottom: 20px;
 }
