@@ -242,19 +242,18 @@ main .main-inter-section-black h2{
     color: #808080;
 }
 main .main-third-section{
-    background-color: cornsilk;
+    background-image: url(https://cdn.pixabay.com/photo/2017/10/08/10/31/bitcoin-2829407__340.png);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
-    height: 290px;
-
+    height: 245px;
 }
 main .main-third-section .main-title-third-section h1{
     text-align: center;
-    color: var(--justWhite);
+    color: black;
     font-weight: 500;
     font-style: normal;
-    font-size: 24px;
+    font-size: 34px;
     line-height: 26px;
     margin: auto;
     padding-top: 10%;
