@@ -4,6 +4,10 @@
         margin: 0 auto 5%;
         width: 65%;
     }
+    main .main-title-table{
+        margin-left: 18%;
+        margin-bottom: 5%;
+    }
     main .main-date-table{
         margin: 0 0 0 18%;
         width: 55%;
