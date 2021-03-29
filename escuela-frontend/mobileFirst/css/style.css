@@ -77,6 +77,14 @@ main .main-section-first{
     width: 100%;
     padding-bottom: 10%;
 }
+main .main-section-first .main-table-general{
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding-bottom: 10%;
+    padding-top: 13%;
+}
 main .main-img-bitcoin{
     padding: 20% 0 10% 0;
     text-align: center;
@@ -100,7 +108,7 @@ main .main-content-title-bitcoin h2{
     font-size: 14px;
     line-height: 18px;
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 5%;
     color: var(--colorh2);
     ;
 }
@@ -115,15 +123,20 @@ main .main-title-table p{
     line-height: 23px;
     color: var(--colorTitle);
 }
+main .main-title-table .commision{
+    color: #1A9AF7;
+}
 main .main-table-bitcoin{
     display: flex;
-    margin: 0 auto 5%;
     width: 80%;
+    margin-left: 10%;
+    padding-right: 10%;
 }
 main .main-table-bitcoin .main-table{
     padding-right: 22px;
     background-color: white;
     border-radius: 8px;
+    
 }
 main .main-table-bitcoin .main-table .main-table-tr-title{
     padding: 10px 12px 10px 12px;
@@ -147,16 +160,18 @@ main .main-table-bitcoin .main-table .main-table-tr-money{
 }
 main .main-table-arrow-right{
     margin: auto;
+    padding: 0 50% 0 18%;
 }
 main .main-table-arrow-right img{
     color: var(--warmBlack);
+    
 }
 main .main-date-table{
     display: flex;
     padding: 8px;
     background-color: var(--softOrange);
-    margin: 0 0 0 11%;
-    width: 64%;
+    margin: 10% 0 0 11%;
+    width: 100%;
 }
 main .main-date-table .main-strong{
     font-family: var(--fontText);
