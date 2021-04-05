@@ -29,20 +29,6 @@
     .seccionProyectos img{
         width: 70%;
     }
-    /*CERTIFICADOS*/
-    .seccionCertificados{
-        margin: auto;
-        padding-bottom: 20px;
-    }
-    .certificados{
-        display: flex;
-        align-items: center;
-    }
-    .certificados img{
-        
-        padding: 10px;
-        width: 25%;
-    }
     /*DEBIAN.HTML*/
     .containerDebian{
         margin: auto;

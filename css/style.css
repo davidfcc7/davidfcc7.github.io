@@ -41,87 +41,82 @@ nav li a:hover{ /*hover -> animacion al pasar la flecha del mouse*/
 .seccionPortada{
     display: grid;
     background-image: url("https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?cs=srgb&dl=pexels-neo-2653362.jpg&fm=jpg");
-    height: 500px;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
     background-size: cover;
     background-position: center top;
-    width: 100%;
+    align-items: center;
+    text-align: center;
+    color: white;
 }
 .seccionPortada img{
-    padding: 40px;
     border-radius: 200px;
+    height: 200px;
     display: block;
-    margin-left: 37%; 
-    height: 300px;
-    margin-bottom: -70px;
-}
-.seccionPortada ul{
-    color: white;
-    text-align: center;
+    padding-top: 1%;
+    margin: auto;
 }
 /*FIN ESTILOS DE SECCION PORTADA*/
 /*------------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------------*/
 /*INICIO ESTILOS SECCION DESCRIPCION*/
-.seccionDescripcion{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 31px;
+.container-description{
+    display: grid;
+    grid-template-rows: max-content;
     text-align: center;
-    padding: 300px 300px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    font-style: italic;
+    grid-template-columns: 10% 80% 10%;
+    margin: 3%;
     color: rgb(175, 175, 175);
-}
-.seccionDescripcion #frase{
-    margin-bottom: 0px;
-    margin-left: 8%;
+    font-style: italic;
+    font-size: 28px;
 }
 /*FIN ESTILOS SECCION DESCRIPCION*/
 /*------------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------------*/
 /*INICIO ESTILOS SECCION PROYECTOS*/
-.seccionGeneralProyectos{
-    display: flex;
-    padding-left: 100px;
-    padding-right: 100px;
+.section-proy{
+    display: grid;
+    grid-template-rows: 10% 35% 15% 30% auto;
+    grid-template-columns: 100%;
+    margin: auto;
 }
-
+.section-proy h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
 .seccionProyectos{
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: repeat(6, 50%);
     text-align: center;
-    box-shadow: var(--sombraDeCaja);
-    margin: 10%;
-}
-.seccionProyectos p{
-    text-align: center;
-    padding: 10px;
-}
-.seccionProyectos img{
-    height: 250px;
-    border-radius: 20px;
-    text-align: center;
-    padding: 5px;
-}
-.seccionProyectos input{
-    color: rgb(255, 255, 255);
-    background-color: var(--color-header-footer);
-    font-size: 20px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    text-align: center;
-}
-.seccionProyectos input:hover{
-    color: wheat;
-    background-color: black;
-    cursor: pointer;
-}
-.seccionPrincipal{
-    padding-bottom: 20px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding-top: 30px;
 }
 /*FIN ESTILOS SECCION PROYECTOS*/
 /*------------------------------------------------------------------------*/
+
+/*INICIO SECCION CERTIFICADOS*/
+.certificados{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(11, 40%);
+    overflow-x: scroll;
+    text-align: center;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding-bottom: 20%;
+}
+.certificados img{
+    height: 400px;
+    padding-top: 20px;
+    padding: 10px;
+}
+/*FIN SECCION CERTIFICADOS*/
 
 /*------------------------------------------------------------------------*/
 /*INICIO ESTILOS FOOTER*/
@@ -131,30 +126,4 @@ footer{
     display: flex;
 }
 /*FIN ESTILOS FOOTER*/
-/*------------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------------*/
-/*INICIO PAGINA DE CONTACTO FORMULARIO*/
-.formularioContacto{
-    box-shadow: var(--sombraDeCaja);
-    background-color: white;
-    padding: 60px;
-    margin: 5%;
-    margin-inline: auto;
-    width: max-content;
-    text-align: -webkit-center;
-}
-.formularioContacto input{
-    padding: 10px;
-}
-.formularioContacto .btnEnviar{
-    width: 70%;
-    background-color: var(--color-header-footer);
-    color: white;
-}
-.formularioContacto #experiencia{
-    width: 100%;
-    padding: 10px;
-}
-/*FIN PAGINA DE CONTACTO FORMULARIO*/
 /*------------------------------------------------------------------------*/
