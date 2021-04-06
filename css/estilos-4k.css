@@ -5,10 +5,6 @@
         margin-left: 20%;
         margin-right: 20%;
     }
-    .seccionGeneralProyectos{
-        margin-left: 0%;
-        margin-right: 0%;
-    }
     .containerFooter{
         display: flex;
         margin-left: inherit;
@@ -17,41 +13,42 @@
         width: 3%;
         margin-left: inherit;
     }
-    /*DEBIAN.HTML*/
-    .containerDebian{
-        margin: auto;
+    .seccionProyectos a img{
+        padding: 0px 40px 0px 40px;
+        width: 1240px;
+    }
+    .certificados figure img{
+        padding: 0 40px 0 40px;
+        height: 700px;
+    }
+    .container-description{
+        font-size: 70px;
+    }
+    .section-proy h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 90px;
         text-align: center;
-        justify-content: center;
     }
-    .iconosDebian{
-        justify-content: center;
-    }
-    .iconosDebian{
-        align-items: center;
-        margin-left: 38%;
-    }
-    .iconosDebian picture{
+    nav .header {
         display: flex;
-        width: 10%;
+        font-size: 60px;
     }
-    .iconosDebian picture img{
-        padding: 15px;
+    .seccionPortada{
+        background-image: url("https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?cs=srgb&dl=pexels-neo-2653362.jpg&fm=jpg");
+        height: 750px;
     }
-    /*WORDPRESS.HTML*/
-    .containerWordpress{
-        margin: auto;
-        text-align: center;
-        justify-content: center;
+    .seccionPortada img{
+        height: 400px;
     }
-    .iconosWordpress{
-        justify-content: center;
-        margin-left: 38%;
+    .seccionPortada h1{
+        font-size: 70px;
     }
-    .iconosWordpress picture{
-        display: flex;
-        width: 8%;
+    .seccionPortada p{
+        font-size: 60px;
     }
-    .iconosWordpress picture img{
-        padding: 15px;
+    .containerFooter a img{
+        width: 25%;
+        margin-left: inherit;
+        padding: 0 10px 0 10px;
     }
 }
