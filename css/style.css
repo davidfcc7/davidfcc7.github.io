@@ -1,129 +1,142 @@
 /*INICIO VARIABLES*/
-:root{
-    --color-header-footer: rgb(21, 95, 138);
-    --sombraDeCaja: 0 0 5px black;
+:root {
+  --color-header-footer: rgb(21, 95, 138);
+  --sombraDeCaja: 0 0 5px black;
 }
+
 /*FIN VARIABLES*/
+/*------------------------------------------------------------------------*/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: var(--color-header-footer);
+  padding: 25px;
+  display: flex;
+  padding-right: 5px;
+  justify-content: flex-end;
+}
+
+nav ul {
+  display: flex;
+  font-size: 15px;
+}
+
+nav li {
+  display: flex;
+  padding-right: 10px;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  /*hover -> animacion al pasar la flecha del mouse*/
+  text-decoration: underline;
+}
 
 /*------------------------------------------------------------------------*/
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-nav{
-    background-color: var(--color-header-footer);
-    padding: 25px;
-    display: flex;
-    padding-right: 5px;
-    justify-content: flex-end;
-}
-nav ul{
-    display: flex;
-    font-size: 15px;
-}
-nav li{
-    display: flex;
-    padding-right: 10px;
-}
-nav li a{
-    color: white;
-    text-decoration: none;
-}
-nav li a:hover{ /*hover -> animacion al pasar la flecha del mouse*/
-    text-decoration: underline;
-}
-/*------------------------------------------------------------------------*/
-
 /*------------------------------------------------------------------------*/
 /*INICIO ESTILOS DE SECCION PORTADA*/
-.seccionPortada{
-    display: grid;
-    background-image: url("https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?cs=srgb&dl=pexels-neo-2653362.jpg&fm=jpg");
-    grid-template-columns: 100%;
-    grid-template-rows: 70% 30%;
-    background-size: cover;
-    background-position: center top;
-    align-items: center;
-    text-align: center;
-    color: white;
+.seccionPortada {
+  display: grid;
+  background-image: url("https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?cs=srgb&dl=pexels-neo-2653362.jpg&fm=jpg");
+  grid-template-columns: 100%;
+  grid-template-rows: 70% 30%;
+  background-size: cover;
+  background-position: center top;
+  align-items: center;
+  text-align: center;
+  color: white;
 }
-.seccionPortada img{
-    border-radius: 200px;
-    height: 200px;
-    display: block;
-    padding-top: 1%;
-    margin: auto;
+
+.seccionPortada img {
+  border-radius: 200px;
+  height: 200px;
+  display: block;
+  padding-top: 1%;
+  margin: auto;
 }
+
 /*FIN ESTILOS DE SECCION PORTADA*/
 /*------------------------------------------------------------------------*/
-
 /*------------------------------------------------------------------------*/
 /*INICIO ESTILOS SECCION DESCRIPCION*/
-.container-description{
-    display: grid;
-    grid-template-rows: max-content;
-    text-align: center;
-    grid-template-columns: 10% 80% 10%;
-    margin: 3%;
-    color: rgb(175, 175, 175);
-    font-style: italic;
-    font-size: 28px;
+.container-description {
+  display: grid;
+  grid-template-rows: max-content;
+  text-align: center;
+  grid-template-columns: 10% 80% 10%;
+  margin: 3%;
+  color: #afafaf;
+  font-style: italic;
+  font-size: 28px;
 }
+
 /*FIN ESTILOS SECCION DESCRIPCION*/
 /*------------------------------------------------------------------------*/
-
 /*------------------------------------------------------------------------*/
 /*INICIO ESTILOS SECCION PROYECTOS*/
-.section-proy{
-    display: grid;
-    grid-template-rows: 10% 35% 15% 30% auto;
-    grid-template-columns: 100%;
-    margin: auto;
+.section-proy {
+  display: grid;
+  grid-template-rows: 10% 35% 15% 30% auto;
+  grid-template-columns: 100%;
+  margin: auto;
 }
-.section-proy h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    text-align: center;
+
+.section-proy h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  text-align: center;
 }
-.seccionProyectos{
-    display: grid;
-    grid-template-rows: repeat(2, 50%);
-    grid-template-columns: repeat(6, 50%);
-    text-align: center;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    padding-top: 30px;
+
+.seccionProyectos {
+  display: grid;
+  grid-template-rows: repeat(2, 50%);
+  grid-template-columns: repeat(6, 50%);
+  text-align: center;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  padding-top: 30px;
 }
+
 /*FIN ESTILOS SECCION PROYECTOS*/
 /*------------------------------------------------------------------------*/
-
 /*INICIO SECCION CERTIFICADOS*/
-.certificados{
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: repeat(11, 40%);
-    overflow-x: scroll;
-    text-align: center;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    padding-bottom: 20%;
+.certificados {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: repeat(11, 40%);
+  overflow-x: scroll;
+  text-align: center;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  padding-bottom: 20%;
 }
-.certificados img{
-    height: 400px;
-    padding-top: 20px;
-    padding: 10px;
-}
-/*FIN SECCION CERTIFICADOS*/
 
+.certificados img {
+  height: 400px;
+  padding-top: 20px;
+  padding: 10px;
+}
+
+/*FIN SECCION CERTIFICADOS*/
 /*------------------------------------------------------------------------*/
 /*INICIO ESTILOS FOOTER*/
-footer{
-    background-color: var(--color-header-footer);
-    padding: 20px;
-    display: flex;
+footer {
+  background-color: var(--color-header-footer);
+  padding: 20px;
+  display: flex;
 }
+
 /*FIN ESTILOS FOOTER*/
 /*------------------------------------------------------------------------*/
+
+/*# sourceMappingURL=style.css.map */
