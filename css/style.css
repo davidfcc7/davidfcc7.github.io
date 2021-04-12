@@ -1,6 +1,6 @@
 /*INICIO VARIABLES*/
 :root {
-  --color-header-footer: rgb(21, 95, 138);
+  --color-header-footer: #155f8a;
   --sombraDeCaja: 0 0 5px black;
 }
 
@@ -14,8 +14,8 @@
 }
 
 nav {
-  background-color: var(--color-header-footer);
-  padding: 10px;
+  background-image: linear-gradient(to right top, #155f8a, #22496a, #22344c, #1a212f, #0d0e14);
+  padding: 20px;
   display: flex;
   padding-right: 5px;
   justify-content: flex-end;
@@ -112,7 +112,7 @@ main h1, p{
 /*------------------------------------------------------------------------*/
 /*INICIO ESTILOS FOOTER*/
 footer {
-  background-color: var(--color-header-footer);
+  background-image: linear-gradient(to right top, #155f8a, #22496a, #22344c, #1a212f, #0d0e14);
   padding: 10px;
   display: flex;
   justify-content: center;
