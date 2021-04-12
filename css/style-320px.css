@@ -38,7 +38,7 @@
         padding: 15px 0;
     }
     .seccionProyectos a img{
-        padding: 0 10px;
+        padding: auto 10px;
         width: 240px;
     }
     .containerFooter{
