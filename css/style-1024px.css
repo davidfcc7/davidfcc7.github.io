@@ -12,7 +12,7 @@
         height: 300px;
     }
     .seccionPortada h1{
-        font-size: 50px;
+        font-size: 40px;
     }
     .seccionPortada p{
         font-size: 40px;
@@ -21,12 +21,14 @@
         display: flex;
         margin-left: inherit;
     }
+    .containerFooter a{
+        padding: 0 15px;
+    }
     .containerFooter a img{
-        width: 10%;
+        width: 40px;
         margin-left: inherit;
     }
     .seccionProyectos a img{
-        padding: 0px 40px 0px 40px;
         width: 540px;
     }
     .certificados figure img{
@@ -38,6 +40,6 @@
     }
     nav .header {
         display: flex;
-        font-size: 25px;
+        font-size: 15px;
     }
 }
