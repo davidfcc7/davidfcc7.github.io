@@ -223,6 +223,11 @@ main section .planes .card .planes__card .boton img{
     margin: auto 0px;
 }
 /*FIN PLANES*/
+footer section .footer{
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    text-align: center;
+    padding: 15px 0px;
+}
 
 
 
