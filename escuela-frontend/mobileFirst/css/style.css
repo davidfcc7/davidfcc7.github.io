@@ -32,18 +32,18 @@ header{
     width: 100%;
     text-align: center;
 }
-.header{
+header .container{
     margin: auto;
     padding: 30px 10px;
 }
-.header p, h1{
+header .container p, h1{
     color: white;
     padding-top: 30px;
 }
-.header p{
+header .container p{
     padding-bottom: 40px;
 }
-.header-btn{
+header .container .button{
     position: relative;
     padding: 15px 20px;
     background-color: white;
@@ -54,7 +54,7 @@ header{
     display: inline-flex;
     justify-content: center;
 }
-.header-btn a{
+header .container .button a{
     color: black;
     font-weight: 700;
     font-size: 14px;
@@ -64,11 +64,14 @@ header{
 /*FIN SECCION HEADER*/
 
 /*INICIO SECCION BITCOIN*/
-.seccion__bitcoin h1, p{
+main section .binarios{
+    text-align: center;
+}
+main section .binarios h1, p{
     color: black;
     padding: 15px 20px;
 }
-.seccion__bitcoin-monedas .monedas, .comisiones{
+main section .binarios .container .monedas, .comisiones{
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, auto);
@@ -82,441 +85,150 @@ header{
     box-shadow:  5px 5px 7px #b3b6b6,
              -5px -5px 7px #ffffff;
 }
-.seccion__bitcoin-comisiones, .seccion__bitcoin-monedas{
+main section .binarios .container .container__comisiones, .container__money{
     padding-left: 10%;
     margin: auto;
 }
-.seccion__bitcoin-comisiones{
+main section .binarios .container .container__comisiones{
     padding-right: 10%;
 }
-.seccion__bitcoin-monedas img{
+main section .binarios .container .container__money img{
     margin: auto;
 }
-.seccion__bitcoin-comisiones img{
+main section .binarios .container .container__comisiones img{
     margin: auto;
 }
-.seccion__bitcoin-date{
+main section .binarios .container .seccion__bitcoin-date{
     display: flex;
     width: 100%;
     justify-content: center;
     text-align: center;
 }
-.seccion__bitcoin-date p{
+main section .binarios .container .seccion__bitcoin-date p{
     margin: auto;
 }
-.seccion__bitcoin-container{
+main section .binarios .container{
     display: flex;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
 /*FIN SECCION BITCOIN*/
-
-
-
-
-
-
-header .header-img-logo{
-    width: 150px;
-    margin: auto;
-    padding-top: 39px;
-    padding-bottom: 33px;
-}
-header .header-content-title{
-    margin: auto;
-}
-header .header-content-title h1{
-    font-size: 24px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 26px;
+/*INICIO SECCION SERVICIOS*/
+main section .servicios{
+    background-color: black;
     color: white;
-    margin: 0  16px 24px 16px;
 }
-header .header-content-title p{
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 500;
-    font-style: normal;
-    color: var(--softOrange);
-    margin: 32px 16px 32px 16px;
+main section .servicios .card{
+    padding: 0px 20px 10px 20px;
 }
-
-
-main .main-section-first{
-    background-color: var(--offWhite);
-    width: 100%;
-    padding-bottom: 10%;
-}
-main .main-section-first .main-table-general{
-    display: flex;
-    overflow-x: scroll;
-    
-    scroll-snap-type: x proximity;
-    padding-bottom: 10%;
-    padding-top: 13%;
-}
-main .main-img-bitcoin{
-    padding: 20% 0 10% 0;
+main section .servicios h1{
     text-align: center;
+    font-size: 30px;
 }
-main .main-content-title-bitcoin{
+main section .servicios p{
     text-align: center;
-    margin: auto;
+    color: gray;
 }
-main .main-content-title-bitcoin h1{
-    font-weight: 700;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 26px;
-    text-align: center;
-    margin-bottom: 24px;
-    color: var(--warmBlack);
+main section .servicios .card div{
+    background-color: rgb(39, 37, 37);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
-main .main-content-title-bitcoin h2{
-    font-weight: 500;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    margin-bottom: 5%;
-    color: var(--colorh2);
-    ;
-}
-main .main-title-table{
-    margin-left: 12%;
-    margin-bottom: 5%;
-}
-main .main-title-table p{
-    font-weight: 700;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 23px;
-    color: var(--colorTitle);
-}
-main .main-title-table .commision{
-    color: #1A9AF7;
-}
-main .main-table-bitcoin{
-    display: flex;
-    width: 80%;
-    margin-left: 10%;
-    padding-right: 10%;
-}
-main .main-table-bitcoin .main-table{
-    padding-right: 22px;
-    background-color: white;
-    border-radius: 8px;
-    display: block;
-    width: 100vh;
-    text-align: center;
-}
-main .main-table-bitcoin .main-table tr{
-    justify-content: center;
+main section .servicios .card p{
     text-align: left;
 }
-main .main-table-bitcoin .main-table .main-table-tr-title{
-    padding: 10px 12px 10px 12px;
-    font-family: var(--fontText);
-    font-weight: 500;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #B5B0AC;
-} 
-main .main-table-bitcoin .main-table .main-table-tr-money{
-    padding: 11px 10px 11px 12px;
-    font-family: var(--fontText);
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: var(--colorh2);
-    margin-right: 10px;
-}
-main .main-table-arrow-right{
-    margin: auto;
-    padding: 0 50% 0 18%;
-}
-main .main-table-arrow-right img{
-    color: var(--warmBlack);
-    
-}
-main .main-date-table{
-    display: flex;
-    padding: 8px;
-    background-color: var(--softOrange);
-    margin: 10% 0 0 11%;
-    width: 100%;
-}
-main .main-date-table .main-strong{
-    font-family: var(--fontText);
-    font-weight: 700;
-    font-style: normal;
-    font-size: 13px;
-    line-height: 19px;
-    text-align: center;
-    margin: auto;
-    color: var(--warmBlack);
-}
-main .main-date-table .main-date{
-    font-family: var(--fontText);
-    font-weight: 500;
-    font-style: normal;
-    font-size: 10px;
-    line-height: 14px;
-    text-align: center;
-    margin-left: 5px;
-    margin: auto;
-    color: var(--warmBlack);
-}
-main .main-second-section{
-    background-color: var(--warmBlack);
-    width: 100%;
-}
-main .main-second-section .main-icon-section-second img{
-    margin: -5% 40% 0 40%;
-    width: 15%;
-    position: relative;
-}
-main .main-title-section-black{
-    margin: auto;
-    text-align: center;
-}
-main .main-title-section-black h1{
-    padding: 64px 17px 24px 15px;
-    color: var(--justWhite);
-    font-weight: 700;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 26px;
-    text-align: center;
-}
-main .main-title-section-black h2{
-    padding: 0px 17px 32px 15px;
-    color: #808080;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-}
-main .main-inter-section-black{
-    margin: auto;
-    display: block;
-    text-align: left;
-    padding: 16px 16px;
-    
-}
-main .main-inter-section-black div{
-    margin-bottom: 16px;
-    background-color: #282623;
-    border-radius: 4px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
-}
-main .main-inter-section-black img{
-    padding-top: 14px;
-    padding-left: 18px;
-}
-main .main-inter-section-black p{
-    padding: 12px 0 10px 16px;
-    color: var(--justWhite);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 18px;
-}
-main .main-inter-section-black h2{
-    padding: 0 0 22px 16px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-    color: #808080;
-}
-main .main-third-section{
-    background-image: url(https://cdn.pixabay.com/photo/2017/10/08/10/31/bitcoin-2829407__340.png);
+/*FIN SECCION SERVICIOS*/
+/*INICIO IMAGEN FONDO*/
+main section .imagenFondo{
+    background-image: url("https://previews.dropbox.com/p/thumb/ABKCoTdQLxqdxgD84TktdDF1ngtaV8oxyBdz4D6hjMVLiPRp2D5GZut7tS0_6izyjDE2muDYamkrZV7Of3fR94cluuzYUCWOwv-BzddCUvph4grSCCsBZ56aZjRT-lQ4YBlWygWdBHRm083nXNRtIbQHNNmwTLmqTwz6AzNhtFSXCSZqH-2YxA3w7ECB2t9m3u9bvRT7_GGa7lxcUzgESX8-1GWX4VTPavNu5hHv0K4X9YJ0eMVOfXsjxRUczTf-LlW5N6k3v2NUR6aOaMHNFX6pr4GoBNm5-JZz4lGGGYHTQElw0YoqBvARvzRc7hVP9kkjHtT_V6zJ4xPm8GYovegLhQI6nowFq0F61vr7M8QK-g/p.png?fv_content=true&size_mode=5");
     background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100%;
-    height: 245px;
-}
-main .main-third-section .main-title-third-section h1{
+    background-size: cover;
+    height: 60vh;
+    color: white;
     text-align: center;
-    color: black;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 34px;
-    line-height: 26px;
-    margin: auto;
-    padding-top: 10%;
-}
-main .main-fourth-section{
-    background-color: var(--offWhite);
-    padding-top: 15%;
-    padding-bottom: 15%;
-}
-main .main-fourth-section .main-title{
-    margin: auto;
-    width: 90%;
-}
-main .main-fourth-section .main-title h1{
-    font-weight: 700;
-    font-style: normal;
     font-size: 24px;
-    line-height: 26px;
-    text-align: center;
-    color: var(--warmBlack);
 }
-main .main-fourth-section .main-title h2{
-    font-weight: 500;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 18px;
+/*FIN IMAGEN FONDO*/
+/*INICIO PLANES*/
+main section .planes{
     text-align: center;
-    color: var(--colorh2);
-    margin-top: 10%;
 }
-main .main-fourth-section .main-top-button{
-    position: absolute;
-    text-align: center;
-    margin: -16% 0% 0% 0%;
-    width: 100%;
+main section .planes h1{
+    color: black;
+    font-size: 32px;
+    margin-top: 30px;
 }
-main .main-cards-fourth-section{
-    display: flex;
+main section .planes h2{
+    color: black;
+    font-size: 18px;
+    margin-top: 26px;
+}
+main section .planes .card{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(3, 90%);
     overflow-x: scroll;
-    overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-    padding-bottom: 10%;
-    padding-top: 13%;
 }
-main .main-cards-fourth-section .main-card-first, .main-card-sold, .main-card-second{
-    padding: 0 30% 0 5%;
+main section .planes .card .planes__card{
+    border-radius: 10px;
+    border: 0px solid black;
+    box-shadow:  5px 5px 10px #828282,
+             -5px -5px 10px #ffffff;
+    margin: 20% 5% 20% 5%;
+    background-color: rgb(247, 246, 244);
+    font-weight: bold;
 }
-main .main-fourth-section .main-content-price{
+main section .planes .card .planes__card .recomendado{
     padding: 10px;
-    background-color: white;
-    margin: auto;
-    width: 160%;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-    height: 280px;
+    background-color: #F7931A;
     position: relative;
-    scroll-snap-align: center;
+    width: 40%;
+    margin: auto;
+    border-radius: 15px;
+    color: white;
+    top: -20px;
+    font-weight: bold;
 }
-main .main-fourth-section .main-content-price .main-title p{
-    font-family: var(--fontText);
-    font-weight: 700;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-    padding: 10px;
-    background-color: var(--bitcoinOrange);
-    border-radius: 8px;
-    margin: -21% 15% 0 7%;
-    width: 70%;
-    color: var(--justWhite);
-    position: absolute;
+main section .planes .card .planes__card .precio{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
 }
-main .main-fourth-section .main-content-price .main-title h2{
+main section .planes .card .planes__card .precio .pesos{
+    padding: 0px;
+}
+main section .planes .card .planes__card .precio .valor{
+    font-size: 52px;
+    line-height: 63px;
+    letter-spacing: -0.08em;
+    padding: 0px;
+}
+main section .planes .card .planes__card .text{
     font-weight: 500;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 12px;
+}
+main section .planes .card .planes__card .boton{
+    display: flex;
+    justify-content: center;
     text-align: center;
+    margin: auto;
+    width: 50%;
+    border: 2px solid rgb(255, 165, 0);
     margin-bottom: 5%;
 }
-main .main-fourth-section .main-content-price .main-price{
-    display: flex;
-    margin: auto;
-    width: 43%;
+main section .planes .card .planes__card .boton img{
+    margin: auto 0px;
 }
-main .main-fourth-section .main-content-price .main-price #caracter{
-    font-family: var(--fontText);
-    font-weight: 500;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-    margin-top: 10px;
-}
-main .main-fourth-section .main-content-price .main-price #price{
-    font-family: var(--fontText);
-    font-weight: 700;
-    font-style: normal;
-    font-size: 52px;
-    line-height: 62px;
-    letter-spacing: -8%;
-    text-align: center;
-}
-main .main-fourth-section .main-content-price .main-text-price p{
-    margin-top: 5%;
-    font-family: var(--fontText);
-    font-weight: 500;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-    color: var(--colorh2);
-}
-main .main-fourth-section .main-content-price .main-bottom-button{
-    display: flex;
-    padding: 10px;
-    margin-top: 10%;
-    background-color: #FAF8F7;
-    border: 2px solid #F7931A;
-    border-radius: 4px;
-    width: 86%;
-    margin: 10% auto;
-}
-main .main-fourth-section .main-content-price .main-bottom-button p{
-    padding-right: 12px;
-    font-size: 14px;
-    color: var(--warmBlack);
-    font-weight: 700;
-    font-style: normal;
-    line-height: 18px;
-    text-align: center;
-}
-footer{
-    background-color: var(--bitcoinOrange);
-    display: flex;
-    width: 100%;
-}
-footer .footer-column-first{
-    display: grid;
-    padding: 10% 20% 10% 10%;
-}
-footer .footer-column-first a{
-    font-weight: 500;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    padding: 8px;
-    color: var(--justWhite);
-    text-decoration: none;
-}
-footer .footer-column-second{
-    margin: auto;
-    padding: 1% 0 0 1%;
-}
-footer .footer-column-second img{
-    width: 40px;
-    height: 24px;
-}
-footer .footer-column-second p{
-    color: var(--softOrange);
-    font-size: 8px;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 18px;
-    text-align: center;
-}
+/*FIN PLANES*/
+
+
+
+
+
+
 
 
 
