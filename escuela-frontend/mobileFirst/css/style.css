@@ -19,13 +19,104 @@
 }
 html{
     font-family: var(--fontTitle);
+    border: 0px solid black;
+    width: 500px;
+    height: 100vh;
+    margin: auto;
 }
+/*INICIO SECCION HEADER*/
 header{
     background:linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
     background-size: 100%;
-    height: 307px;
+    height: 290px;
     width: 100%;
+    text-align: center;
 }
+.header{
+    margin: auto;
+    padding: 30px 10px;
+}
+.header p, h1{
+    color: white;
+    padding-top: 30px;
+}
+.header p{
+    padding-bottom: 40px;
+}
+.header-btn{
+    position: relative;
+    padding: 15px 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 4px;
+    text-align: center;
+    width: 50%;
+    display: inline-flex;
+    justify-content: center;
+}
+.header-btn a{
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+}
+/*FIN SECCION HEADER*/
+
+/*INICIO SECCION BITCOIN*/
+.seccion__bitcoin h1, p{
+    color: black;
+    padding: 15px 20px;
+}
+.seccion__bitcoin-monedas .monedas, .comisiones{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
+    background-color: rgb(255, 249, 249);
+    border-radius: 10px;
+    width: 100%;
+    justify-content: center;
+    text-align: left;
+    margin: auto;
+    padding: 0px 100px;
+    box-shadow:  5px 5px 7px #b3b6b6,
+             -5px -5px 7px #ffffff;
+}
+.seccion__bitcoin-comisiones, .seccion__bitcoin-monedas{
+    padding-left: 10%;
+    margin: auto;
+}
+.seccion__bitcoin-comisiones{
+    padding-right: 10%;
+}
+.seccion__bitcoin-monedas img{
+    margin: auto;
+}
+.seccion__bitcoin-comisiones img{
+    margin: auto;
+}
+.seccion__bitcoin-date{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.seccion__bitcoin-date p{
+    margin: auto;
+}
+.seccion__bitcoin-container{
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+/*FIN SECCION BITCOIN*/
+
+
+
+
+
+
 header .header-img-logo{
     width: 150px;
     margin: auto;
@@ -40,7 +131,6 @@ header .header-content-title h1{
     font-style: normal;
     font-weight: bold;
     line-height: 26px;
-    text-align: center;
     color: white;
     margin: 0  16px 24px 16px;
 }
@@ -49,29 +139,11 @@ header .header-content-title p{
     line-height: 18px;
     font-weight: 500;
     font-style: normal;
-    text-align: center;
     color: var(--softOrange);
     margin: 32px 16px 32px 16px;
 }
-header .header-buttom-float{
-    position: absolute;
-    padding: 15px 20px 15px 16px;
-    background-color: white;
-    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-    border-radius: 4px;
-    text-align: -webkit-center;
-    width: 90%;
-    margin: 0 5% 0 5%;
-}
-header .header-buttom-float a{
-    color: var(--warmBlack);
-    font-weight: 700;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    margin: auto;
-}
+
+
 main .main-section-first{
     background-color: var(--offWhite);
     width: 100%;
@@ -80,7 +152,7 @@ main .main-section-first{
 main .main-section-first .main-table-general{
     display: flex;
     overflow-x: scroll;
-    overscroll-behavior-x: contain;
+    
     scroll-snap-type: x proximity;
     padding-bottom: 10%;
     padding-top: 13%;
@@ -136,7 +208,13 @@ main .main-table-bitcoin .main-table{
     padding-right: 22px;
     background-color: white;
     border-radius: 8px;
-    
+    display: block;
+    width: 100vh;
+    text-align: center;
+}
+main .main-table-bitcoin .main-table tr{
+    justify-content: center;
+    text-align: left;
 }
 main .main-table-bitcoin .main-table .main-table-tr-title{
     padding: 10px 12px 10px 12px;
@@ -201,7 +279,7 @@ main .main-second-section{
 main .main-second-section .main-icon-section-second img{
     margin: -5% 40% 0 40%;
     width: 15%;
-    position: absolute;
+    position: relative;
 }
 main .main-title-section-black{
     margin: auto;
