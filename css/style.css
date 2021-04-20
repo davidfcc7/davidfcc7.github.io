@@ -112,7 +112,7 @@ main h1, p{
 /*INICIO SECCION CERTIFICADOS*/
 .certificados {
   display: grid;
-  grid-template-columns: repeat(11, 1fr);
+  grid-template-columns: repeat(15, auto);
   overflow-x: scroll;
   scroll-snap-type: x proximity;
   padding: 15px auto;
