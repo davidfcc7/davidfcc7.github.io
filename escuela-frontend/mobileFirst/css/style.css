@@ -37,8 +37,8 @@ header .container{
     padding: 30px 10px;
 }
 header .container p, h1{
-    color: white;
     padding-top: 30px;
+    color: white;
 }
 header .container p{
     padding-bottom: 40px;
