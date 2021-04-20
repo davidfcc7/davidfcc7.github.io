@@ -37,6 +37,9 @@
         padding: auto 10px;
         width: 240px;
     }
+    .seccionRetos img{
+        height: 100px;
+    }
     .containerFooter{
         display: flex;
         margin-left: inherit;

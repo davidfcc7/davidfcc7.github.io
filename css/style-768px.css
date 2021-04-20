@@ -32,6 +32,9 @@
         padding: 0px 30px 0px 30px;
         width: 440px;
     }
+    .seccionRetos img{
+        height: 200px;
+    }
     .certificados figure img{
         padding: 0 40px 0 40px;
         height: 210px;
