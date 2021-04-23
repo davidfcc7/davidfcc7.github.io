@@ -12,12 +12,6 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-html{
-  border: 0px solid black;
-  width: 100vw;
-  height: 100vh;
-  margin: auto;
-}
 nav {
   background-image: linear-gradient(to right top, #155f8a, #22496a, #22344c, #1a212f, #0d0e14);
   padding: 20px;
