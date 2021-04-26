@@ -91,10 +91,7 @@ main section .binarios .container .container__comisiones, .container__money{
 main section .binarios .container .container__comisiones{
     padding-right: 10%;
 }
-main section .binarios .container .container__money img{
-    margin: auto;
-}
-main section .binarios .container .container__comisiones img{
+main section .binarios .container img{
     margin: auto;
 }
 main section .binarios .container .seccion__bitcoin-date{
@@ -141,10 +138,10 @@ main section .servicios .card p{
 /*FIN SECCION SERVICIOS*/
 /*INICIO IMAGEN FONDO*/
 main section .imagenFondo{
-    background-image: url("https://previews.dropbox.com/p/thumb/ABKCoTdQLxqdxgD84TktdDF1ngtaV8oxyBdz4D6hjMVLiPRp2D5GZut7tS0_6izyjDE2muDYamkrZV7Of3fR94cluuzYUCWOwv-BzddCUvph4grSCCsBZ56aZjRT-lQ4YBlWygWdBHRm083nXNRtIbQHNNmwTLmqTwz6AzNhtFSXCSZqH-2YxA3w7ECB2t9m3u9bvRT7_GGa7lxcUzgESX8-1GWX4VTPavNu5hHv0K4X9YJ0eMVOfXsjxRUczTf-LlW5N6k3v2NUR6aOaMHNFX6pr4GoBNm5-JZz4lGGGYHTQElw0YoqBvARvzRc7hVP9kkjHtT_V6zJ4xPm8GYovegLhQI6nowFq0F61vr7M8QK-g/p.png?fv_content=true&size_mode=5");
+    background-image: url("https://i.ibb.co/tpCcQyK/bitcoinbaby-1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: 100vh;
     color: white;
     text-align: center;
     font-size: 24px;
