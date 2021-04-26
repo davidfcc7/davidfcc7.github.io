@@ -19,9 +19,8 @@
 }
 html{
     font-family: var(--fontTitle);
-    border: 0px solid black;
+    border: 2px solid black;
     width: 500px;
-    height: 100vh;
     margin: auto;
 }
 /*INICIO SECCION HEADER*/
