@@ -31,18 +31,18 @@ header{
     width: 100%;
     text-align: center;
 }
-header .container{
+.container{
     margin: auto;
     padding: 30px 10px;
 }
-header .container p, h1{
+.container p, h1{
     padding-top: 30px;
     color: white;
 }
-header .container p{
+.container p{
     padding-bottom: 40px;
 }
-header .container .button{
+.container__button{
     position: relative;
     padding: 15px 20px;
     background-color: white;
@@ -53,7 +53,7 @@ header .container .button{
     display: inline-flex;
     justify-content: center;
 }
-header .container .button a{
+.container__button a{
     color: black;
     font-weight: 700;
     font-size: 14px;
@@ -62,14 +62,14 @@ header .container .button a{
 }
 /*FIN SECCION HEADER*/
 /*INICIO SECCION BITCOIN*/
-main section .binarios{
+.binarios{
     text-align: center;
 }
-main section .binarios h1, p{
+.binarios h1, p{
     color: black;
     padding: 15px 20px;
 }
-main section .binarios .container .monedas, .comisiones{
+.binarios__container--money--monedas, .binarios__container--comisiones--comisiones{
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, auto);
@@ -83,26 +83,26 @@ main section .binarios .container .monedas, .comisiones{
     box-shadow:  5px 5px 7px #b3b6b6,
              -5px -5px 7px #ffffff;
 }
-main section .binarios .container .container__comisiones, .container__money{
+.binarios__container--comisiones, .binarios__container--money{
     padding-left: 10%;
     margin: auto;
 }
-main section .binarios .container .container__comisiones{
+.binarios__container--comisiones{
     padding-right: 10%;
 }
-main section .binarios .container img{
+.binarios__container img{
     margin: auto;
 }
-main section .binarios .container .seccion__bitcoin-date{
+.binarios__container--date{
     display: flex;
     width: 100%;
     justify-content: center;
     text-align: center;
 }
-main section .binarios .container .seccion__bitcoin-date p{
+.binarios__container--date p{
     margin: auto;
 }
-main section .binarios .container{
+.binarios__container{
     display: flex;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
@@ -110,33 +110,33 @@ main section .binarios .container{
 }
 /*FIN SECCION BITCOIN*/
 /*INICIO SECCION SERVICIOS*/
-main section .servicios{
+.servicios{
     background-color: black;
     color: white;
 }
-main section .servicios .card{
+.servicios__card{
     padding: 0px 20px 10px 20px;
 }
-main section .servicios h1{
+.servicios h1{
     text-align: center;
     font-size: 30px;
 }
-main section .servicios p{
+.servicios p{
     text-align: center;
     color: gray;
 }
-main section .servicios .card div{
+.servicios__card div{
     background-color: rgb(39, 37, 37);
     padding: 20px;
     margin-bottom: 10px;
     border-radius: 10px;
 }
-main section .servicios .card p{
+.servicios__card p{
     text-align: left;
 }
 /*FIN SECCION SERVICIOS*/
 /*INICIO IMAGEN FONDO*/
-main section .imagenFondo{
+.imagen{
     background-image: url("https://i.ibb.co/tpCcQyK/bitcoinbaby-1.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -147,27 +147,27 @@ main section .imagenFondo{
 }
 /*FIN IMAGEN FONDO*/
 /*INICIO PLANES*/
-main section .planes{
+.planes{
     text-align: center;
 }
-main section .planes h1{
+.planes h1{
     color: black;
     font-size: 32px;
     margin-top: 30px;
 }
-main section .planes h2{
+.planes h2{
     color: black;
     font-size: 18px;
     margin-top: 26px;
 }
-main section .planes .card{
+.planes__card {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: repeat(3, 90%);
     overflow-x: scroll;
     scroll-snap-type: x proximity;
 }
-main section .planes .card .planes__card{
+.planes__card--general{
     border-radius: 10px;
     border: 0px solid black;
     box-shadow:  5px 5px 10px #828282,
@@ -176,7 +176,7 @@ main section .planes .card .planes__card{
     background-color: rgb(247, 246, 244);
     font-weight: bold;
 }
-main section .planes .card .planes__card .recomendado{
+.planes__card--general--recomendado{
     padding: 10px;
     background-color: #F7931A;
     position: relative;
@@ -187,25 +187,25 @@ main section .planes .card .planes__card .recomendado{
     top: -20px;
     font-weight: bold;
 }
-main section .planes .card .planes__card .precio{
+.planes__card--general--precio{
     display: flex;
     justify-content: center;
     padding: 20px 0px;
 }
-main section .planes .card .planes__card .precio .pesos{
+.planes__card--general--precio--pesos{
     padding: 0px;
 }
-main section .planes .card .planes__card .precio .valor{
+.planes__card--general--precio--valor{
     font-size: 52px;
     line-height: 63px;
     letter-spacing: -0.08em;
     padding: 0px;
 }
-main section .planes .card .planes__card .text{
+.planes__card--general--text{
     font-weight: 500;
     font-size: 12px;
 }
-main section .planes .card .planes__card .boton{
+.planes__card--general--boton{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -214,11 +214,11 @@ main section .planes .card .planes__card .boton{
     border: 2px solid rgb(255, 165, 0);
     margin-bottom: 5%;
 }
-main section .planes .card .planes__card .boton img{
+.planes__card--general--boton img{
     margin: auto 0px;
 }
 /*FIN PLANES*/
-footer section .footer{
+.footer{
     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
     text-align: center;
     padding: 15px 0px;
