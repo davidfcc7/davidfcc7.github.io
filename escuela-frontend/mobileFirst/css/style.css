@@ -64,6 +64,8 @@ header{
 /*INICIO SECCION BITCOIN*/
 .binarios{
     text-align: center;
+    font-size: 14px;
+    font-weight: normal;
 }
 .binarios img{
     padding-top: 50px;
@@ -95,7 +97,7 @@ header{
     padding-right: 10%;
 }
 .binarios__container img{
-    margin: auto;
+    margin-top: -25px;
 }
 .binarios__container--date{
     display: flex;
