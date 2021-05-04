@@ -65,6 +65,10 @@ header{
 .binarios{
     text-align: center;
 }
+.binarios img{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
 .binarios h1, p{
     color: black;
     padding: 15px 20px;
@@ -140,10 +144,10 @@ header{
     background-image: url("https://i.ibb.co/tpCcQyK/bitcoinbaby-1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 65vh;
     color: white;
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
 }
 /*FIN IMAGEN FONDO*/
 /*INICIO PLANES*/
@@ -159,6 +163,7 @@ header{
     color: black;
     font-size: 18px;
     margin-top: 26px;
+    font-weight: 100;
 }
 .planes__card {
     display: grid;
