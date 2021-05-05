@@ -1,40 +1,8 @@
--var imgPrecioAlza = "https://raw.githubusercontent.com/davidfcc7/imagenesRepositorio/2336f0998f3894d3a71f74cccce7b5aac606d6bd/trending-up.svg"
--var imgLogo = "https://raw.githubusercontent.com/davidfcc7/imagenesRepositorio/2336f0998f3894d3a71f74cccce7b5aac606d6bd/papaLogo.svg"
--var imgArrowButton = "https://raw.githubusercontent.com/davidfcc7/imagenesRepositorio/2336f0998f3894d3a71f74cccce7b5aac606d6bd/flecha%20derecha%20boton.svg"
-mixin card 
-    .planes__card--general
-        p.planes__card--general--recomendado Recomendado 
-        p.planes__card--general--pago Pago Anual
-        .planes__card--general--precio 
-            p.planes__card--general--precio--pesos $
-            p.planes__card--general--precio--valor 99
-        p.planes__card--general--text *Ahorras $129 comparado al plan mensual.
-        .planes__card--general--boton 
-            p.planes__card--general--boton--text Escoger este
-            img(src= imgArrowButton, alt="icono de flecha del boton escoger plan")
+include variables.pug 
 doctype html
 html(lang="es")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="./css/style.css")
-        link(rel="stylesheet", href="./css/style_375px.css")
-        link(rel="stylesheet", href="./css/style_425px.css")
-        link(rel="stylesheet", href="https://fonts.gstatic.com")
-        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@500;700&display=swap")
-        title Document
-        link(rel="shortcut icon", href="https://raw.githubusercontent.com/davidfcc7/imagenesRepositorio/2336f0998f3894d3a71f74cccce7b5aac606d6bd/papa.svg")
-    body
-        header 
-            section.header
-                .container
-                    img(src= imgLogo, alt="logo de batabit")
-                    h1 La próxima revolución en el intercambio de criptomonedas.
-                    p Batatabit te ayuda a navegar entre los diferentes precios y tendencias.  
-                    .container__button 
-                        a(href="#") Conoce Nuestros Planes
-                        img(src="https://raw.githubusercontent.com/davidfcc7/imagenesRepositorio/2336f0998f3894d3a71f74cccce7b5aac606d6bd/flechaAbajo.svg", alt="icono de flecha hacia abajo")
+    include header.pug 
+    body 
         main 
             section.firstSection 
                 .binarios 
@@ -107,31 +75,4 @@ html(lang="es")
                         +card 
                         +card 
                         +card 
-    footer 
-        section 
-            .footer: img(src= imgLogo , alt="imagen logo batabit")                            
-
-                           
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+include footer.pug                           
