@@ -13,4 +13,11 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
+
+* ejecutar proyectos con pug: 
+    * instalar: npm install -g pug
+    * ejecutar: pug -w --pretty archivo.pug
+* ejecutar proyectos con less:
+    * instalar: npm install -g less
+    * ejecutar: lessc rachivo.less archivo.css
 -->
