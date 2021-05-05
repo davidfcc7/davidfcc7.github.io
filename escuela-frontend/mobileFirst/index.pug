@@ -1,6 +1,17 @@
 -var imgPrecioAlza = "https://raw.githubusercontent.com/davidfcc7/imagenesRepositorio/2336f0998f3894d3a71f74cccce7b5aac606d6bd/trending-up.svg"
 -var imgLogo = "https://raw.githubusercontent.com/davidfcc7/imagenesRepositorio/2336f0998f3894d3a71f74cccce7b5aac606d6bd/papaLogo.svg"
 -var imgArrowButton = "https://raw.githubusercontent.com/davidfcc7/imagenesRepositorio/2336f0998f3894d3a71f74cccce7b5aac606d6bd/flecha%20derecha%20boton.svg"
+mixin card 
+    .planes__card--general
+        p.planes__card--general--recomendado Recomendado 
+        p.planes__card--general--pago Pago Anual
+        .planes__card--general--precio 
+            p.planes__card--general--precio--pesos $
+            p.planes__card--general--precio--valor 99
+        p.planes__card--general--text *Ahorras $129 comparado al plan mensual.
+        .planes__card--general--boton 
+            p.planes__card--general--boton--text Escoger este
+            img(src= imgArrowButton, alt="icono de flecha del boton escoger plan")
 doctype html
 html(lang="es")
     head
@@ -93,36 +104,9 @@ html(lang="es")
                     h1 Escoge el plan que mejor se ajuste a ti.
                     h2 Cualquier plan te da acceso completo a nuestra plataforma.
                     section.planes__card 
-                        .planes__card--general
-                            p.planes__card--general--recomendado Recomendado 
-                            p.planes__card--general--pago Pago Anual
-                            .planes__card--general--precio 
-                                p.planes__card--general--precio--pesos $
-                                p.planes__card--general--precio--valor 99
-                            p.planes__card--general--text *Ahorras $129 comparado al plan mensual.
-                            .planes__card--general--boton 
-                                p.planes__card--general--boton--text Escoger este
-                                img(src= imgArrowButton, alt="icono de flecha del boton escoger plan")
-                        .planes__card--general
-                            p.planes__card--general--recomendado Recomendado 
-                            p.planes__card--general--pago Pago Anual
-                            .planes__card--general--precio 
-                                p.planes__card--general--precio--pesos $
-                                p.planes__card--general--precio--valor 99
-                            p.planes__card--general--text *Ahorras $129 comparado al plan mensual.
-                            .planes__card--general--boton 
-                                p.planes__card--general--boton--text Escoger este
-                                img(src= imgArrowButton, alt="icono de flecha del boton escoger plan")
-                        .planes__card--general
-                            p.planes__card--general--recomendado Recomendado 
-                            p.planes__card--general--pago Pago Anual
-                            .planes__card--general--precio 
-                                p.planes__card--general--precio--pesos $
-                                p.planes__card--general--precio--valor 99
-                            p.planes__card--general--text *Ahorras $129 comparado al plan mensual.
-                            .planes__card--general--boton 
-                                p.planes__card--general--boton--text Escoger este
-                                img(src= imgArrowButton, alt="icono de flecha del boton escoger plan")
+                        +card 
+                        +card 
+                        +card 
     footer 
         section 
             .footer: img(src= imgLogo , alt="imagen logo batabit")                            
