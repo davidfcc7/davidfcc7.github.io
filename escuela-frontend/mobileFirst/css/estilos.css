@@ -35,7 +35,7 @@ header .container {
   padding: 30px 10px;
 }
 header .container p,
-header h1 {
+header .container h1 {
   padding-top: 30px;
   color: white;
 }
@@ -53,4 +53,172 @@ header .container__button {
   text-align: center;
   font-size: 14px;
   font-weight: normal;
+}
+.binarios img {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.binarios h1,
+.binarios p {
+  color: black;
+  padding: 15px 20px;
+}
+.binarios__container {
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+.binarios__container img {
+  margin-top: -25px;
+}
+.binarios__container--date {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.binarios__container--date p {
+  margin: auto;
+}
+.binarios__container--comisiones {
+  padding: 0 10% 0 10%;
+  margin: auto;
+}
+.binarios__container--comisiones--comisiones {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
+  background-color: #fff9f9;
+  border-radius: 10px;
+  width: 100%;
+  justify-content: center;
+  text-align: left;
+  margin: auto;
+  padding: 0px 100px;
+  box-shadow: 5px 5px 7px #b3b6b6, -5px -5px 7px #ffffff;
+}
+.binarios__container--money {
+  padding-left: 10%;
+  margin: auto;
+}
+.binarios__container--money--monedas {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
+  background-color: #fff9f9;
+  border-radius: 10px;
+  width: 100%;
+  justify-content: center;
+  text-align: left;
+  margin: auto;
+  padding: 0px 100px;
+  box-shadow: 5px 5px 7px #b3b6b6, -5px -5px 7px #ffffff;
+}
+.servicios {
+  background-color: black;
+  color: white;
+}
+.servicios p {
+  text-align: center;
+}
+.servicios__card {
+  padding: 0px 20px 10px 20px;
+}
+.servicios__card div {
+  background-color: #272525;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.servicios__card p {
+  text-align: left;
+}
+.servicios h1 {
+  text-align: center;
+  font-size: 30px;
+}
+.imagen {
+  background-image: url("https://i.ibb.co/tpCcQyK/bitcoinbaby-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65vh;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+.planes {
+  text-align: center;
+}
+.planes h1 {
+  color: black;
+  font-size: 32px;
+  margin-top: 30px;
+}
+.planes h2 {
+  color: black;
+  font-size: 18px;
+  margin-top: 26px;
+  font-weight: 100;
+}
+.planes__card {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: repeat(3, 90%);
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+}
+.planes__card--general {
+  border-radius: 10px;
+  border: 0px solid black;
+  box-shadow: 5px 5px 10px #828282, -5px -5px 10px #ffffff;
+  margin: 20% 5% 20% 5%;
+  background-color: #f7f6f4;
+  font-weight: bold;
+}
+.planes__card--general--recomendado {
+  padding: 10px;
+  background-color: #F7931A;
+  position: relative;
+  width: 40%;
+  margin: auto;
+  border-radius: 15px;
+  color: white;
+  top: -20px;
+  font-weight: bold;
+}
+.planes__card--general--precio {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.planes__card--general--precio--pesos {
+  padding: 0px;
+}
+.planes__card--general--precio--valor {
+  font-size: 52px;
+  line-height: 63px;
+  letter-spacing: -0.08em;
+  padding: 0px;
+}
+.planes__card--general--text {
+  font-weight: 500;
+  font-size: 12px;
+}
+.planes__card--general--boton {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  border: 2px solid #ffa500;
+  margin-bottom: 5%;
+}
+.planes__card--general--boton img {
+  margin: auto 0px;
+}
+.footer {
+  background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+  text-align: center;
+  padding: 15px 0px;
 }

@@ -4,5 +4,170 @@
     text-align: center;
     font-size: 14px;
     font-weight: normal;
+    img{
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    h1, p{
+        color: black;
+        padding: 15px 20px;
+    }
+    &__container{
+        display: flex;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        img{
+            margin-top: -25px;
+        }
+        &--date{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            p{
+                margin: auto;
+            }
+        }
+        &--comisiones{
+            padding: 0 10% 0 10%;
+            margin: auto;
+            &--comisiones{
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(3, auto);
+                background-color: rgb(255, 249, 249);
+                border-radius: 10px;
+                width: 100%;
+                justify-content: center;
+                text-align: left;
+                margin: auto;
+                padding: 0px 100px;
+                box-shadow:  5px 5px 7px #b3b6b6,
+                        -5px -5px 7px #ffffff;
+            }
+        }
+        &--money{
+            padding-left: 10%;
+            margin: auto;
+            &--monedas{
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(3, auto);
+                background-color: rgb(255, 249, 249);
+                border-radius: 10px;
+                width: 100%;
+                justify-content: center;
+                text-align: left;
+                margin: auto;
+                padding: 0px 100px;
+                box-shadow:  5px 5px 7px #b3b6b6,
+                        -5px -5px 7px #ffffff;
+            }
+        }
+    }
 }
-
+.servicios{
+    background-color: black;
+    color: white;
+    p{
+        text-align: center;
+    }
+    &__card{
+        padding: 0px 20px 10px 20px;
+        div{
+            background-color: rgb(39, 37, 37);
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        p{
+            text-align: left;
+        }
+    }
+    h1{
+        text-align: center;
+        font-size: 30px;
+    }
+}
+.imagen{
+    background-image: url("https://i.ibb.co/tpCcQyK/bitcoinbaby-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.planes{
+    text-align: center;
+    h1{
+        color: black;
+        font-size: 32px;
+        margin-top: 30px;
+    }
+    h2{
+        color: black;
+        font-size: 18px;
+        margin-top: 26px;
+        font-weight: 100;
+    }
+    &__card{
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: repeat(3, 90%);
+        overflow-x: scroll;
+        scroll-snap-type: x proximity;
+        &--general{
+            border-radius: 10px;
+            border: 0px solid black;
+            box-shadow:  5px 5px 10px #828282,
+                    -5px -5px 10px #ffffff;
+            margin: 20% 5% 20% 5%;
+            background-color: rgb(247, 246, 244);
+            font-weight: bold;
+            &--recomendado{
+                padding: 10px;
+                background-color: #F7931A;
+                position: relative;
+                width: 40%;
+                margin: auto;
+                border-radius: 15px;
+                color: white;
+                top: -20px;
+                font-weight: bold;
+            }
+            &--precio{
+                display: flex;
+                justify-content: center;
+                padding: 20px 0px;
+                &--pesos{
+                    padding: 0px;
+                }
+                &--valor{
+                    font-size: 52px;
+                    line-height: 63px;
+                    letter-spacing: -0.08em;
+                    padding: 0px;
+                }
+            }
+            &--text{
+                font-weight: 500;
+                font-size: 12px;
+            }
+            &--boton{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin: auto;
+                width: 50%;
+                border: 2px solid rgb(255, 165, 0);
+                margin-bottom: 5%;
+                img{
+                    margin: auto 0px;
+                }
+            }
+        }
+    }
+}
+@import "./footer.less";
