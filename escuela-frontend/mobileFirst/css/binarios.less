@@ -1,0 +1,67 @@
+.binarios{
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    img{
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    h1, p{
+        color: black;
+        padding: 15px 20px;
+    }
+    &__container{
+        display: flex;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        img{
+            margin-top: -25px;
+        }
+        &--date{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            p{
+                margin: auto;
+            }
+        }
+        &--comisiones{
+            padding: 0 10% 0 10%;
+            margin: auto;
+            &--comisiones{
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(3, auto);
+                background-color: rgb(255, 249, 249);
+                border-radius: 10px;
+                width: 100%;
+                justify-content: center;
+                text-align: left;
+                margin: auto;
+                padding: 0px 100px;
+                box-shadow:  5px 5px 7px #b3b6b6,
+                        -5px -5px 7px #ffffff;
+            }
+        }
+        &--money{
+            padding-left: 10%;
+            margin: auto;
+            &--monedas{
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(3, auto);
+                background-color: rgb(255, 249, 249);
+                border-radius: 10px;
+                width: 100%;
+                justify-content: center;
+                text-align: left;
+                margin: auto;
+                padding: 0px 100px;
+                box-shadow:  5px 5px 7px #b3b6b6,
+                        -5px -5px 7px #ffffff;
+            }
+        }
+    }
+}
