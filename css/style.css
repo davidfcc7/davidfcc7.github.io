@@ -45,3 +45,38 @@ html{
     position: absolute;
     animation: fondo 10s infinite;
 }
+.perfil__foto img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 43%;
+    top: 15%;
+    border-radius: 200px;
+}
+.perfil__texto{
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    left: 39%;
+}
+.perfil__texto p{
+    text-align: center;
+    padding-top: 10px;
+}
+.perfil__contacto{
+    padding-top: 15px;
+    font-size: 20px;
+}
+.perfil__contacto a{
+    color: white;
+    text-decoration: none;
+}
+
+.perfil__redes{
+    text-align: center;
+    padding-top: 15px;
+}
+.perfil__redes img{
+    width: 70px;
+    padding: 10px;
+}
