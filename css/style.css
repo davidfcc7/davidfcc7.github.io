@@ -55,16 +55,16 @@ html{
 }
 .perfil__texto{
     position: absolute;
-    padding: 10px;
+    padding-top: 1%;
     top: 50%;
     left: 39%;
 }
 .perfil__texto p{
     text-align: center;
-    padding-top: 10px;
+    padding-top: 1%;
 }
 .perfil__contacto{
-    padding-top: 15px;
+    padding-top: 2%;
     font-size: 20px;
 }
 .perfil__contacto a{
@@ -74,9 +74,9 @@ html{
 
 .perfil__redes{
     text-align: center;
-    padding-top: 15px;
+    padding-top: 3%;
 }
 .perfil__redes img{
     width: 70px;
-    padding: 10px;
+    padding: 2%;
 }
