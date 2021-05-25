@@ -45,8 +45,7 @@
     margin: 0;
     padding: 0;
 }
-.raw div{
-    position: absolute;
+div.row.header{
     text-align: center;
 }
 div.foto__perfil{
