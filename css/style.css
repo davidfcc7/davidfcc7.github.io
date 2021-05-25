@@ -14,10 +14,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-html{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
 .fondo__uno{
     background-image: url("../imagenes/pexels-luis-gomes-546819.jpg");    
     width: 100%;
@@ -45,29 +41,55 @@ html{
     position: absolute;
     animation: fondo 10s infinite;
 }
-.perfil__foto img{
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+.raw div{
     position: absolute;
-    width: 300px;
-    height: 300px;
-    left: 43%;
-    top: 15%;
-    border-radius: 200px;
+    text-align: center;
 }
-.perfil__texto{
+div.foto__perfil{
     position: absolute;
-    padding-top: 2%;
-    top: 50%;
-    left: 35%;
+    top: 10%;
 }
-.perfil__texto p{
-    text-align: center;
-    padding-top: 5%;
+div.foto__perfil img{
+    border-radius: 300px;
+    width: 20%;
+    height: auto;
 }
-.perfil__redes{
-    text-align: center;
-    padding-top: 10%;
+div.perfil__nombre{
+    position: absolute;
+    top: 52%;
 }
-.perfil__redes img{
-    width: 70px;
-    padding: 2%;
+div.perfil__nombre h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 290%;
 }
+div.perfil__profesion{
+    position: absolute;
+    top: 57%;
+}
+div.perfil__profesion p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 220%;
+}
+div.perfil__redes{
+    position: absolute;
+    top: 65%;
+}
+div.perfil__redes a img{
+    width: 3%;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
