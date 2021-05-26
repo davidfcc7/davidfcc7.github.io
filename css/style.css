@@ -45,9 +45,6 @@
     margin: 0;
     padding: 0;
 }
-div.row.header{
-    text-align: center;
-}
 div.foto__perfil{
     position: absolute;
     top: 10%;
@@ -83,7 +80,36 @@ div.perfil__redes a img{
     width: 3%;
     padding-right: 10px;
 }
-
+section.about{
+    position: relative;
+    background-image: linear-gradient(to right top, #016650, #005d5b, #005263, #004763, #003a5d, #003758, #003554, #00324f, #00374d, #003c49, #114044, #214340);
+    top: 978px;
+    height: 100vh;
+}
+section.about h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.021);
+    transition: color 5s;
+    font-size: 150px;
+}
+section.about h1:hover{
+    color: rgb(255, 255, 255);
+    transition: color 3s;
+}
+section.about div.habilidades{
+    padding-top: 80px;
+}
+section.about div p{
+    color: white;
+    font-size: 22px;
+    padding-top: 100px;
+}
+section.about div h2{
+    color: white;
+    font-size: 22px;
+    padding-top: 10px;
+}
 
 
 
