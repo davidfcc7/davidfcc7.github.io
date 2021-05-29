@@ -14,6 +14,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background-image: linear-gradient(to right top, #016650, #005d5b, #005263, #004763, #003a5d, #003758, #003554, #00324f, #00374d, #003c49, #114044, #214340);
+}
 ::-webkit-scrollbar{
     background-color: teal;
     width: 10px;
@@ -101,7 +104,6 @@ div.perfil__redes a img{
 }
 section.about{
     position: relative;
-    background-image: linear-gradient(to right top, #016650, #005d5b, #005263, #004763, #003a5d, #003758, #003554, #00324f, #00374d, #003c49, #114044, #214340);
     top: 978px;
     height: 100vh;
 }
@@ -129,7 +131,63 @@ section.about div h2{
     font-size: 22px;
     padding-top: 10px;
 }
-
+section.about figure{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+section.about figure img{
+    width: 70px;
+    padding-right: 10px;
+}
+section.miTrabajo{
+    position: relative;
+    top: 1000px;
+    height: 100vh;
+}
+section.miTrabajo h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.021);
+    transition: color 5s;
+    font-size: 150px;
+}
+section.miTrabajo h1:hover{
+    color: rgb(255, 255, 255);
+    transition: color 3s;
+}
+section.miTrabajo .col{
+    display: flex;
+    padding: 10px;
+}
+section.miTrabajo .col img{
+    height: 280px;
+    width: 600px;
+}
+section.miEstudio h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.021);
+    transition: color 5s;
+    font-size: 150px;
+}
+section.miEstudio h1:hover{
+    color: rgb(255, 255, 255);
+    transition: color 3s;
+}
+section.miEstudio{
+    position: relative;
+    top: 1000px;
+    height: 100vh;
+}
+section.miEstudio .col{
+    display: flex;
+    padding: 10px;
+}
+section.miEstudio .col img{
+    height: 280px;
+    width: 400px;
+}
 
 
 
