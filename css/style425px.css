@@ -1,0 +1,196 @@
+@media (max-width: 425px) {
+    @keyframes fondo {
+        0%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-image: linear-gradient(to right top, #016650, #005d5b, #005263, #004763, #003a5d, #003758, #003554, #00324f, #00374d, #003c49, #114044, #214340);
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    ::-webkit-scrollbar{
+        background-color: teal;
+        width: 10px;
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: rgb(26, 34, 80);
+        border-radius: 10px;
+        height: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #060f3d;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    ::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece{
+        background-color: teal;
+        width: 10px;
+        border-radius: 10px;
+    }
+    .fondo__uno{
+        background-image: url("../imagenes/pexels-luis-gomes-546819.jpg");    
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        animation: fondo 10s linear 15s infinite;
+    }
+    .fondo__dos{
+        background-image: url("../imagenes/pexels-negative-space-160107.jpg");    
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        animation: fondo 15s infinite;
+    }
+    .fondo__tres{
+        background-image: url("../imagenes/pexels-neo-2653362.jpg");    
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        animation: fondo 10s infinite;
+    }
+    .container-fluid{
+        margin: 0;
+        padding: 0;
+    }
+    div.foto__perfil{
+        position: absolute;
+        top: 10%;
+    }
+    div.foto__perfil img{
+        border-radius: 300px;
+        width: 100%;
+        height: auto;
+    }
+    div.perfil__nombre{
+        position: absolute;
+        top: 52%;
+    }
+    div.perfil__nombre h1{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 290%;
+    }
+    div.perfil__profesion{
+        position: absolute;
+        top: 57%;
+    }
+    div.perfil__profesion p{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 220%;
+    }
+    div.perfil__redes{
+        position: absolute;
+        top: 65%;
+    }
+    div.perfil__redes a img{
+        width: 3%;
+        padding-right: 10px;
+    }
+    section.about{
+        position: relative;
+        top: 978px;
+        height: 100vh;
+    }
+    section.about h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.021);
+        transition: color 5s;
+        font-size: 150px;
+    }
+    section.about h1:hover{
+        color: rgb(255, 255, 255);
+        transition: color 3s;
+    }
+    section.about div.habilidades{
+        padding-top: 80px;
+    }
+    section.about div p{
+        color: white;
+        font-size: 22px;
+        padding-top: 100px;
+    }
+    section.about div h2{
+        color: white;
+        font-size: 22px;
+        padding-top: 10px;
+    }
+    section.about figure{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    section.about figure img{
+        width: 70px;
+        padding-right: 10px;
+    }
+    section.miTrabajo{
+        position: relative;
+        top: 1000px;
+        height: 100vh;
+    }
+    section.miTrabajo h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.021);
+        transition: color 5s;
+        font-size: 150px;
+    }
+    section.miTrabajo h1:hover{
+        color: rgb(255, 255, 255);
+        transition: color 3s;
+    }
+    section.miTrabajo .col{
+        display: flex;
+        padding: 10px;
+    }
+    section.miTrabajo .col img{
+        height: 280px;
+        width: 600px;
+    }
+    section.miEstudio h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.021);
+        transition: color 5s;
+        font-size: 150px;
+    }
+    section.miEstudio h1:hover{
+        color: rgb(255, 255, 255);
+        transition: color 3s;
+    }
+    section.miEstudio{
+        position: relative;
+        top: 1000px;
+        height: 100vh;
+    }
+    section.miEstudio .col{
+        display: flex;
+        padding: 10px;
+    }
+    section.miEstudio .col img{
+        height: 280px;
+        width: 400px;
+    }
+}
