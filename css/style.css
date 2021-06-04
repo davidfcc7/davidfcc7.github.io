@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .mainIndex {
   background-image: url("../imagenes/pexels-neo-2653362.jpg");
   background-position: center;
@@ -43,6 +44,10 @@ body {
 
 nav {
   background-color: #007580;
+}
+nav .navbar-toggler-icon {
+  background-image: url("../imagenes/icons8-menú-52.png");
+  width: 20px;
 }
 nav .nav-item .nav-link {
   color: white;
