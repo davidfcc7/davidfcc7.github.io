@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  position: fixed;
+}
+
+nav {
+  background-color: #007580;
+}
+nav .nav-item .nav-link {
+  color: white;
+}
+nav .nav-item .dropdown-menu {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
