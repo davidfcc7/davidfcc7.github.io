@@ -1,0 +1,74 @@
+.mainPerfil{
+    background: $color-fondo-main;
+    height: 79.9vh;
+    .row{
+        padding-top: 5%;
+        .progress{
+            margin-top: 20px;
+            .progress-bar.css{
+                background: $color-css;
+            }
+            .progress-bar.html{
+                background: $color-html;
+            }
+            .progress-bar.ux{
+                background: $color-ux;
+            }
+            .progress-bar.js{
+                background: $color-js;
+            }
+            .progress-bar.sass{
+                background: $color-sass;
+            }
+            .progress-bar.wordpress{
+                background: $color-wordpress;
+            }
+            .progress-bar.bootstrap{
+                background: $color-bootstrap;
+            }
+            .progress-bar.git{
+                background: $color-git;
+            }
+            .progress-bar.less{
+                background: $color-less;
+            }
+            .progress-bar.figma{
+                background: $color-figma;
+            }
+            .progress-bar.aws{
+                background: $color-aws;
+            }
+        }
+    }
+        .perfil{
+            img{
+                width: 200px;
+                border-radius: 200px;
+        }
+    }
+        .nombre{
+            color: $color-claro;
+            margin: auto;
+            text-align: left;
+            p{
+                font-size: 20px;
+            }
+        }
+        .cv{
+            text-align: center;
+            input{
+                color: $color-claro;
+                font-weight: 500;
+                font-size: 20px;
+                border-radius: 10px;
+                padding: 10px;
+                border: none;
+                background: $color-fondo-main;
+                box-shadow:  5px 5px 10px #084055,
+             -5px -5px 10px #0c5a77;
+            }
+            input:hover{
+                background: $color-git;
+            }
+        }
+}
