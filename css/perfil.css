@@ -1,1 +1,92 @@
-/* No CSS *//*# sourceMappingURL=perfil.css.map */
+.mainPerfil {
+  background: #0a4d66;
+  height: 79.9vh;
+}
+
+.mainPerfil .row {
+  padding-top: 1%;
+}
+
+.mainPerfil .row .progress {
+  margin-top: 20px;
+}
+
+.mainPerfil .row .progress .progress-bar.css {
+  background: #2196f3;
+}
+
+.mainPerfil .row .progress .progress-bar.html {
+  background: #f36518;
+}
+
+.mainPerfil .row .progress .progress-bar.ux {
+  background: #8dc926;
+}
+
+.mainPerfil .row .progress .progress-bar.js {
+  background: #e4ba42;
+}
+
+.mainPerfil .row .progress .progress-bar.sass {
+  background: #ce6a9b;
+}
+
+.mainPerfil .row .progress .progress-bar.wordpress {
+  background: #23749a;
+}
+
+.mainPerfil .row .progress .progress-bar.bootstrap {
+  background: #673ab7;
+}
+
+.mainPerfil .row .progress .progress-bar.git {
+  background: #293939;
+}
+
+.mainPerfil .row .progress .progress-bar.less {
+  background: #0d6efd;
+}
+
+.mainPerfil .row .progress .progress-bar.figma {
+  background: #e85654;
+}
+
+.mainPerfil .row .progress .progress-bar.aws {
+  background: #ff9900;
+}
+
+.mainPerfil .perfil img {
+  width: 200px;
+  border-radius: 200px;
+}
+
+.mainPerfil .nombre {
+  color: white;
+  margin: auto;
+  text-align: left;
+}
+
+.mainPerfil .nombre p {
+  font-size: 20px;
+}
+
+.mainPerfil .cv {
+  text-align: center;
+}
+
+.mainPerfil .cv input {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  background: #0a4d66;
+  -webkit-box-shadow: 5px 5px 10px #084055, -5px -5px 10px #0c5a77;
+          box-shadow: 5px 5px 10px #084055, -5px -5px 10px #0c5a77;
+}
+
+.mainPerfil .cv input:hover {
+  background: #293939;
+}
+/*# sourceMappingURL=perfil.css.map */

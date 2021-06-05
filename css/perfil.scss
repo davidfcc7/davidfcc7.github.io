@@ -1,8 +1,10 @@
+@import "./global.scss";
+
 .mainPerfil{
     background: $color-fondo-main;
     height: 79.9vh;
     .row{
-        padding-top: 5%;
+        padding-top: 1%;
         .progress{
             margin-top: 20px;
             .progress-bar.css{
