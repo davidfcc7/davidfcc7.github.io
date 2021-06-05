@@ -104,6 +104,14 @@
   background: #293939;
 }
 
+.wordpress {
+  padding: 10px;
+}
+
+.card {
+  width: 23rem;
+}
+
 * {
   margin: 0;
   padding: 0;
