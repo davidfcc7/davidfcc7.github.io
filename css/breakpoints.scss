@@ -1,9 +1,20 @@
-@media (max-width: 540px){
-    .mainPerfil{
-        background: $color-fondo-main;
-        height: auto;
+@media (max-width: 425px) {
+    .mainWordpress{
+        .wordpress{
+            .card{
+                width: 300px;
+                margin: 0 auto;
+            }
+        }
     }
-    footer{
-        margin-top: 10%;
+}
+@media (max-width: 1024px) {
+    .mainWordpress{
+        .wordpress{
+            .card{
+                width: 350px;
+                margin: 0 auto;
+            }
+        }
     }
 }

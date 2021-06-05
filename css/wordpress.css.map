@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,CAAA;EACN,OAAO,EAAE,IAAI;CAChB;;AACD,AAAA,KAAK,CAAA;EACD,KAAK,EAAE,KAAK;CACf",
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACN,OAAO,EAAE,GAAG;CACf;;AACD,AAAA,KAAK,CAAA;EACD,KAAK,EAAE,KAAK;CACf",
     "sources": [
         "wordpress.scss"
     ],
