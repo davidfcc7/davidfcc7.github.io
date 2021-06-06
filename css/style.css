@@ -125,6 +125,13 @@
     margin: 0 auto;
   }
 }
+.dw {
+  padding: 5px;
+}
+.dw .card {
+  width: 23rem;
+}
+
 * {
   margin: 0;
   padding: 0;
