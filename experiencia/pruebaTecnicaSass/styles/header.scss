@@ -1,0 +1,186 @@
+@import "./rootstyle.scss";
+header {
+  background-image: url("../assets/Enmascarar\ grupo\ 11.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-position-x: -582px;
+  section#headerMenu {
+    background-color: $colorBackground;
+  }
+  section#headerMenu {
+    display: flex;
+    justify-content: space-between;
+  }
+  input#botonMovil {
+    display: none;
+  }
+  label#labelMovil span {
+    position: absolute;
+    width: 18px;
+    height: 14px;
+    background-image: url("../assets/Burguer\ -\ Menu.svg");
+    background-size: cover;
+    margin: 20px 0px 19px 19px;
+  }
+  label#labelMovil span:hover {
+    cursor: pointer;
+  }
+  input#botonMovil:checked + label#labelMovil span {
+    background-image: url("../assets/Arrow\ -\ back.svg");
+    width: 8px;
+    height: 17px;
+  }
+  input#botonMovil:checked ~ nav.botoneraMovil {
+    left: 0px;
+  }
+  nav.botoneraMovil {
+    position: absolute;
+    width: 491px;
+    height: auto;
+    background: white;
+    top: 50px;
+    left: -100%;
+    transition: left 0.5s;
+    ul {
+      margin: 119px 0 0 75px;
+      li {
+        width: 100%;
+        line-height: 40px;
+        text-align: left;
+        border: 1px solid white;
+        color: $colorDesaultText;
+        font-size: 22px;
+        font-weight: medium;
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .menu__socialNetwork {
+    margin: 134px 0 0 75px;
+    h3 {
+      color: $colorBorderHeader;
+      font-size: 22px;
+      font-weight: 400;
+    }
+    &--icons {
+      display: flex;
+      justify-content: space-around;
+      margin: 28px 174px 20vh 0;
+    }
+  }
+  .headerLogo {
+    display: flex;
+    width: 79px;
+    height: 34px;
+    margin: 9px 0px 10px 60px;
+  }
+  .headerIconos {
+    display: flex;
+    justify-content: space-around;
+    margin: 16px 17px;
+    img {
+      padding: 0 10px 0 10px;
+    }
+  }
+  .headerTitulo {
+    margin: auto;
+    padding: 23px 14px;
+    text-align: center;
+    h1 {
+      font-size: 18px;
+      color: white;
+    }
+  }
+  .headerLocalidad {
+    margin: 14px 30px 16px 31px;
+    display: flex;
+    background-color: $colorBackground;
+    border-radius: 6px;
+    input {
+      width: 27px;
+      height: 24px;
+      margin: 31px 0px 29px 17px;
+    }
+    div {
+      margin: 19px 55px 17px 16px;
+      h3 {
+        @include h3-text;
+      }
+      h1 {
+        @include h1-title;
+      }
+    }
+  }
+  .headerSwitch {
+    display: flex;
+    div p {
+      padding-left: 16px;
+      color: $colorBackground;
+      margin: auto;
+    }
+  }
+  .switchButton {
+    display: inline-block;
+    width: 36px;
+    height: 21px;
+    border: 2px solid $colorBackground;
+    border-radius: 10px;
+    margin-left: 36px;
+    &__checkBox {
+      display: none;
+    }
+    .switchButton__label {
+      background-color: $colorBackground;
+      border-radius: 10px;
+      width: 16px;
+      height: 18px;
+      border: 0px solid $colorCheck;
+      display: inline-block;
+      position: inherit;
+    }
+    .switchButton__label:before {
+      transition: 0.2s;
+      display: block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+    }
+    .switchButton__checkBox:checked + .switchButton {
+      background-color: $colorBackgroundCheckBox;
+    }
+    .switchButton__checkBox:checked + .switchButton__label:before {
+      transform: translateX(20px);
+    }
+  }
+  .headerCalendar {
+    display: flex;
+    margin: 14px 30px 16px 31px;
+    background-color: $colorBackground;
+    border-radius: 6px;
+    justify-content: space-around;
+    &__event {
+      display: flex;
+      input {
+        width: 27px;
+        height: 24px;
+        margin: 31px 0px 29px 17px;
+      }
+      div {
+        margin: 19px 55px 17px 16px;
+        h3 {
+          @include h3-text;
+        }
+        h1{
+          @include h1-title;
+        }
+      }
+    }
+  }
+  .headerBrowser {
+    position: inherit;
+    width: 86px;
+    height: 60px;
+    top: 10px;
+    margin: auto;
+  }  
+}

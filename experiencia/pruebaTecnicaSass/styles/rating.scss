@@ -1,0 +1,63 @@
+@import "./rootstyle.scss";
+.mainStar{
+    display: flex;
+    justify-content: space-around;
+    margin: 19px 69px 2px 69px;
+    &__logo{
+        display: flex;
+        img{
+            margin: auto;
+        }
+        h1{
+            margin: auto;
+        }
+    }
+    &__qualification{
+        display: flex;
+        label{
+            font-size: 22px;
+            font-weight: normal;
+            padding-right: 10px;
+            margin: auto;
+        }
+    }
+    .starRating{
+        display: inline-block;
+        margin: auto;
+        a{
+            text-decoration: none;
+            width: 12px;
+            height: 11px;
+            background-image: url("../assets/Grupo\ 5391.svg");
+            background-position: center;
+            background-size: cover;
+            color: white;
+            border: 1px solid $colorBorderHeader;
+            padding: 1px;
+        }
+    }
+    .starRating:hover a{
+        background-image: url("../assets/Grupo\ 5392.svg");
+        background-position: center;
+        background-size: cover;
+    }
+    .starRating > a:hover ~ a{
+        background-image: url("../assets/Grupo\ 5391.svg");
+        background-position: center;
+        background-size: cover;
+    }    
+    &__paragraph{
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 0.36px;
+        margin-top: 2px;
+        p{
+            color: $colorParagraphFooter;
+            font-weight: 600;
+        }
+        span{
+            color: $colorDesaultText;
+            font-weight: 700;
+        }
+    }
+} 
