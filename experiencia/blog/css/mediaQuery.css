@@ -1,0 +1,63 @@
+@media (max-width: 425px){
+    /*
+    * INICIO HEADER
+    */
+    .nav__redes{
+        text-align: center;
+    }
+    .nav__redes img{
+        width: 8%;
+        margin-top: 5px;
+    }
+    .nav__menu img{
+        width: 30%;
+        padding: 10px 0px 10px 20px;
+    }
+    .nav__menu--about{
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+    .main__imagen--text{
+        font-size: 20px;
+        line-height: 50px;
+        margin: 0 auto;
+        letter-spacing: 5px;
+    }
+    .main__imagen--btn{
+        margin-bottom: 100%;
+    }
+    /*
+    * FIN HEADER
+    */
+
+    /*
+    * INICIO BLOGS
+    */
+    .blogsMain__newsContainer__new{
+        display: inline-block;
+    }
+    .blogsPostContainer .grid-container{
+        display: inline-grid;
+    }
+    .blogsPostContainer__postContainer{
+        max-width: none;
+    }
+    /*
+    * FIN BLOGS
+    */
+
+    /*
+    * INICIO BLOG
+    */
+    .contactMainContainer{
+        display: grid;
+        grid-template-columns: none;
+    }
+    /*
+    * FIN BLOG
+    */
+
+    .blogsMain__newsContainer__new--perfil{
+        display: inline-block;
+    }
+}
