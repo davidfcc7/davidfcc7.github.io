@@ -128,8 +128,39 @@
 .dw {
   padding: 5px;
 }
-.dw .card {
+.dw .card img {
   width: 23rem;
+  position: relative;
+}
+.dw .card .descripcion {
+  width: 23rem;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  background: black;
+  transition: opacity 0.4s linear;
+  cursor: pointer;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+}
+.dw .card .descripcion:hover {
+  opacity: 0.9;
+}
+.dw .card .descripcion p {
+  border: 2px solid white;
+  width: auto;
+  margin: auto;
+  background: white;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 20px;
 }
 
 * {
