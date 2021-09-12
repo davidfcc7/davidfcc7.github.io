@@ -1,116 +1,368 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <title>Desarrollador Frontend</title>
-    <link rel="shortcut icon" href="./imagenes/codificacion-html.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/breakpoints.scss">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="shortcut icon" href="./imagenes/codificacion-html.png" type="image/x-icon">
+  <title>Portafolio</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./perfil.html">Perfil</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Experiencia
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="./wordpress.html">WordPress</a></li>
-                                <li><a class="dropdown-item" href="./diseñoWeb.html">Frontend</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./certificados.html">Certificados</a>
-                        </li>
-                    </ul>
+  <!--HEADER-->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg" id="navbar-scroll">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="./imagenes/logologo.png" alt=""></a>
+        <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#scroll1">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#scroll2">Diseño Web</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#scroll3">Diseño UX / UI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#scroll4">Desarrollo Frontend</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scroll4">Diseño Web Wordpress</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link color-compra" href="./archivos/Hoja de vida.pdf" target="_blank">Ver Hoja de Vida</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--HEADER-->
+  <main data-spy="scroll" data-bs-target="#navbar-scroll" data-bs-offset="0" class="scrollspy-main" tabindex="0">
+    <!--CARRUSEL-->
+    <div id="carousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/pexels-luis-gomes-546819.jpg" class="d-block w-100" alt="conferencia 1">
+          </div>
+        </div>
+      <div class="overlay">
+        <div class="container text-justify content-overlay">
+          <div class="row">
+            <div class="col-md-6 offset-md-3 pt-md-5 pt-5 pt-lg-10 text-center pb-5">
+              <img class="perfil" src="./assets/pp.jpg" alt="" id="scroll1">
+              <p class="d-none d-lg-block">Hola, Soy David tengo 28 años, Ingeniero de Sistemas, responsable y proactivo. Me apasiona conocer sobre nuevas tendencias y herramientas que me permitan expandir mi conocimiento y habilidades.</p>
+              <h2 class="hobbies">Experiencia: <span class="typed"></span></h2>
+            </div>
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-12 text-center section-verCV">
+                        <a class="verCV" href="./archivos/Hoja de vida.pdf" target="_blank">Ver Hoja de Vida</a>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <main class="mainIndex">
-        <div class="container">
-            <div class="row">
-              <div class="col-12 perfil">
-                <img src="./imagenes/pp.jpg" alt="imagen de perfil">
-              </div>
-              <div class="col-12 nombre">
-                <h1>DAVID FELIPE CAICEDO CANCHÓN</h1>
-              </div>
-              <div class="col-12 profesion">
-                <p>Ingeniero de Sistemas</p>
-              </div>
-              <div class="col-12 especialidad">
-                <p>Diseñador Web</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--CARRUSEL-->
+    <!--CARD TOPIC DISEÑO WEB-->
+    <div class="container">
+      <div class="row text-center">
+        <div class="temasConf">
+          <h1 id="scroll2">Diseño Web</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-md-6 mb-4 col-xl-3">
+          <div class="card card-topic">
+            <img src="./assets/pexels-luis-gomes-546819.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <span class="badge rounded-pill bg-success">Html5</span>
+              <span class="badge rounded-pill bg-success">Css</span>
+              <span class="badge rounded-pill bg-success">Sass</span>
+              <div class="button-verProyecto">
+                <button class="btn btn-primary mt-5">VER PROYECTO</button>
               </div>
             </div>
           </div>
-    </main>
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <img src="./imagenes/css.png" alt="icono css" title="css">
-                </div>
-                <div class="col">
-                    <img src="./imagenes/html-5.png" alt="icono html" title="html">
-                </div>
-                <div class="col">
-                    <img src="./imagenes/interfaz-ux.png" alt="icono experiencia de usuario" title="UX">
-                </div>
-                <div class="col">
-                    <img src="./imagenes/javascript.png" alt="icono javascript" title="JavaScript">
-                </div>
-                <div class="col">
-                    <img src="./imagenes/sass.png" alt="icono sass" title="Sass">
-                </div>
-                <div class="col">
-                    <img src="./imagenes/icons8-wordpress-50.png" alt="icono wordpress" title="Wordpress">
-                </div>
-                <div class="col">
-                    <img src="./imagenes/icons8-oreja-48.png" alt="icono cbootstrap" title="bootstrap">
-                </div>
-                <div class="col">
-                    <img src="./imagenes/github.png" alt="git" title="Git">
-                </div>
-                <div class="col">
-                    <img src="./imagenes/icons8-less-logo-64.png" alt="less" title="Less">
-                </div>
-                <div class="col">
-                    <img src="./imagenes/icons8-figma-100.png" alt="figma" title="Figma">
-                </div>
-                <div class="col">
-                    <img src="./imagenes/icons8-amazon-web-services-48.png" alt="icono de amazon web service" title="amazon web service">
-                </div>
-            </div>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
-        crossorigin="anonymous"></script>
+        <div class="col-lg-6 col-md-6 mb-4 col-xl-3">
+          <div class="card card-topic">
+            <img src="./imagenes/pexels-helena-lopes-705792.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <span class="badge rounded-pill bg-success">Less</span>
+              <span class="badge rounded-pill bg-success">JavaScript</span>
+              <span class="badge rounded-pill bg-success">Vuejs</span>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, facere vel suscipit
+                est odit fugit alias sunt, odio, iure illum aperiam hic! Atque ducimus itaque beatae? Esse repellat
+                sapiente omnis!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4 col-xl-3">
+          <div class="card card-topic">
+            <img src="./imagenes/pexels-helena-lopes-705792.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <span class="badge rounded-pill bg-success">Linux</span>
+              <span class="badge rounded-pill bg-success">Nagios</span>
+              <span class="badge rounded-pill bg-success">Pug</span>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore reprehenderit,
+                modi voluptatem repellendus officiis deserunt adipisci expedita doloremque iure provident itaque commodi
+                quidem vitae consectetur soluta. Doloribus, error molestiae.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4 col-xl-3">
+          <div class="card card-topic">
+            <img src="./imagenes/pexels-helena-lopes-705792.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <span class="badge rounded-pill bg-success">IoT</span>
+              <span class="badge rounded-pill bg-success">IA</span>
+              <span class="badge rounded-pill bg-success">QA</span>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni alias quia non fugit
+                numquam pariatur aspernatur hic vitae et at assumenda adipisci nemo, minima cum soluta voluptatibus modi
+                dignissimos magnam?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--CARD TOPIC DISEÑO WEB-->
+
+    <!--CARD TOPIC DISEÑO UX / UI-->
+    <div class="container">
+      <div class="row text-center">
+        <div class="temasConf">
+          <h1 id="scroll2">Diseño Web</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-md-6 mb-4 col-xl-3">
+          <div class="card card-topic">
+            <img src="./assets/pexels-luis-gomes-546819.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <span class="badge rounded-pill bg-success">Html5</span>
+              <span class="badge rounded-pill bg-success">Css</span>
+              <span class="badge rounded-pill bg-success">Sass</span>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero quisquam culpa
+                ullam, error eaque tempora neque, quae vel reiciendis magni expedita natus unde doloribus odio amet qui,
+                perspiciatis ea suscipit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4 col-xl-3">
+          <div class="card card-topic">
+            <img src="./imagenes/pexels-helena-lopes-705792.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <span class="badge rounded-pill bg-success">Less</span>
+              <span class="badge rounded-pill bg-success">JavaScript</span>
+              <span class="badge rounded-pill bg-success">Vuejs</span>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, facere vel suscipit
+                est odit fugit alias sunt, odio, iure illum aperiam hic! Atque ducimus itaque beatae? Esse repellat
+                sapiente omnis!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4 col-xl-3">
+          <div class="card card-topic">
+            <img src="./imagenes/pexels-helena-lopes-705792.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <span class="badge rounded-pill bg-success">Linux</span>
+              <span class="badge rounded-pill bg-success">Nagios</span>
+              <span class="badge rounded-pill bg-success">Pug</span>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore reprehenderit,
+                modi voluptatem repellendus officiis deserunt adipisci expedita doloremque iure provident itaque commodi
+                quidem vitae consectetur soluta. Doloribus, error molestiae.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4 col-xl-3">
+          <div class="card card-topic">
+            <img src="./imagenes/pexels-helena-lopes-705792.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <span class="badge rounded-pill bg-success">IoT</span>
+              <span class="badge rounded-pill bg-success">IA</span>
+              <span class="badge rounded-pill bg-success">QA</span>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni alias quia non fugit
+                numquam pariatur aspernatur hic vitae et at assumenda adipisci nemo, minima cum soluta voluptatibus modi
+                dignissimos magnam?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--CARD TOPIC DISEÑO UX / UI-->
+
+    <!--CARD TOPIC DESARROLLO FRONTEND-->
+    <div class="container">
+      <div class="row text-center">
+        <div class="temasConf">
+          <h1 id="scroll2">Diseño Web</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-md-6 mb-4 col-xl-3">
+          <div class="card card-topic">
+            <img src="./assets/pexels-luis-gomes-546819.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <span class="badge rounded-pill bg-success">Html5</span>
+              <span class="badge rounded-pill bg-success">Css</span>
+              <span class="badge rounded-pill bg-success">Sass</span>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero quisquam culpa
+                ullam, error eaque tempora neque, quae vel reiciendis magni expedita natus unde doloribus odio amet qui,
+                perspiciatis ea suscipit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4 col-xl-3">
+          <div class="card card-topic">
+            <img src="./imagenes/pexels-helena-lopes-705792.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <span class="badge rounded-pill bg-success">Less</span>
+              <span class="badge rounded-pill bg-success">JavaScript</span>
+              <span class="badge rounded-pill bg-success">Vuejs</span>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, facere vel suscipit
+                est odit fugit alias sunt, odio, iure illum aperiam hic! Atque ducimus itaque beatae? Esse repellat
+                sapiente omnis!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4 col-xl-3">
+          <div class="card card-topic">
+            <img src="./imagenes/pexels-helena-lopes-705792.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <span class="badge rounded-pill bg-success">Linux</span>
+              <span class="badge rounded-pill bg-success">Nagios</span>
+              <span class="badge rounded-pill bg-success">Pug</span>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore reprehenderit,
+                modi voluptatem repellendus officiis deserunt adipisci expedita doloremque iure provident itaque commodi
+                quidem vitae consectetur soluta. Doloribus, error molestiae.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4 col-xl-3">
+          <div class="card card-topic">
+            <img src="./imagenes/pexels-helena-lopes-705792.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <span class="badge rounded-pill bg-success">IoT</span>
+              <span class="badge rounded-pill bg-success">IA</span>
+              <span class="badge rounded-pill bg-success">QA</span>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni alias quia non fugit
+                numquam pariatur aspernatur hic vitae et at assumenda adipisci nemo, minima cum soluta voluptatibus modi
+                dignissimos magnam?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--CARD TOPIC DESARROLLO FRONTEND-->
+
+    <!--CARD TOPIC WORDPRESS-->
+    <div class="container">
+      <div class="row text-center">
+        <div class="temasConf">
+          <h1 id="scroll2">Diseño Web</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-md-6 mb-4 col-xl-3">
+          <div class="card card-topic">
+            <img src="./assets/pexels-luis-gomes-546819.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <span class="badge rounded-pill bg-success">Html5</span>
+              <span class="badge rounded-pill bg-success">Css</span>
+              <span class="badge rounded-pill bg-success">Sass</span>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero quisquam culpa
+                ullam, error eaque tempora neque, quae vel reiciendis magni expedita natus unde doloribus odio amet qui,
+                perspiciatis ea suscipit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4 col-xl-3">
+          <div class="card card-topic">
+            <img src="./imagenes/pexels-helena-lopes-705792.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <span class="badge rounded-pill bg-success">Less</span>
+              <span class="badge rounded-pill bg-success">JavaScript</span>
+              <span class="badge rounded-pill bg-success">Vuejs</span>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, facere vel suscipit
+                est odit fugit alias sunt, odio, iure illum aperiam hic! Atque ducimus itaque beatae? Esse repellat
+                sapiente omnis!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4 col-xl-3">
+          <div class="card card-topic">
+            <img src="./imagenes/pexels-helena-lopes-705792.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <span class="badge rounded-pill bg-success">Linux</span>
+              <span class="badge rounded-pill bg-success">Nagios</span>
+              <span class="badge rounded-pill bg-success">Pug</span>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore reprehenderit,
+                modi voluptatem repellendus officiis deserunt adipisci expedita doloremque iure provident itaque commodi
+                quidem vitae consectetur soluta. Doloribus, error molestiae.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4 col-xl-3">
+          <div class="card card-topic">
+            <img src="./imagenes/pexels-helena-lopes-705792.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <span class="badge rounded-pill bg-success">IoT</span>
+              <span class="badge rounded-pill bg-success">IA</span>
+              <span class="badge rounded-pill bg-success">QA</span>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni alias quia non fugit
+                numquam pariatur aspernatur hic vitae et at assumenda adipisci nemo, minima cum soluta voluptatibus modi
+                dignissimos magnam?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--CARD TOPIC WORDPRESS-->
+    
+  </main>
+  <!--FOOTER-->
+  <footer>
+    <div class="container footer">
+      <div class="row text-center">
+        <div class="col-12 col-lg copyright pt-3"><p>Copyright© Hecha con ❤ Por David Felipe Caicedo Canchón</p></div>
+      </div>
+    </div>
+  </footer>
+  <!--FOOTER-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./code/code.js"></script>
 </body>
 
 </html>

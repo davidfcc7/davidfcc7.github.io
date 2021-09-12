@@ -1,0 +1,29 @@
+nav {
+  background-image: linear-gradient(to right bottom, white, white);
+}
+nav .nav-item,
+nav .nav-link {
+  color: black;
+  background-image: linear-gradient(#77cbda, #77cbda), linear-gradient(to right bottom, white, white);
+  background-size: 0 1px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all 0.4s ease-out;
+  font-weight: 600;
+}
+nav .nav-item,
+nav .nav-link:hover {
+  color: #38465f;
+  background-size: 100% 3px, auto;
+}
+nav .selector-for-some-widget {
+  box-sizing: content-box;
+}
+nav div.container a img {
+  width: 150px;
+}
+nav .color-compra {
+  color: black;
+}
+
+/*# sourceMappingURL=header.css.map */
