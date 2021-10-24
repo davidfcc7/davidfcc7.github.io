@@ -1,0 +1,40 @@
+@import "./variables";
+
+.navNarMenu{
+    nav{
+        display: flex;
+        justify-content: space-around;
+        background: $backgroundColorNavBar;
+        figure.imgIconNav img{
+            width: 50px;
+            margin: 10px;
+        }
+        ul{
+            display: flex;
+            margin: auto;
+            li{
+                a{
+                    color: $textColorPrimary;
+                    text-decoration: none;
+                    padding-top: 50%;
+                    padding-bottom: 50%;
+                    padding-right: 10px;
+                    padding-left: 10px;
+                }
+                a:hover{
+                    background: white;
+                    color: black;
+                }
+                font-weight: 500;
+                margin-right: 20px;
+                list-style: none;
+            }
+        }
+        div.searchNavBar{
+            margin: auto;
+            a{
+                border: 1px solid white;
+            }
+        }
+    }
+}
