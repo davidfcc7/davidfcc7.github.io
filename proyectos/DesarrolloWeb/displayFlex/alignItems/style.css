@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.ejemplosAlignItems{}
+/* .ejemplosAlignItems{} */
 .contenedorFlexStart{
     margin: 10px 30px; 
     width: 200px; 
