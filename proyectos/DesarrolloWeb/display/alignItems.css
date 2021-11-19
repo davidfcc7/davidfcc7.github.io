@@ -1,0 +1,51 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.ejemplosAlignItems{}
+.contenedorFlexStart{
+    margin: 10px 30px; 
+    width: 200px; 
+    height: 300px; 
+    border: 1px solid black; 
+    display: flex;
+    align-items: flex-start;}
+
+.flexStart{
+    padding: 20px; 
+    background: brown;  
+    width: 10px;
+    height: 20px;
+    border: 1px solid black;}
+
+.contenedorCenter{
+    margin: 10px 30px; 
+    width: 200px; 
+    height: 300px; 
+    border: 1px solid black; 
+    display: flex;
+    align-items: center;
+}
+.centerFlex{
+    padding: 20px; 
+    background: brown;  
+    width: 10px;
+    height: 20px;
+    border: 1px solid black;}
+
+.contenedorEnd{
+    margin: 10px 30px; 
+    width: 200px; 
+    height: 300px; 
+    border: 1px solid black; 
+    display: flex;
+    align-items: flex-end;
+}
+.flexEnd{
+    padding: 20px; 
+    background: brown;  
+    width: 10px;
+    height: 20px;
+    border: 1px solid black;}
