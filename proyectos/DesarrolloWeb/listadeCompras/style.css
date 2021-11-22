@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+.contenedor{
+    width: 20%;
+    height: 90vh;
+    border: 1px solid black;
+    margin: 20px 40%;
+    border-radius: 25px;
+}
+
+.contenedor h1{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.separador{
+    border: 1px solid black;
+}
+
+.contenedorProductos{
+    padding-top: 25px;
+}
+
+/* .acordion{
+    
+} */
+
+.contenedorProductos .listaFrutas{
+    padding-top: 20px;
+    display: flex;
+}
+.contenedorProductos .listaFrutas img{
+    width: 30px;
+    margin: auto 0;
+}
+
+.carnes .listaCarnes{
+    display: flex;
+    padding-top: 20px;
+}
+
+.carnes .listaCarnes li{
+    margin: auto 0;
+}
+
+.carnes .listaCarnes img{
+    width: 30px;
+}
