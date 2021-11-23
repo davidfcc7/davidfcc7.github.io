@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: monospace;
 }
 
 li {
@@ -31,9 +32,13 @@ li {
 
 .acordion{
     width: 100%;
-    border: 1px solid black;
+    border: none;
     padding: 10px 0;
-    background-color: azure;    
+    background-color: greenyellow;    
+}
+
+.frutas, .carnes{
+    padding: 0 0 10px 10px;
 }
 
 .contenedorProductos .listaFrutas{
