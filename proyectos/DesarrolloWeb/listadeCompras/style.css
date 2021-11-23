@@ -29,9 +29,12 @@ li {
     padding-top: 25px;
 }
 
-/* .acordion{
-    
-} */
+.acordion{
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px 0;
+    background-color: azure;    
+}
 
 .contenedorProductos .listaFrutas{
     padding-top: 20px;
