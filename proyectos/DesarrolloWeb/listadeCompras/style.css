@@ -10,11 +10,11 @@ li {
 }
 
 .contenedor{
-    width: 20%;
     height: 90vh;
     border: 1px solid black;
-    margin: 20px 40%;
-    border-radius: 25px;
+    margin: auto;
+    border-radius: 1.5rem;
+    max-width: 50%;
 }
 
 .contenedor h1{
@@ -27,7 +27,7 @@ li {
 }
 
 .contenedorProductos{
-    padding-top: 25px;
+    padding-top: 1.5rem;
 }
 
 .acordion{
@@ -35,6 +35,11 @@ li {
     border: none;
     padding: 10px 0;
     background-color: greenyellow;    
+}
+
+.acordion:hover{
+    cursor: pointer;
+    background-color: rgb(114, 181, 13);
 }
 
 .frutas, .carnes{
