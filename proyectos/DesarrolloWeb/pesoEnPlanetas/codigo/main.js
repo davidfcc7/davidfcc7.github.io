@@ -8,12 +8,9 @@ let peso = 94;
 
 let pesoMarte;
 let pesoJupiter;
-let nombre = prompt("¿Cómo te llamas?");
 
-pesoMarte = (peso * gravedadTierra) / gravedadMarte;
 
-pesoJupiter = (peso * gravedadTierra) / gravedadJupiter;
+pesoMarte = (peso * gravedadMarte) / gravedadTierra;
+pesoJupiter = (peso * gravedadJupiter) / gravedadTierra;
 
 document.write("Mi peso en Marte es: <strong>" + pesoMarte.toFixed(2) + "kg </strong> y mi peso en Jupiter es: <strong>" + pesoJupiter.toFixed(2) + "kg </strong>");
-
-document.write("mi nombre es: " + nombre)
