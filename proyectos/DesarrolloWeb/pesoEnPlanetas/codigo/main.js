@@ -1,18 +1,19 @@
+var peso = document.getElementsByClassName("peso").value
+var planeta = document.getElementsByClassName("planeta").value
 
+/* VARIABLES DE ENTRADA */
+let gravedadTierra = 9.8;
+let gravedadMarte = 3.7;
+let gravedadJupiter = 24.8;
+/* let peso = parseInt(prompt("¿Cuanto pesas en Kilogramos?"))
+let planeta = parseInt(prompt("¿Que planeta deseas elegir: 1. Marte o 2. Jupiter")) */
 
-    /* VARIABLES DE ENTRADA */
-    let gravedadTierra = 9.8;
-    let gravedadMarte = 3.7;
-    let gravedadJupiter = 24.8;
-    let peso = parseInt(prompt("¿Cuanto pesas en Kilogramos?"))
-    let planeta = parseInt(prompt("¿Que planeta deseas elegir: 1. Marte o 2. Jupiter"))
+/* VARIABLES DE SALIDA */
 
-    /* VARIABLES DE SALIDA */
+let pesoMarte;
+let pesoJupiter;
 
-    let pesoMarte;
-    let pesoJupiter;
-
-    
+function pedirDatos(peso, planeta){
 
     if (planeta === 1) {
         pesoMarte = (peso * gravedadMarte) / gravedadTierra;
@@ -25,4 +26,4 @@
     if (planeta != 1 && planeta != 2) {
         alert("ESTA OPCION NO EXISTE!!!!")
     }
-
+}
