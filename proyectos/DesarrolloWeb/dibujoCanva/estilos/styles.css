@@ -1,0 +1,9 @@
+.contenedor{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.dibujoCanvas{
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+}
