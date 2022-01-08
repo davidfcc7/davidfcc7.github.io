@@ -29,12 +29,18 @@ body{
 }
 
 .card-container figure:hover{
-    cursor: pointer;
+    overflow: hidden;
 }
 
 .card-container figure img{
     width: 200px;
     max-height: 100vh;
+    transition: 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+.card-container figure img:hover{
+    transform: scale(1.5);
 }
 
 .name-product{
