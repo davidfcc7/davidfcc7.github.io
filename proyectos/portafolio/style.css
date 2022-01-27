@@ -40,7 +40,6 @@ body, section{
 .first-section .certifications figure{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 3;
     flex-wrap: wrap;
     /* max-width: 90vw;
     width: 100%; */
