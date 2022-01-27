@@ -39,8 +39,8 @@ body, section{
 }
 .first-section .certifications figure{
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 1px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     overflow-x: auto;
@@ -50,4 +50,80 @@ body, section{
 .first-section .certifications figure img{
     width: 500px;
     object-fit: cover;
+}
+.first-section .menu{
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.255);
+    background: linear-gradient(#051937, #470f4a);
+    position: fixed;
+    top: 90%;
+    border-radius: 20px;
+}
+.first-section .menu a{
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 1s;
+}
+.first-section .menu a:hover{
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    transition: .8s;
+}
+.second-section .img-uxui{
+    width: 90vw;
+}
+.second-section .img-uxui h1{
+    padding: 50px 0;
+    font-size: 50px;
+}
+.second-section .img-uxui figure{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1;
+    max-width: 90vw;
+    width: 100%;
+}
+.second-section .img-uxui figure img{
+    width: 200px;
+    object-fit: cover;
+}
+.third-section .wordpress h1{
+    padding: 50px 0;
+    font-size: 50px;
+    font-weight: 400;
+}
+.third-section .wordpress figure{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3;
+    max-width: 90vw;
+    width: 100%;
+}
+.third-section .wordpress figure img{
+    width: 300px;
+    object-fit: cover;
+    padding: 10px;
+}
+.fourth-section .maquetacion h1{
+    padding: 50px 0;
+    font-size: 50px;
+    font-weight: 400;
+}
+.fourth-section .maquetacion figure{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 1;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    overflow-x: auto;
+    max-width: 90vw;
+    width: 100%;
+}
+.fourth-section .maquetacion figure img{
+    width: 200px;
+    object-fit: cover;
+}
+.fourth-section{
+    padding-bottom: 150px;
 }
