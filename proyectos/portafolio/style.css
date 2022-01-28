@@ -41,8 +41,6 @@ body, section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     flex-wrap: wrap;
-    /* max-width: 90vw;
-    width: 100%; */
 }
 .first-section .certifications figure img{
     width: 300px;
@@ -68,9 +66,6 @@ body, section{
     color: white;
     transition: .8s;
 }
-.second-section .img-uxui{
-    width: 90vw;
-}
 .second-section .img-uxui h1{
     padding: 50px 0;
     font-size: 50px;
@@ -82,8 +77,6 @@ body, section{
     grid-template-rows: 1;
     justify-items: center;
     flex-wrap: wrap;
-    max-width: 90vw;
-    width: 100%;
 }
 .second-section .img-uxui figure img{
     width: 200px;
@@ -100,8 +93,6 @@ body, section{
     grid-template-rows: 3;
     justify-items: center;
     flex-wrap: wrap;
-    max-width: 90vw;
-    width: 100%;
 }
 .third-section .wordpress figure img{
     width: 300px;
@@ -113,14 +104,12 @@ body, section{
     font-size: 50px;
     font-weight: 400;
 }
-.fourth-section .maquetacion figure{
+.fourth-section .maquetacion figure {
     display: grid;
-    grid-template-columns: repeat(11, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1;
     flex-wrap: wrap;
     justify-items: center;
-    max-width: 90vw;
-    width: 100%;
 }
 .fourth-section .maquetacion figure img{
     width: 200px;
