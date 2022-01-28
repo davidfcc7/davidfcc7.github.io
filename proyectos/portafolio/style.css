@@ -6,12 +6,14 @@
     color: white;
     text-align: center;
 }
+body{
+    background-image: linear-gradient(to right, #051937, #141a3f, #241946, #351649, #470f4a);
+}
 body, section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, #051937, #141a3f, #241946, #351649, #470f4a);
 }
 .first-section div .img-perfil img{
     width: 200px;
