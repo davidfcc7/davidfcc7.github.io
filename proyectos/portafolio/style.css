@@ -43,6 +43,7 @@ body, section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     flex-wrap: wrap;
+    justify-items: center;
 }
 .first-section .certifications figure img{
     width: 300px;
@@ -83,6 +84,7 @@ body, section{
 .second-section .img-uxui figure img{
     width: 200px;
     object-fit: cover;
+    padding: 10px;
 }
 .third-section .wordpress h1{
     padding: 50px 0;
