@@ -110,14 +110,15 @@ body, section{
 }
 .fourth-section .maquetacion figure {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1;
     flex-wrap: wrap;
     justify-items: center;
 }
 .fourth-section .maquetacion figure img{
-    width: 200px;
+    width: 300px;
     object-fit: cover;
+    padding: 10px;
 }
 .fourth-section{
     padding-bottom: 150px;
