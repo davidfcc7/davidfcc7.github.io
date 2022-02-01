@@ -1,5 +1,5 @@
 const typed = new Typed ('.typed',{
-    strings: ['Desarrollo Web/Movil', 'Diseño Web', 'Diseño Grafico', 'wordpress', 'Videojuegos'],
+    strings: ['Figma', 'Html5', 'Css3', 'Sass', 'Bootstrap', 'JavaScript', 'Wordpress'],
     typeSpeed: 75,
     startDelay: 300,
     loop: true,

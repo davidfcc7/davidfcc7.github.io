@@ -1,112 +1,129 @@
-nav {
-  background-image: linear-gradient(to right bottom, white, white);
-}
-nav .nav-item,
-nav .nav-link {
-  color: black;
-  background-image: linear-gradient(#77cbda, #77cbda), linear-gradient(to right bottom, white, white);
-  background-size: 0 1px, auto;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  transition: all 0.4s ease-out;
-  font-weight: 600;
-}
-nav .nav-item,
-nav .nav-link:hover {
-  color: #38465f;
-  background-size: 100% 3px, auto;
-}
-nav .selector-for-some-widget {
-  box-sizing: content-box;
-}
-nav div.container a img {
-  width: 150px;
-}
-nav .color-compra {
-  color: black;
-}
-
-.carousel-item img {
-  max-height: 80vh;
-  object-fit: cover;
-  filter: grayscale(70%);
-}
-
-#carousel {
-  position: relative;
-}
-#carousel .overlay {
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
-  background-color: black;
-  color: white;
-}
-#carousel .overlay .container {
-  height: 100%;
-}
-#carousel .overlay .row {
-  height: 100%;
-}
-#carousel .overlay .perfil {
-  width: 200px;
-  border-radius: 50%;
-}
-#carousel .overlay h2 .typed {
-  color: #13d3a4;
-  transition: 0.2s;
-}
-#carousel .overlay .container .verCV {
-  color: white;
-  text-decoration: none;
-  border: solid 1px white;
-  padding: 10px;
-  border-radius: 10px;
-}
-#carousel .overlay .container .verCV:hover {
-  color: black;
-  background-color: white;
-  font-weight: 600;
-}
-#carousel .boton-overlay {
-  border-radius: 10px;
-  color: white;
-  border: 1px solid white;
-  width: 170px;
-  height: 50px;
-  background-color: black;
-}
-#carousel .boton-overlay:hover {
-  color: white;
-  background-color: #161515;
-}
-
-.temasConf {
-  padding: 10px 0px 20px 0px;
-  text-decoration: 2px underline black;
-}
-
-.card-topic {
-  height: auto;
-}
-
-.button-verProyecto button {
-  width: 100%;
-}
-
-footer {
-  background-image: linear-gradient(to right bottom, #112e5b, #003963, #004468, #004f6c, #08596f);
-}
-footer .copyright p {
-  color: white;
-}
-
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
 }
-
-/*# sourceMappingURL=style.css.map */
+body{
+  background-image: linear-gradient(to right, #051937, #141a3f, #241946, #351649, #470f4a);
+}
+body, section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.first-section div .img-perfil img{
+  width: 200px;
+}
+.first-section .content-perfil{
+  margin-top: 30px;
+}
+.first-section .content-perfil h1{
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+.first-section .skills-perfil h2{
+  font-weight: 400;
+}
+.first-section .hv-perfil{
+  margin-bottom: 55px;
+  margin-top: 40px;
+}
+.first-section .hv-perfil a{
+  padding: 18px 28px;
+  border: 1px solid rgba(255, 255, 255, 0.186);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+}
+.first-section .certifications figure{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex-wrap: wrap;
+  justify-items: center;
+}
+.first-section .certifications figure img{
+  width: 300px;
+  padding: 10px;
+  object-fit: cover;
+}
+.first-section .menu{
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.255);
+  background: linear-gradient(#051937, #470f4a);
+  position: fixed;
+  top: 85%;
+  border-radius: 20px;
+}
+.first-section .menu a{
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 1s;
+  color: white;
+}
+.first-section .menu a:hover{
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  transition: .8s;
+}
+.second-section .img-uxui h1{
+  padding: 50px 0;
+  font-size: 50px;
+  font-weight: 400;
+}
+.second-section .img-uxui figure{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+.second-section .img-uxui figure img{
+  width: 200px;
+  object-fit: cover;
+  padding: 10px;
+}
+.third-section .wordpress h1{
+  padding: 50px 0;
+  font-size: 50px;
+  font-weight: 400;
+}
+.third-section .wordpress figure{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+.third-section .wordpress figure img{
+  width: 300px;
+  object-fit: cover;
+  padding: 10px;
+}
+.fourth-section .maquetacion h1{
+  padding: 50px 0;
+  font-size: 50px;
+  font-weight: 400;
+}
+.fourth-section .maquetacion figure {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+.fourth-section .maquetacion figure img{
+  width: 300px;
+  object-fit: cover;
+  padding: 10px;
+}
+.fourth-section{
+  padding-bottom: 150px;
+}
