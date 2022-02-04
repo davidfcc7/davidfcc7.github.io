@@ -8,7 +8,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, #051937, #141a3f, #241946, #351649, #470f4a);
 }
 
 .carousel{
@@ -36,4 +36,25 @@ body{
     transform: translate(-50%, -50%);
     z-index: 1000;
     pointer-events: none;
+}
+.menu{
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.255);
+    background: linear-gradient(#051937, #470f4a);
+    position: fixed;
+    top: 85%;
+    right: 10%;
+    border-radius: 20px;
+}
+.menu a{
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 1s;
+    color: white;
+}
+.menu a:hover{
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    transition: .8s;
 }

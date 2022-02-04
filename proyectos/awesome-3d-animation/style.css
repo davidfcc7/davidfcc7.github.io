@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    color: white;
 }
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: linear-gradient(to right, #051937, #141a3f, #241946, #351649, #470f4a);
 }
 .container{
     border: 1px solid white;
@@ -28,15 +30,22 @@ body{
     height: 170px;
     background-image: linear-gradient(to right bottom, #084785, #574d94, #8c5199, #ba5594, #df5f87, #ea7394, #f586a2, #ff99b0, #fbb4d4, #f5cfed, #f4e9fb, #ffffff);
 }
-/* .card-container .img-container{
-} */
+.card-container .img-container{
+    position: relative;
+}
 .card-container .img-container img{
     transform: rotate(-45deg);
     width: 250px;
-    top: 23%;
-    right: 44%;
+    top: -180px;
+    right: -140px;
     position: absolute;
     object-fit: cover;
+    z-index: 1;
+    transition: .8s;
+}
+.card-container .img-container img:hover{
+    transform: scale(1.2) rotate(-45deg);
+    transition: .5s;
 }
 .card-container .content{
     margin: 70px 30px 10px;
@@ -65,8 +74,8 @@ body{
     font-weight: 500;
 }
 .card-container .options-container ul li:hover{
-    background-color: rgb(61, 61, 61);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 .card-container .button-container{
     margin: 20% 0;
@@ -84,4 +93,25 @@ body{
     letter-spacing: .1em;
     font-size: 13px;
     font-weight: 300;
+}
+.container .menu{
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.255);
+    background: linear-gradient(#051937, #470f4a);
+    position: fixed;
+    top: 85%;
+    right: 10%;
+    border-radius: 20px;
+}
+.container .menu a{
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 1s;
+    color: white;
+}
+.container .menu a:hover{
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    transition: .8s;
 }

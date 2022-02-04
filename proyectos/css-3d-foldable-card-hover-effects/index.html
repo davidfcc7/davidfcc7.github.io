@@ -23,7 +23,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: rgb(13, 100, 92);
+            background-image: linear-gradient(to right, #051937, #141a3f, #241946, #351649, #470f4a);
         }
         .card{
             position: relative;
@@ -114,6 +114,27 @@
         .card .details .content .social-icons a:hover{
             background-color: red;
         }
+        .menu{
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.255);
+            background: linear-gradient(#051937, #470f4a);
+            position: fixed;
+            top: 85%;
+            right: 10%;
+            border-radius: 20px;
+        }
+        .menu a{
+            padding: 20px 20px;
+            text-decoration: none;
+            font-size: 20px;
+            transition: 1s;
+            color: white;
+        }
+        .menu a:hover{
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            transition: .8s;
+        }
     </style>
     <div class="card">
         <div class="img-box">
@@ -131,6 +152,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="menu">
+        <a href="https://davidfcc7.github.io">Volver</a>
     </div>
     <script>
 
