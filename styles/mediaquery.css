@@ -55,4 +55,8 @@
         width: 120px;
         object-fit: cover;
     }
+    .fourth-section .maquetacion .proyectos{
+        display: grid;
+        justify-content: center;
+      }
 }
