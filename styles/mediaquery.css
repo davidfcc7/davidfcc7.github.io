@@ -36,6 +36,11 @@
         width: 80px;
         object-fit: cover;
     }
+    .second-section .img-uxui h1{
+        padding: 50px 0;
+        font-size: 30px;
+        font-weight: 400;
+    }
     .third-section .wordpress figure{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -44,6 +49,11 @@
     .third-section .wordpress figure img{
         width: 120px;
         object-fit: cover;
+    }
+    .third-section .wordpress h1{
+        padding: 50px 0;
+        font-size: 30px;
+        font-weight: 400;
     }
     .fourth-section .maquetacion figure {
         display: grid;
@@ -56,7 +66,12 @@
         object-fit: cover;
     }
     .fourth-section .maquetacion .proyectos{
-        display: grid;
-        justify-content: center;
-      }
+        display: flex;
+        flex-direction: column;
+    }
+    .fourth-section .maquetacion h1{
+        padding: 50px 0;
+        font-size: 30px;
+        font-weight: 400;
+    }
 }
