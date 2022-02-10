@@ -15,27 +15,17 @@ body{
     position: relative;
     height: 600px;
     margin-top: 80px;
-    perspective: 200px;
+    perspective: 600px;
 }
 
 .carousel .carousel-item{
-    width: 250px;
+    width: 450px;
 }
 
 .carousel .carousel-item img{
-    max-width: 180px;
-    height: 320px;
-    transform: translateX(30px) translateY(-60px);
-}
-
-.mobile{
-    max-width: 260px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-    pointer-events: none;
+    max-width: 400px;
+    height: 420px;
+    transform: translateX(20px) translateY(-80px);
 }
 .menu{
     padding: 20px;
