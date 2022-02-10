@@ -67,3 +67,22 @@ a{
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.323);
 }
+.verMas{
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.255);
+    background: linear-gradient(#051937, #470f4a);
+    top: 85%;
+    border-radius: 20px;
+  }
+  .verMas a{
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 1s;
+    color: white;
+  }
+  .verMas a:hover{
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    transition: .8s;
+  }
