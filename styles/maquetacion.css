@@ -68,11 +68,13 @@ a{
     background-color: rgba(255, 255, 255, 0.323);
 }
 .verMas{
+    text-align: center;
     padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.255);
     background: linear-gradient(#051937, #470f4a);
     top: 85%;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 .verMas a{
     padding: 20px 20px;
