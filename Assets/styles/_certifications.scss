@@ -1,6 +1,9 @@
 .certifications{
     h1{
         margin-top: 150px;
+        @include movil{
+            margin-top: 70px;
+        }
     }
     figure{
         display: flex;
@@ -8,10 +11,20 @@
         gap: 50px;
         overflow-x: auto;
         margin: 100px 30px;
+        @include movil{
+            gap: 15px;
+            margin: 50px 30px;
+        }
         img{
             width: 400px;
             margin-bottom: 20px;
             object-fit: contain;
+            @include tablet{
+                width: 350px;
+            }
+            @include movil{
+                width: 160px;
+            }
         }
     }
 }
