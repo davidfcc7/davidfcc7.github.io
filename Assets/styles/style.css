@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#051937), color-stop(#141a3f), color-stop(#241946), color-stop(#351649), to(#470f4a));
+  background-image: linear-gradient(to right, #051937, #141a3f, #241946, #351649, #470f4a);
+}
+
+body,
+a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.perfilSection .perfil .imgPerfil img {
+  width: 300px;
+}
+/*# sourceMappingURL=style.css.map */
