@@ -1,0 +1,14 @@
+.certifications{
+    figure{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 50px;
+        overflow-x: auto;
+        margin: 100px 30px;
+        img{
+            width: 400px;
+            margin-bottom: 20px;
+            object-fit: contain;
+        }
+    }
+}

@@ -26,4 +26,46 @@ h1 {
 .perfilSection .perfil .imgPerfil img {
   width: 300px;
 }
+
+.perfilSection .perfilCV {
+  margin: 50px auto;
+  width: 20%;
+}
+
+.perfilSection .perfilCV a {
+  background-color: white;
+  padding: 20px 30px;
+  color: black;
+  border-radius: 10px;
+}
+
+.certifications figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 50px;
+  overflow-x: auto;
+  margin: 100px 30px;
+}
+
+.certifications figure img {
+  width: 400px;
+  margin-bottom: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.verMasSection .verMas {
+  margin: 50px auto;
+  width: 20%;
+}
+
+.verMasSection .verMas a {
+  background-color: white;
+  padding: 20px 30px;
+  color: black;
+  border-radius: 10px;
+}
 /*# sourceMappingURL=style.css.map */

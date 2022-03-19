@@ -6,4 +6,10 @@
             }
         }
     }
+    .perfilCV{
+        @include sizeBtn;
+        a{
+            @include contentBtn;
+        }
+    }
 }
