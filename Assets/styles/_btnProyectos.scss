@@ -1,8 +1,6 @@
+@import "./mixin";
 .verMasSection{
     .verMas{
-        @include sizeBtn;
-        a{
-            @include contentBtn;
-        }
+        @include btn;
     }
 }
