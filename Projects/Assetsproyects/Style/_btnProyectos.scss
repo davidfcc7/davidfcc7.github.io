@@ -5,6 +5,14 @@
     }
 }
 .btnReturn{
-    position: fixed;
     @include btn;
+    position: relative;
+}
+.btnReturn::before{
+    content: '\25C2';
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    color: white;
+    font-size: 70px;
 }

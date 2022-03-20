@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -59,9 +60,9 @@ h1 {
 }
 
 .btnReturn {
-  position: fixed;
   margin: 50px auto;
   width: 20%;
+  position: relative;
 }
 @media (max-width: 768px) {
   .btnReturn {
@@ -84,6 +85,15 @@ h1 {
   .btnReturn a {
     padding: 10px 15px;
   }
+}
+
+.btnReturn::before {
+  content: "◂";
+  position: absolute;
+  top: -40px;
+  left: 40px;
+  color: white;
+  font-size: 70px;
 }
 
 /*# sourceMappingURL=style.css.map */
