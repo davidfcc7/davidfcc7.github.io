@@ -1,0 +1,10 @@
+@import "./mixin";
+.verMasSection{
+    .verMas{
+        @include btn;
+    }
+}
+.btnReturn{
+    position: fixed;
+    @include btn;
+}

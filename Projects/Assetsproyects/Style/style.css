@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+body {
+  background-image: linear-gradient(to right, #051937, #141a3f, #241946, #351649, #470f4a);
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+}
+@media (max-width: 500px) {
+  a {
+    font-size: 10px;
+  }
+}
+
+h1 {
+  font-size: 36px;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 18px;
+  }
+}
+
+.verMasSection .verMas {
+  margin: 50px auto;
+  width: 20%;
+}
+@media (max-width: 768px) {
+  .verMasSection .verMas {
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .verMasSection .verMas {
+    width: 80%;
+  }
+}
+.verMasSection .verMas a {
+  background-color: white;
+  padding: 20px 30px;
+  color: black;
+  border-radius: 10px;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  .verMasSection .verMas a {
+    padding: 10px 15px;
+  }
+}
+
+.btnReturn {
+  position: fixed;
+  margin: 50px auto;
+  width: 20%;
+}
+@media (max-width: 768px) {
+  .btnReturn {
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .btnReturn {
+    width: 80%;
+  }
+}
+.btnReturn a {
+  background-color: white;
+  padding: 20px 30px;
+  color: black;
+  border-radius: 10px;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  .btnReturn a {
+    padding: 10px 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
