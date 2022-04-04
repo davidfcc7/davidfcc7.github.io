@@ -1,5 +1,27 @@
 @import "./mediaQuerys";
 //RESETEAR LOS ESTILOS
+@font-face{
+  font-family: 'Quicksand-Bold';
+  src: url(/Assets/Fonts/Quicksand-Bold.ttf);
+}
+@font-face{
+  font-family: 'Quicksand-light';
+  src: url(/Assets/Fonts/Quicksand-Light.ttf);
+}
+@font-face{
+  font-family: 'Quicksand-Medium';
+  src: url(/Assets/Fonts/Quicksand-Medium.ttf);
+}
+@font-face{
+  font-family: 'Quicksand-Regular';
+  src: url(/Assets/Fonts/Quicksand-Regular.ttf);
+}
+@font-face{
+  font-family: 'Quicksand-SemiBold';
+  src: url(/Assets/Fonts/Quicksand-SemiBold.ttf);
+}
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
