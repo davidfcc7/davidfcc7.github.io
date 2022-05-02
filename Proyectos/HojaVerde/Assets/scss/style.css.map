@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "style.scss",
+        "_global.scss",
+        "_mediaQuery.scss",
+        "_header.scss",
+        "_footer.scss",
+        "_content.scss",
+        "_mixin.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
