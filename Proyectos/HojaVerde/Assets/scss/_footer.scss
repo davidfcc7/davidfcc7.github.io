@@ -1,0 +1,15 @@
+footer{
+    background-color: $background-nav;
+    height: auto;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    a{
+        padding: 10px;
+        svg{
+            width: 50px;
+        }
+    }
+}

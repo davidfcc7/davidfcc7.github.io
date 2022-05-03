@@ -19,6 +19,15 @@ header {
 
 header .nav-menu {
   background-color: #006600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .nav-menu .menu-movil {
@@ -26,9 +35,8 @@ header .nav-menu .menu-movil {
 }
 
 header .nav-menu .menu-movil .diseno-menu {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  padding: 10px;
+  position: relative;
 }
 
 header .nav-menu .menu-movil .diseno-menu div {
@@ -41,10 +49,14 @@ header .nav-menu .menu-movil .diseno-menu div {
 }
 
 header .nav-menu .menu-movil ul.list-menu {
-  width: 70%;
-  padding: 50px;
+  padding: 25px;
   border-radius: 10px;
   background-color: #408c40;
+  position: absolute;
+  top: -300px;
+  left: 10px;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 header .nav-menu .menu-movil ul.list-menu li {
@@ -54,5 +66,63 @@ header .nav-menu .menu-movil ul.list-menu li {
 header .nav-menu .menu-movil ul.list-menu li a {
   text-decoration: none;
   color: white;
+}
+
+header .nav-menu .menu-movil ul.list-menu.active {
+  top: 100px;
+  left: 10px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+header .nav-menu figure {
+  margin: 0;
+  padding: 0;
+}
+
+header .nav-menu figure img {
+  width: 200px;
+}
+
+header .nav-menu .icono-home-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-menu .icono-home-cart a {
+  margin-right: 20px;
+}
+
+header .nav-menu .icono-home-cart a svg {
+  width: 30px;
+}
+
+header .nav-menu .icono-home-cart a img {
+  width: 30px;
+}
+
+footer {
+  background-color: #006600;
+  height: auto;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer a {
+  padding: 10px;
+}
+
+footer a svg {
+  width: 50px;
 }
 /*# sourceMappingURL=style.css.map */
