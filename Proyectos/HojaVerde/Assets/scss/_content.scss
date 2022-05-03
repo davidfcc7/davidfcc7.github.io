@@ -44,7 +44,7 @@
             margin: 16px 0 32px;
         }
     }
-    table{
+    table.details-product-cart{
         width: 100%;
         border-bottom: 1px solid lightgray;
         border-top: 1px solid lightgray;
@@ -83,18 +83,19 @@
             }
         }
     }
-    table tr:nth-child(2){
+    table.details-product-cart tr:nth-child(2){
         margin-bottom: 24px;
     }
     button.button-buy-whatsapp{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 30px auto;
+        margin: 30px auto 100px;
         border: none;
         background-color: $color-whatsapp;
         padding: 10px 30px;
         border-radius: 10px;
+        cursor: pointer;
         svg{
             width: 30px;
             margin-right: 12px;

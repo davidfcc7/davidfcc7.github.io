@@ -191,7 +191,7 @@ footer a svg {
   margin: 16px 0 32px;
 }
 
-.cart-products table {
+.cart-products table.details-product-cart {
   width: 100%;
   border-bottom: 1px solid lightgray;
   border-top: 1px solid lightgray;
@@ -207,7 +207,7 @@ footer a svg {
           justify-content: center;
 }
 
-.cart-products table tr {
+.cart-products table.details-product-cart tr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,18 +219,18 @@ footer a svg {
   margin-bottom: 16px;
 }
 
-.cart-products table tr td h1 {
+.cart-products table.details-product-cart tr td h1 {
   color: #006600;
   margin-bottom: 16px;
 }
 
-.cart-products table tr td p.title-table {
+.cart-products table.details-product-cart tr td p.title-table {
   font-weight: bold;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
 }
 
-.cart-products table tr td #units-product-cart {
+.cart-products table.details-product-cart tr td #units-product-cart {
   width: 50px;
   height: 30px;
   background-color: lightgray;
@@ -238,7 +238,7 @@ footer a svg {
   border-radius: 5px;
 }
 
-.cart-products table tr td button.delete-product {
+.cart-products table.details-product-cart tr td button.delete-product {
   background: lightcoral;
   color: white;
   border: none;
@@ -246,7 +246,7 @@ footer a svg {
   cursor: pointer;
 }
 
-.cart-products table tr:nth-child(2) {
+.cart-products table.details-product-cart tr:nth-child(2) {
   margin-bottom: 24px;
 }
 
@@ -260,11 +260,12 @@ footer a svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 30px auto;
+  margin: 30px auto 100px;
   border: none;
   background-color: #00fb64;
   padding: 10px 30px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .cart-products button.button-buy-whatsapp svg {
