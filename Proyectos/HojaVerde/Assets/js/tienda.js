@@ -1,0 +1,1 @@
+button = document.querySelectorAll('.add-to-cart');

@@ -156,10 +156,11 @@ footer a svg {
 .card-products .product img {
   width: 180px;
   height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .card-products .product p {
-  margin: 0;
   font-weight: 900;
 }
 
@@ -169,5 +170,79 @@ footer a svg {
   color: white;
   padding: 10px;
   border-radius: 10px;
+}
+
+.cart-products .title-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cart-products .title-cart p {
+  font-weight: bold;
+  font-size: 32px;
+  margin: 16px 0 32px;
+}
+
+.cart-products table {
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cart-products table tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+.cart-products table tr td h1 {
+  color: #006600;
+  margin-bottom: 16px;
+}
+
+.cart-products table tr td p.title-table {
+  font-weight: bold;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.cart-products table tr td #units-product-cart {
+  width: 50px;
+  height: 30px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 10px;
+}
+
+.cart-products table tr td button.delete-product {
+  background: lightcoral;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-products table tr:nth-child(2) {
+  margin-bottom: 24px;
 }
 /*# sourceMappingURL=style.css.map */
