@@ -172,6 +172,10 @@ footer a svg {
   border-radius: 10px;
 }
 
+.cart-products {
+  text-align: center;
+}
+
 .cart-products .title-cart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,7 +235,7 @@ footer a svg {
   height: 30px;
   background-color: lightgray;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .cart-products table tr td button.delete-product {
@@ -244,5 +248,34 @@ footer a svg {
 
 .cart-products table tr:nth-child(2) {
   margin-bottom: 24px;
+}
+
+.cart-products button.button-buy-whatsapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px auto;
+  border: none;
+  background-color: #00fb64;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.cart-products button.button-buy-whatsapp svg {
+  width: 30px;
+  margin-right: 12px;
+}
+
+.cart-products button.button-buy-whatsapp p {
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=style.css.map */

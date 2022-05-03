@@ -34,6 +34,7 @@
 }
 
 .cart-products{
+    text-align: center;
     .title-cart{
         display: flex;
         justify-content: center;
@@ -70,7 +71,7 @@
                     height: 30px;
                     background-color: lightgray;
                     border: none;
-                    border-radius: 10px;
+                    border-radius: 5px;
                 }
                 button.delete-product{
                     background: lightcoral;
@@ -84,5 +85,25 @@
     }
     table tr:nth-child(2){
         margin-bottom: 24px;
+    }
+    button.button-buy-whatsapp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px auto;
+        border: none;
+        background-color: $color-whatsapp;
+        padding: 10px 30px;
+        border-radius: 10px;
+        svg{
+            width: 30px;
+            margin-right: 12px;
+        }
+        p{
+            color: white;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
     }
 }
