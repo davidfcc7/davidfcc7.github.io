@@ -15,19 +15,19 @@
 header {
   width: 100%;
   min-width: 320px;
+  background-color: #006600;
 }
 
 header .nav-menu {
-  background-color: #006600;
+  margin: 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 header .nav-menu .menu-movil {
@@ -81,7 +81,7 @@ header .nav-menu figure {
 }
 
 header .nav-menu figure img {
-  width: 200px;
+  width: 150px;
 }
 
 header .nav-menu .icono-home-cart {
@@ -93,12 +93,9 @@ header .nav-menu .icono-home-cart {
           align-items: center;
 }
 
-header .nav-menu .icono-home-cart a {
-  margin-right: 20px;
-}
-
 header .nav-menu .icono-home-cart a svg {
   width: 30px;
+  margin-right: 10px;
 }
 
 header .nav-menu .icono-home-cart a img {

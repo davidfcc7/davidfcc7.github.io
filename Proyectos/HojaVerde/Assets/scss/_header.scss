@@ -3,11 +3,12 @@
 header{
     width: 100%;
     min-width: 320px;
+    background-color: $background-nav;
     .nav-menu{
-        background-color: $background-nav;
+        margin: 0 30px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         .menu-movil{
             position: relative;
             .diseno-menu{
@@ -48,16 +49,16 @@ header{
             margin: 0;
             padding: 0;
             img{
-                width: 200px;
+                width: 150px;
             }
         }
         .icono-home-cart{
             display: flex;
             align-items: center;
             a{
-                margin-right: 20px;
                 svg{
                     width: 30px;
+                    margin-right: 10px;
                 }
                 img{
                     width: 30px;
