@@ -14,5 +14,4 @@ function addToCartClicked(event){
     const productImg = product.querySelector('.img-product').src;
     const productTitle = product.querySelector('.title-product').textContent;
     const productPrice = product.querySelector('.pice-product').textContent;
-    console.log(productTitle, productPrice, productImg);
 }
