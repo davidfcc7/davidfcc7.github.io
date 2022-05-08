@@ -207,21 +207,49 @@ footer a svg {
           justify-content: center;
 }
 
-.cart-products table.details-product-cart tr {
+.cart-products table.details-product-cart tr.title-details-products {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.cart-products table.details-product-cart tr.details-products table tbody tr:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.cart-products table.details-product-cart tr {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 16px;
+  margin: 16px 0;
+}
+
+.cart-products table.details-product-cart tr td {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cart-products table.details-product-cart tr td h1 {
   color: #006600;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .cart-products table.details-product-cart tr td p.title-table {
