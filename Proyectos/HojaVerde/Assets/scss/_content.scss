@@ -1,130 +1,163 @@
-.filter-products{
+main{
+    margin-top: 100px;
+    .filter-products{
 
-}
-
-.card-products{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    margin: 20px 0 100px;
-    @include movil-medium{
-        grid-template-columns: none;
     }
-    .product{
-        margin: 20px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        img{
-            width: 180px;
-            height: 300px;
-            object-fit: contain;
+    
+    .card-products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        margin: 20px 0 100px;
+        @include movil-medium{
+            grid-template-columns: none;
         }
-        p{
-            font-weight: 900;
-        }
-        button{
-            border: none;
-            background-color: $background-nav;
-            color: white;
-            padding: 10px;
-            border-radius: 10px;
-        }
-    }
-}
-
-.cart-products{
-    position: absolute;
-    visibility: hidden;
-    background-color: white;
-    top: 10%;
-    width: 100%;
-    height: auto;
-    .title-cart{
-        display: flex;
-        justify-content: center;
-        p{
-            font-weight: bold;
-            font-size: 32px;
-            margin: 16px 0 32px;
-        }
-    }
-    table.details-product-cart{
-        width: 100%;
-        border-bottom: 1px solid lightgray;
-        border-top: 1px solid lightgray;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        tr.title-details-products{
+        .product{
+            margin: 20px 0;
             display: flex;
-            justify-content: space-around;
-        }
-        tr.details-products table tbody tr:nth-child(2){
-            display: flex;
-            justify-content: space-around;
-        }
-        tr{
-            display: grid;
-            width: 100%;
+            flex-direction: column;
             align-items: center;
-            margin: 16px 0;
-            td{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                h1{
-                    color: $background-nav;
-                    margin-bottom: 16px;text-align: center;
-                }
-                p.title-table{
-                    font-weight: bold;
-                    border-top: 1px solid lightgray;
-                    border-bottom: 1px solid lightgray;
-                }
-                #units-product-cart{
-                    width: 50px;
-                    height: 30px;
-                    background-color: lightgray;
-                    border: none;
-                    border-radius: 5px;
-                }
-                button.delete-product{
-                    background: lightcoral;
-                    color: white;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                }
+            img{
+                width: 180px;
+                height: 300px;
+                object-fit: contain;
+            }
+            p{
+                font-weight: 900;
+            }
+            button{
+                border: none;
+                background-color: $background-nav;
+                color: white;
+                padding: 10px;
+                border-radius: 10px;
             }
         }
     }
-    table.details-product-cart tr:nth-child(2){
-        margin-bottom: 24px;
-    }
-    button.button-buy-whatsapp{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 30px auto 100px;
-        border: none;
-        background-color: $color-whatsapp;
-        padding: 10px 30px;
-        border-radius: 10px;
-        cursor: pointer;
-        svg{
-            width: 30px;
-            margin-right: 12px;
+    
+    .cart-products{
+        position: absolute;
+        visibility: hidden;
+        background-color: white;
+        top: 10%;
+        width: 100%;
+        height: 110vh;
+        overflow-y: auto;
+        .title-cart{
+            display: flex;
+            justify-content: center;
+            p{
+                font-weight: bold;
+                font-size: 32px;
+                margin: 16px 0 32px;
+            }
         }
-        p{
-            color: white;
-            margin: 0;
+        .details-product-cart{
+            width: 100%;
+            border-bottom: 1px solid lightgray;
+            border-top: 1px solid lightgray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .title-details-products{
+                display: flex;
+                justify-content: space-around;
+            }
+            .details-products table tbody tr:nth-child(2){
+                display: flex;
+                justify-content: space-around;
+            }
+            tr{
+                display: grid;
+                width: 100%;
+                align-items: center;
+                margin: 16px 0;
+                td{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    h1{
+                        color: $background-nav;
+                        margin-bottom: 16px;text-align: center;
+                    }
+                    p.title-table{
+                        font-weight: bold;
+                        border-top: 1px solid lightgray;
+                        border-bottom: 1px solid lightgray;
+                    }
+                    #units-product-cart{
+                        width: 50px;
+                        height: 30px;
+                        background-color: lightgray;
+                        border: none;
+                        border-radius: 5px;
+                    }
+                    button.delete-product{
+                        background: lightcoral;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .details-product-cart{
+            margin-bottom: 24px;
+            .details-products{
+                .details{
+                    text-align: center;
+                    .shoppingCartItem{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        input{
+                            width: 70px;
+                            border: 3px solid #006600;
+                            border-radius: 10px;
+                            height: 40px;
+                        }
+                        button{
+                            background-color: darkred;
+                            color: white;
+                            border: none;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .total-price{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
             font-weight: bold;
-            letter-spacing: 1px;
+        }
+        button.button-buy-whatsapp{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px auto 100px;
+            border: none;
+            background-color: $color-whatsapp;
+            padding: 10px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            svg{
+                width: 30px;
+                margin-right: 12px;
+            }
+            p{
+                color: white;
+                margin: 0;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
         }
     }
-}
-
-.cart-products.active{
-    visibility: visible;
+    
+    .cart-products.active{
+        visibility: visible;
+    }
 }

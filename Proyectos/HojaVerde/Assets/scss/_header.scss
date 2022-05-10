@@ -4,22 +4,23 @@ header{
     width: 100%;
     min-width: 320px;
     background-color: $background-nav;
+    position: fixed;
+    top: 0;
+    z-index: 5;
     .nav-menu{
         margin: 0 30px;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         .menu-movil{
             position: relative;
             .diseno-menu{
-                padding: 10px;
                 position: relative;
                 div{
-                    width: 30px;
-                    height: 5px;
+                    width: 20px;
                     border-radius: 10px;
                     background-color: white;
-                    border: 3px solid white;
+                    border: 1px solid white;
                     margin-bottom: 5px;
                 }
             }
@@ -29,7 +30,7 @@ header{
                 background-color: $background-menu-movil;
                 position: absolute;
                 top: -300px;
-                left: -20px;
+                left: -10px;
                 transition: .4s;
                 li{
                     list-style: none;
@@ -40,8 +41,8 @@ header{
                 }
             }
             ul.list-menu.active{
-                top: 100px;
-                left: -20px;
+                top: 50px;
+                left: -10px;
                 transition: .4s;
             }
         }
@@ -49,7 +50,7 @@ header{
             margin: 0;
             padding: 0;
             img{
-                width: 150px;
+                width: 80px;
             }
         }
         .icono-home-cart{
@@ -61,7 +62,7 @@ header{
                     margin-right: 10px;
                 }
                 img{
-                    width: 30px;
+                    width: 25px;
                 }
             }
         }
