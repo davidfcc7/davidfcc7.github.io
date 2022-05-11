@@ -22,12 +22,21 @@ function addToCartClicked(event) {
 }
 
 function addDetailsProduct(productImg, productTitle, productPrice) {
+
+    const elementTitle = containerTableDetailsProducts.getElementsByClassName('shoppingCartItemTitle');
+    for (let i = 0; i < elementTitle.length; i++){
+        if (elementTitle[i].innerText === productTitle){
+            let elementQuantity = elementTitle[i].querySelector('.units-product-cart');
+            elementQuantity.value++;
+            return;
+        }
+    }
     const tableProductsCart = document.createElement("div");
     //variable para colocar el html dentro de un string literal
     const tableProductCartHtml = 
     `
     <div class="details">
-        <h1>${productTitle}</h1>
+        <h1 class="shoppingCartItemTitle">${productTitle}</h1>
         <div class="shoppingCartItem">
             <img src=${productImg} alt="" width="50" height="50">
             <p class="productPriceCart">${productPrice}</p>
