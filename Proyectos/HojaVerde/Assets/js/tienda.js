@@ -41,26 +41,38 @@ function addDetailsProduct(productImg, productTitle, productPrice) {
     tableProductsCart.innerHTML = tableProductCartHtml;
     //colovar la varibale con la tabla contenida en el la etiqueta padre donde van los detalles del producto
     containerTableDetailsProducts.appendChild(tableProductsCart);
+    tableProductsCart.querySelector('.delete-product').addEventListener('click', removeProductCart);
     //creacion de una funcion para actualizar el precio total de los productos agregados al carrito
     updateShoppingCartTotal();
 }
-
+//funcion de actualizar precio a medida que se agrega un producto
 function updateShoppingCartTotal() {
+   //valor inicial del total
     let total = 0;
+    //campo donde se muestra el total
     const shoppingCartTotal = document.querySelector('.total-price-products');
-  
+    //contenedor del producto cargado desde js
     const shoppingCartItems = document.querySelectorAll('div.details');
-  
+    //foreach para que cada bloque haga la funcion
     shoppingCartItems.forEach((shoppingCartItem) => {
-      const shoppingCartItemPriceElement = shoppingCartItem.querySelector('.productPriceCart');
-      console.log(shoppingCartItemPriceElement);
-
-      const shoppingCartItemPrice = Number(shoppingCartItemPriceElement.textContent.replace('$', ''));
-      const shoppingCartItemQuantityElement = shoppingCartItem.querySelector('.units-product-cart');
-      const shoppingCartItemQuantity = Number(shoppingCartItemQuantityElement.value);
-      total = total + shoppingCartItemPrice * shoppingCartItemQuantity;
+        //precio del producto cargado en el bloque de js
+        const shoppingCartItemPriceElement = shoppingCartItem.querySelector('.productPriceCart');
+        //reemplazar el signo $ por un espacio
+        const shoppingCartItemPrice = Number(shoppingCartItemPriceElement.textContent.replace('$', ''));
+        //capturar las unidades del producto mientras se va a gregando al carrito
+        const shoppingCartItemQuantityElement = shoppingCartItem.querySelector('.units-product-cart');
+        //captura la cantidad de productos con el metodo value 
+        const shoppingCartItemQuantity = Number(shoppingCartItemQuantityElement.value);
+        //operacion para sacar el total de los productos agregados
+        total = total + shoppingCartItemPrice * shoppingCartItemQuantity;
     });
-    shoppingCartTotal.innerHTML = `$ ${total.toFixed(2)}`;
+    shoppingCartTotal.innerHTML = `$ ${total.toFixed(3)}`;
+
+    /* console.log(shoppingCartItemPriceElement); */
+  }
+  //funcion de eliminar un producto al dar click en el boton de papelera
+  function removeProductCart () {
+
   }
 
 
