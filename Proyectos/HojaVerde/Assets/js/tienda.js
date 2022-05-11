@@ -39,9 +39,11 @@ function addDetailsProduct(productImg, productTitle, productPrice) {
 
     //colocar el html desntro de la variable donde se llamo la tabla
     tableProductsCart.innerHTML = tableProductCartHtml;
-    //colovar la varibale con la tabla contenida en el la etiqueta padre donde van los detalles del producto
+    //colocar la varibale con la tabla contenida en el la etiqueta padre donde van los detalles del producto
     containerTableDetailsProducts.appendChild(tableProductsCart);
+    //llamar el boton de borrar productos
     tableProductsCart.querySelector('.delete-product').addEventListener('click', removeProductCart);
+    tableProductsCart.querySelector('.units-product-cart').addEventListener('change', updateUnitsProduct);
     //creacion de una funcion para actualizar el precio total de los productos agregados al carrito
     updateShoppingCartTotal();
 }
@@ -71,8 +73,20 @@ function updateShoppingCartTotal() {
     /* console.log(shoppingCartItemPriceElement); */
   }
   //funcion de eliminar un producto al dar click en el boton de papelera
-  function removeProductCart () {
+  function removeProductCart (event) {
+    const buttonClick = event.target;
+    buttonClick.closest('div.details').remove();
+    updateShoppingCartTotal();
+  }
 
+  function updateUnitsProduct (event){
+    const changeQuantity = event.target;
+    /* if (changeQuantity.value <= 0){
+        changeQuantity.value = 1;
+    } */
+    //si es menos o igual a 0 iguale la variable a 1 si no, no haga nada
+    changeQuantity.value <= 0 ? changeQuantity.value = 1 : null;
+    updateShoppingCartTotal();
   }
 
 
