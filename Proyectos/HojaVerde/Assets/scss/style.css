@@ -164,7 +164,6 @@ main .card-products .product {
 
 main .card-products .product img {
   width: 180px;
-  height: 300px;
   -o-object-fit: contain;
      object-fit: contain;
 }
