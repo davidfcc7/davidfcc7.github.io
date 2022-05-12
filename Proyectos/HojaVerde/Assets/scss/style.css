@@ -12,6 +12,11 @@
   font-family: 'Roboto-Regular';
 }
 
+body, html, header, footer {
+  max-width: 500px;
+  width: 100%;
+}
+
 header {
   width: 100%;
   min-width: 320px;
