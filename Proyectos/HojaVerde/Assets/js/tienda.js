@@ -21,9 +21,10 @@ function addToCartClicked(event) {
     addDetailsProduct(productImg, productTitle, productPrice);
 }
 
-function addDetailsProduct(productImg, productTitle, productPrice) {
+function addDetailsProduct(productTitle, productImg, productPrice) {
 
     const elementTitle = containerTableDetailsProducts.getElementsByClassName('shoppingCartItemTitle');
+
     for (let i = 0; i < elementTitle.length; i++){
         if (elementTitle[i].innerText === productTitle){
             let elementQuantity = elementTitle[i].querySelector('.units-product-cart');
