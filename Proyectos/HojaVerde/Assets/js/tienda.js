@@ -116,7 +116,7 @@ function updateShoppingCartTotal() {
 } */
 
 function botonComprarClicked () {
-    window.location.href = 'https://wa.link/17vph1' + shoppingCartTotal;
+    window.location.href = 'https://wa.me/3058804870' + containerTableDetailsProducts;
     /* containerTableDetailsProducts.innerHTML = '';
     updateShoppingCartTotal(); */
 }
