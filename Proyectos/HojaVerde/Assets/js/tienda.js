@@ -21,17 +21,23 @@ function addToCartClicked(event) {
     addDetailsProduct(productImg, productTitle, productPrice);
 }
 
-function addDetailsProduct(productTitle, productImg, productPrice) {
+function addDetailsProduct(productImg, productTitle, productPrice) {
 
-    const elementTitle = containerTableDetailsProducts.getElementsByClassName('shoppingCartItemTitle');
+    const elementsTitle = containerTableDetailsProducts.getElementsByClassName('shoppingCartItemTitle');
 
-    for (let i = 0; i < elementTitle.length; i++){
-        if (elementTitle[i].innerText === productTitle){
-            let elementQuantity = elementTitle[i].querySelector('.units-product-cart');
-            elementQuantity.value++;
-            return;
+    /* console.log(elementsTitle) */
+
+      for (let i = 0; i < elementsTitle.length; i++) {
+        if (elementsTitle[i].textContent === productTitle) {
+          let elementQuantity = elementsTitle[i].parentElement.querySelector('.units-product-cart');
+          elementQuantity.value++;
+          updateShoppingCartTotal();
+          return;
         }
-    }
+      }
+
+
+
     const tableProductsCart = document.createElement("div");
     //variable para colocar el html dentro de un string literal
     const tableProductCartHtml = 
