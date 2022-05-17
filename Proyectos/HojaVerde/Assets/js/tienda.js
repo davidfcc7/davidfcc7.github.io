@@ -1,5 +1,10 @@
 const buttonAddToCart = document.querySelectorAll('.add-to-cart');
 //tabla donde se cargan los productos del carrito
+
+const botonComprar = document.querySelector('.button-buy-whatsapp');
+botonComprar.addEventListener('click', botonComprarClicked);
+
+
 const containerTableDetailsProducts = document.querySelector('.details-products');
 /* const listProductsWhatsapp = document.addEventListener('click', buyProductWhatsapp); */
 //foreach para hacer una funcion por cada boton
@@ -109,5 +114,11 @@ function updateShoppingCartTotal() {
 /* function buyProductWhatsapp (){
     window.location.href = 'https://wa.me/5713058804870/?text=' + ' ' + containerTableDetailsProducts;
 } */
+
+function botonComprarClicked () {
+    window.location.href = 'https://wa.link/17vph1' + shoppingCartTotal;
+    /* containerTableDetailsProducts.innerHTML = '';
+    updateShoppingCartTotal(); */
+}
 
 
