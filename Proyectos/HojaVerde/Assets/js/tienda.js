@@ -110,13 +110,10 @@ function updateShoppingCartTotal() {
     updateShoppingCartTotal();
   }
 
-
-/* function buyProductWhatsapp (){
-    window.location.href = 'https://wa.me/5713058804870/?text=' + ' ' + containerTableDetailsProducts;
-} */
-
 function botonComprarClicked () {
-    window.location.href = 'https://wa.me/3058804870' + containerTableDetailsProducts;
+    const productWhatsapp = 'https://wa.me/3058804870/?text=' + document.querySelector('.details-products').textContent + '\n';
+    console.table(productWhatsapp);
+    window.location.href = productWhatsapp
     /* containerTableDetailsProducts.innerHTML = '';
     updateShoppingCartTotal(); */
 }
