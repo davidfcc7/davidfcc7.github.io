@@ -111,7 +111,7 @@ function updateShoppingCartTotal() {
   }
 
 function botonComprarClicked () {
-    const productWhatsapp = 'https://wa.me/3058804870/?text=' + shoppingCartTotal.textContent;
+    const productWhatsapp = 'https://wa.me/3058804870/?text=' + containerTableDetailsProducts.textContent;
     console.table(productWhatsapp);
     window.location.href = productWhatsapp
     /* containerTableDetailsProducts.innerHTML = '';
