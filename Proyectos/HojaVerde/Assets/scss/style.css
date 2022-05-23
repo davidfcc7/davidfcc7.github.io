@@ -171,6 +171,7 @@ main .card-products .product img {
 
 main .card-products .product p {
   font-weight: 900;
+  text-align: center;
 }
 
 main .card-products .product button {
