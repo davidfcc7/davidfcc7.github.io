@@ -89,7 +89,7 @@ function updateShoppingCartTotal() {
         //operacion para sacar el total de los productos agregados
         total = total + shoppingCartItemPrice * shoppingCartItemQuantity;
     });
-    shoppingCartTotal.innerHTML = `$ ${total.toFixed(3)}`;
+    shoppingCartTotal.innerHTML = `$ ${total}`;
 
     /* console.log(shoppingCartItemPriceElement); */
   }
