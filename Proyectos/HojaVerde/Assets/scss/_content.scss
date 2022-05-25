@@ -21,6 +21,11 @@ main{
                 width: 180px;
                 object-fit: contain;
                 border-radius: 20px;
+                transition: .4s;
+            }
+            .img-product.zoom{
+                transform: scale(4);
+                transition: .4s;
             }
             p{
                 font-weight: 900;

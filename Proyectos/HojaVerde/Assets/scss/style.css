@@ -167,6 +167,15 @@ main .card-products .product img {
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 20px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+main .card-products .product .img-product.zoom {
+  -webkit-transform: scale(4);
+          transform: scale(4);
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 main .card-products .product p {
