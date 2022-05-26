@@ -24,7 +24,11 @@ main{
                 transition: .4s;
             }
             .img-product.zoom{
-                transform: scale(4);
+                transform: scale(1.8) translate(20%, 10%);
+                transition: .4s;
+            }
+            .img-product.zoom-left{
+                transform: scale(1.8) translate(-20%, 10%);
                 transition: .4s;
             }
             p{
