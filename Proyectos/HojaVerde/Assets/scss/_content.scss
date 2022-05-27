@@ -17,25 +17,30 @@ main{
             display: flex;
             flex-direction: column;
             align-items: center;
-            img{
+            .ver-imagen-zoom{
+                font-size: 12px;
+                padding: 8px;
+                margin-bottom: 2px;
+                background-color: #006600;
+                border: none;
+                color: white;
+                border-radius: 10px;
+            }
+            .img-product{
                 width: 180px;
                 object-fit: contain;
                 border-radius: 20px;
                 transition: .4s;
             }
-            .img-product.zoom{
-                transform: scale(1.8) translate(20%, 10%);
-                transition: .4s;
-            }
-            .img-product.zoom-left{
-                transform: scale(1.8) translate(-20%, 10%);
+            .zoom{
+                transform: scale(1.5) translateY(10%);
                 transition: .4s;
             }
             p{
                 font-weight: 900;
                 text-align: center;
             }
-            button{
+            .add-to-cart{
                 border: none;
                 background-color: $background-nav;
                 color: white;

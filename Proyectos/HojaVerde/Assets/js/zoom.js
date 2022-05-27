@@ -1,7 +1,5 @@
 $(document).ready(function(){
-    $( ".img-product" ).click(function() {
-        $( ".img-product" ).each(function() {
-          $( this ).toggleClass( "zoom" );
-        });
-    });
+  $('.ver-imagen-zoom').click(function() {
+    $(this).siblings('.img-product').toggleClass('zoom');
+  });
 });

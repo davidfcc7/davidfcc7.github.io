@@ -162,7 +162,17 @@ main .card-products .product {
           align-items: center;
 }
 
-main .card-products .product img {
+main .card-products .product .ver-imagen-zoom {
+  font-size: 12px;
+  padding: 8px;
+  margin-bottom: 2px;
+  background-color: #006600;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+main .card-products .product .img-product {
   width: 180px;
   -o-object-fit: contain;
      object-fit: contain;
@@ -171,16 +181,9 @@ main .card-products .product img {
   transition: .4s;
 }
 
-main .card-products .product .img-product.zoom {
-  -webkit-transform: scale(1.8) translate(20%, 10%);
-          transform: scale(1.8) translate(20%, 10%);
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-main .card-products .product .img-product.zoom-left {
-  -webkit-transform: scale(1.8) translate(-20%, 10%);
-          transform: scale(1.8) translate(-20%, 10%);
+main .card-products .product .zoom {
+  -webkit-transform: scale(1.5) translateY(10%);
+          transform: scale(1.5) translateY(10%);
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -190,7 +193,7 @@ main .card-products .product p {
   text-align: center;
 }
 
-main .card-products .product button {
+main .card-products .product .add-to-cart {
   border: none;
   background-color: #006600;
   color: white;
