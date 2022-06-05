@@ -1,11 +1,16 @@
 const buttonAddToCart = document.querySelectorAll('.add-to-cart');
 //tabla donde se cargan los productos del carrito
-
 const botonComprar = document.querySelector('.button-buy-whatsapp');
 botonComprar.addEventListener('click', botonComprarClicked);
-
-
 const containerTableDetailsProducts = document.querySelector('.details-products');
+var elementsTitle = containerTableDetailsProducts.getElementsByClassName('shoppingCartItemTitle');
+
+var cantidad = '';
+var nombreProducto = '';
+var precioTotal = '';
+var elementQuantity = '';
+var total = 0;
+
 /* const listProductsWhatsapp = document.addEventListener('click', buyProductWhatsapp); */
 //foreach para hacer una funcion por cada boton
 buttonAddToCart.forEach((button) => {
@@ -13,6 +18,8 @@ buttonAddToCart.forEach((button) => {
     button.addEventListener('click', addToCartClicked);
 });
 //cada vez que se llame un event listener habrá un parametro evento en la funcion
+
+
 function addToCartClicked(event) {
     //captura el target del boton
     const button = event.target;
@@ -20,29 +27,23 @@ function addToCartClicked(event) {
     const product = button.closest('.product');
     //captura el texto que esta dentro de la clase title-product dentro de la clase producto
     const productImg = product.querySelector('.img-product').src;
-    const productTitle = product.querySelector('.title-product').textContent;
+    const productTitle = product.querySelector('.title-product').textContent; 
     const productPrice = product.querySelector('.pice-product').textContent;
     //almacenar todos los detalles del producto en una funcion
     addDetailsProduct(productImg, productTitle, productPrice);
 }
 
+
 function addDetailsProduct(productImg, productTitle, productPrice) {
-
-    const elementsTitle = containerTableDetailsProducts.getElementsByClassName('shoppingCartItemTitle');
-
-    /* console.log(elementsTitle) */
-
+    /* const elementsTitle = containerTableDetailsProducts.getElementsByClassName('shoppingCartItemTitle'); */
       for (let i = 0; i < elementsTitle.length; i++) {
         if (elementsTitle[i].textContent === productTitle) {
-          let elementQuantity = elementsTitle[i].parentElement.querySelector('.units-product-cart');
+          elementQuantity = elementsTitle[i].parentElement.querySelector('.units-product-cart');
           elementQuantity.value++;
           updateShoppingCartTotal();
           return;
         }
       }
-
-
-
     const tableProductsCart = document.createElement("div");
     //variable para colocar el html dentro de un string literal
     const tableProductCartHtml = 
@@ -71,7 +72,6 @@ function addDetailsProduct(productImg, productTitle, productPrice) {
 //funcion de actualizar precio a medida que se agrega un producto
 function updateShoppingCartTotal() {
    //valor inicial del total
-    let total = 0;
     //campo donde se muestra el total
     const shoppingCartTotal = document.querySelector('.total-price-products');
     //contenedor del producto cargado desde js
@@ -90,8 +90,6 @@ function updateShoppingCartTotal() {
         total = total + shoppingCartItemPrice * shoppingCartItemQuantity;
     });
     shoppingCartTotal.innerHTML = `$ ${total}`;
-
-    /* console.log(shoppingCartItemPriceElement); */
   }
   //funcion de eliminar un producto al dar click en el boton de papelera
   function removeProductCart (event) {
@@ -111,11 +109,9 @@ function updateShoppingCartTotal() {
   }
 
 function botonComprarClicked () {
-    const productWhatsapp = 'https://wa.me/3058804870/?text=' + containerTableDetailsProducts.textContent;
-    console.table(productWhatsapp);
-    window.location.href = productWhatsapp
-    /* containerTableDetailsProducts.innerHTML = '';
-    updateShoppingCartTotal(); */
+  console.log('Producto: '+elementsTitle+'Cantidad: '+elementQuantity+'Total: '+total);
+  /* const productWhatsapp = 'https://wa.me/3058804870/?text=' + elementsTitle;
+  window.location.href = productWhatsapp */
 }
 
 
