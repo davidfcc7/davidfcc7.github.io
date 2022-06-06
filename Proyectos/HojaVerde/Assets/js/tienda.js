@@ -5,11 +5,13 @@ botonComprar.addEventListener('click', botonComprarClicked);
 const containerTableDetailsProducts = document.querySelector('.details-products');
 var elementsTitle = containerTableDetailsProducts.getElementsByClassName('shoppingCartItemTitle');
 
+
+
 var cantidad = '';
 var nombreProducto = '';
 var precioTotal = '';
 var elementQuantity = '';
-var total = 0;
+
 
 /* const listProductsWhatsapp = document.addEventListener('click', buyProductWhatsapp); */
 //foreach para hacer una funcion por cada boton
@@ -32,8 +34,6 @@ function addToCartClicked(event) {
     //almacenar todos los detalles del producto en una funcion
     addDetailsProduct(productImg, productTitle, productPrice);
 }
-
-
 function addDetailsProduct(productImg, productTitle, productPrice) {
     /* const elementsTitle = containerTableDetailsProducts.getElementsByClassName('shoppingCartItemTitle'); */
       for (let i = 0; i < elementsTitle.length; i++) {
@@ -70,12 +70,18 @@ function addDetailsProduct(productImg, productTitle, productPrice) {
     updateShoppingCartTotal();
 }
 //funcion de actualizar precio a medida que se agrega un producto
+var inicial = 0;
+var shoppingCartItems = '';
+var div = '';
+
 function updateShoppingCartTotal() {
    //valor inicial del total
+    total = inicial;
     //campo donde se muestra el total
     const shoppingCartTotal = document.querySelector('.total-price-products');
     //contenedor del producto cargado desde js
-    const shoppingCartItems = document.querySelectorAll('div.details');
+    shoppingCartItems = document.querySelectorAll('div.details');
+    div = Array.from(shoppingCartItems);
     //foreach para que cada bloque haga la funcion
     shoppingCartItems.forEach((shoppingCartItem) => {
         //precio del producto cargado en el bloque de js
@@ -109,7 +115,8 @@ function updateShoppingCartTotal() {
   }
 
 function botonComprarClicked () {
-  console.log('Producto: '+elementsTitle+'Cantidad: '+elementQuantity+'Total: '+total);
+  console.log(div);
+  console.log('Total: '+total);
   /* const productWhatsapp = 'https://wa.me/3058804870/?text=' + elementsTitle;
   window.location.href = productWhatsapp */
 }
