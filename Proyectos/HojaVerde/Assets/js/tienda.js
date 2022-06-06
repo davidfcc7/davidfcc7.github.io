@@ -4,7 +4,7 @@ const botonComprar = document.querySelector('.button-buy-whatsapp');
 botonComprar.addEventListener('click', botonComprarClicked);
 const containerTableDetailsProducts = document.querySelector('.details-products');
 var elementsTitle = containerTableDetailsProducts.getElementsByClassName('shoppingCartItemTitle');
-
+var titulo = Array.from(elementsTitle);
 
 
 var cantidad = '';
@@ -61,18 +61,19 @@ function addDetailsProduct(productImg, productTitle, productPrice) {
 
     //colocar el html desntro de la variable donde se llamo la tabla
     tableProductsCart.innerHTML = tableProductCartHtml;
+    
     //colocar la varibale con la tabla contenida en el la etiqueta padre donde van los detalles del producto
     containerTableDetailsProducts.appendChild(tableProductsCart);
     //llamar el boton de borrar productos
     tableProductsCart.querySelector('.delete-product').addEventListener('click', removeProductCart);
     tableProductsCart.querySelector('.units-product-cart').addEventListener('change', updateUnitsProduct);
+    
     //creacion de una funcion para actualizar el precio total de los productos agregados al carrito
     updateShoppingCartTotal();
 }
 //funcion de actualizar precio a medida que se agrega un producto
 var inicial = 0;
 var shoppingCartItems = '';
-var div = '';
 
 function updateShoppingCartTotal() {
    //valor inicial del total
@@ -81,7 +82,6 @@ function updateShoppingCartTotal() {
     const shoppingCartTotal = document.querySelector('.total-price-products');
     //contenedor del producto cargado desde js
     shoppingCartItems = document.querySelectorAll('div.details');
-    div = Array.from(shoppingCartItems);
     //foreach para que cada bloque haga la funcion
     shoppingCartItems.forEach((shoppingCartItem) => {
         //precio del producto cargado en el bloque de js
@@ -115,8 +115,9 @@ function updateShoppingCartTotal() {
   }
 
 function botonComprarClicked () {
-  console.log(div);
+  console.log(shoppingCartItems);
   console.log('Total: '+total);
+  console.log(containerTableDetailsProducts.values)
   /* const productWhatsapp = 'https://wa.me/3058804870/?text=' + elementsTitle;
   window.location.href = productWhatsapp */
 }
