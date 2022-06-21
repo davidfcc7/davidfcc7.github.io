@@ -20,7 +20,7 @@
           align-items: center;
   margin: 10px auto;
   gap: 50px;
-  width: 50%;
+  width: 98%;
   color: white;
 }
 
@@ -43,6 +43,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -54,7 +56,12 @@
   list-style: none;
 }
 
-.contenedorPrincipal .contenedorDescripcion .contenido .habilidades li img {
+.contenedorPrincipal .contenedorDescripcion .contenido .habilidades li a {
+  cursor: pointer;
+  text-transform: none;
+}
+
+.contenedorPrincipal .contenedorDescripcion .contenido .habilidades li a img {
   width: 50px;
 }
 
@@ -130,6 +137,9 @@ body {
   font-family: "Quicksand-Regular";
   background-image: -webkit-gradient(linear, left bottom, right top, from(#48254f), color-stop(#3c224d), color-stop(#2e1f4a), color-stop(#201c46), to(#0e1942));
   background-image: linear-gradient(to right top, #48254f, #3c224d, #2e1f4a, #201c46, #0e1942);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 article, aside, details, figcaption, figure,

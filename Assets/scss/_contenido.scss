@@ -9,7 +9,7 @@
         align-items: center;
         margin: 10px auto;
         gap: 50px;
-        width: 50%;
+        width: 98%;
         color: white;
         picture{
             img{
@@ -28,14 +28,20 @@
             }
             .habilidades{
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: center;
                 gap: 30px;
                 margin-bottom: 50px;
                 li{
                     list-style: none;
-                    img{
-                        width: 50px;
+                    a{
+                        cursor: pointer;
+                        text-transform: none;
+                        img{
+                            width: 50px;
+                        }
                     }
+                    
                 }
             }
         }
