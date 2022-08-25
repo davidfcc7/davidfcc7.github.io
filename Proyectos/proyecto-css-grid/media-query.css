@@ -1,0 +1,26 @@
+@media (max-width:768px){
+    h1{
+        font-size: 40px;
+    }
+    main section.header{
+        grid-template-columns: 1fr; 
+        grid-auto-rows: auto;
+    }
+    main section.header .container-img img{
+        display: none;
+    }
+    main section.header .container-content{
+        align-items: center;
+    }
+    main section.header .container-content *{
+        text-align: center;
+    }
+}
+@media screen and (max-width:1200px) {
+    main section.services{
+        grid-template-columns: repeat(auto-fit, minmax(20px, 300px));
+    }
+    main section.menu .container-menu{
+        grid-template-columns: repeat(auto-fill, minmax(20px, 300px));
+    }
+}

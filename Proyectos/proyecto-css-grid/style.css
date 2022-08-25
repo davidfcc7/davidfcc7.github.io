@@ -23,9 +23,9 @@ main{
 /* PRIMERA SECCION */
 main section.header{
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: minmax(500px, 2fr) 3fr;
     margin: 20px 0;
-    grid-auto-rows: 400px;
+    grid-auto-rows: 1fr;
     padding-bottom: 20px;
     border-bottom: 1px solid lightgray;
 }
@@ -68,7 +68,7 @@ main section.header .container-img img{
 /* SEGUNDA SECCION */
 main section.services{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(250px, 300px));
     grid-auto-rows: 1fr;
     gap: 10px;   
     margin: 20px 0;
@@ -90,8 +90,9 @@ main section.menu{
 
 main section.menu .container-menu{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 10px;
+    grid-template-columns: repeat(5, minmax(200px, 300px));
+    gap: 10px;
+    justify-content: center;
 }
 
 main section.menu .container-menu img{
