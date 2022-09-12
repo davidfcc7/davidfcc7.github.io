@@ -88,9 +88,9 @@ main .container__content--study ul {
   gap: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .container__content--study ul li {
@@ -119,9 +119,9 @@ main .container__content--experience ul {
   gap: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .container__content--experience ul li {
@@ -129,7 +129,6 @@ main .container__content--experience ul li {
   border: 1px solid lightgrey;
   padding: 10px;
   border-radius: 25px;
-  margin: 0 10px;
   width: 300px;
 }
 
@@ -146,9 +145,9 @@ main .container__projects ul {
   gap: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .container__projects ul li {
