@@ -1,84 +1,139 @@
-.contenedorPrincipal{
+@import './mediaQuery';
+@import './mixin';
+
+body{
     max-width: 1200px;
     width: 100%;
-    margin: 50px auto;
-    .contenedorDescripcion{
+    margin: 0 auto;
+    background-image: linear-gradient(to right top, #48254f, #3c224d, #2e1f4a, #201c46, #0e1942);
+}
+header{
+    display: grid;
+    justify-items: center;
+    .container__img--perfil{
+        img{
+            width: 200px;
+            border-radius: 50%;
+            border: 5px solid #3c224d;
+        }
+    }
+    .container__content--perfil{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 10px auto;
-        gap: 50px;
-        width: 98%;
-        color: white;
-        picture{
-            img{
-                border-radius: 50%;
-                width: 200px;
-                height: 200px;
-                object-fit: cover;
+        gap: 10px;
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+main{
+    .container__content--aspirations{
+        text-align: center;
+        h1{
+            padding-bottom: 16px;
+        }
+        p{
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
+            @include movil-large{
+                text-align: justify;
             }
         }
-        .contenido{
-            .descripcion{
-                text-align: center;
-                margin-bottom: 30px;
-                font-size: 20px;
-                font-weight: 500;
-            }
-            .habilidades{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 30px;
-                margin-bottom: 50px;
-                li{
-                    list-style: none;
-                    a{
-                        cursor: pointer;
-                        text-transform: none;
-                        img{
-                            width: 50px;
-                        }
-                    }
-                    
+    }
+    .container__content--skills{
+        h1{
+            text-align: center;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+            flex-wrap: wrap;
+            li{
+                list-style: none;
+                img{
+                    width: 50px;
                 }
             }
         }
     }
-    
-    .certificaciones{
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-        flex-wrap: wrap;
-        margin-bottom: 50px;
-        img{
-            width: 200px;
-            object-fit: scale-down;
+    .container__content--study{
+        h1{
+            text-align: center;
+        }
+        ul{
+            @include section__knowledge--list;
+            li{
+                list-style: none;
+                img{
+                    width: 300px;
+                    border-radius: 20px;
+                }
+            }
         }
     }
-
-    .contenedorRedes{
-        text-align: center;
-        a.hv{
-            border-radius: 50px;
-            border: none;
-            margin-bottom: 20px;
-            padding: 20px 30px;
-            background-color: #0E1942;
-            text-decoration: none;
-            font-weight: bold;
-            color: white;
-            letter-spacing: 1.5px;
-            border: 1px solid white;
+    .container__content--experience{
+        .experience--title{
+            text-align: center;
         }
-        .redes{
-            margin-top: 50px;
-            a{
+        h1,h3,h4{
+            padding-bottom: 16px;
+            font-weight: bold;
+        }
+        ul{
+            @include section__knowledge--list;
+            li{
+                list-style: none;
+                border: 1px solid lightgrey;
+                padding: 10px;
+                border-radius: 25px;
+                margin: 0 10px;
+                width: 300px;
+            }
+        }
+    }
+    .container__projects{
+        h1{
+            text-align: center;
+            padding-bottom: 16px;
+        }
+        ul{
+            @include section__knowledge--list;
+            li{
+                list-style: none;
                 img{
-                    width: 80px;
-                    object-fit: contain;
+                    width: 300px;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+    .CV{
+        display: flex;
+        justify-content: center;
+        a{
+            padding: 20px;
+            border-radius: 25px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+footer{
+    ul{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                img{
+                    width: 50px;
                 }
             }
         }

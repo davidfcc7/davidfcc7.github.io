@@ -1,10 +1,24 @@
-.contenedorPrincipal {
+body {
   max-width: 1200px;
   width: 100%;
-  margin: 50px auto;
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#48254f), color-stop(#3c224d), color-stop(#2e1f4a), color-stop(#201c46), to(#0e1942));
+  background-image: linear-gradient(to right top, #48254f, #3c224d, #2e1f4a, #201c46, #0e1942);
 }
 
-.contenedorPrincipal .contenedorDescripcion {
+header {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+header .container__img--perfil img {
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid #3c224d;
+}
+
+header .container__content--perfil {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,204 +26,177 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 10px auto;
-  gap: 50px;
-  width: 98%;
-  color: white;
-}
-
-.contenedorPrincipal .contenedorDescripcion picture img {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.contenedorPrincipal .contenedorDescripcion .contenido .descripcion {
+  gap: 10px;
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 20px;
-  font-weight: 500;
+  margin: 20px 0;
 }
 
-.contenedorPrincipal .contenedorDescripcion .contenido .habilidades {
+main .container__content--aspirations {
+  text-align: center;
+}
+
+main .container__content--aspirations h1 {
+  padding-bottom: 16px;
+}
+
+main .container__content--aspirations p {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (max-width: 425px) {
+  main .container__content--aspirations p {
+    text-align: justify;
+  }
+}
+
+main .container__content--skills h1 {
+  text-align: center;
+}
+
+main .container__content--skills ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 30px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.contenedorPrincipal .contenedorDescripcion .contenido .habilidades li {
+main .container__content--skills ul li {
   list-style: none;
 }
 
-.contenedorPrincipal .contenedorDescripcion .contenido .habilidades li a {
-  cursor: pointer;
-  text-transform: none;
-}
-
-.contenedorPrincipal .contenedorDescripcion .contenido .habilidades li a img {
+main .container__content--skills ul li img {
   width: 50px;
 }
 
-.contenedorPrincipal .certificaciones {
+main .container__content--study h1 {
+  text-align: center;
+}
+
+main .container__content--study ul {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .container__content--study ul li {
+  list-style: none;
+}
+
+main .container__content--study ul li img {
+  width: 300px;
+  border-radius: 20px;
+}
+
+main .container__content--experience .experience--title {
+  text-align: center;
+}
+
+main .container__content--experience h1, main .container__content--experience h3, main .container__content--experience h4 {
+  padding-bottom: 16px;
+  font-weight: bold;
+}
+
+main .container__content--experience ul {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .container__content--experience ul li {
+  list-style: none;
+  border: 1px solid lightgrey;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 0 10px;
+  width: 300px;
+}
+
+main .container__projects h1 {
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+main .container__projects ul {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .container__projects ul li {
+  list-style: none;
+}
+
+main .container__projects ul li img {
+  width: 300px;
+  border-radius: 20px;
+}
+
+main .CV {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 50px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 50px;
 }
 
-.contenedorPrincipal .certificaciones img {
-  width: 200px;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
-}
-
-.contenedorPrincipal .contenedorRedes {
-  text-align: center;
-}
-
-.contenedorPrincipal .contenedorRedes a.hv {
-  border-radius: 50px;
-  border: none;
-  margin-bottom: 20px;
-  padding: 20px 30px;
-  background-color: #0E1942;
-  text-decoration: none;
-  font-weight: bold;
+main .CV a {
+  padding: 20px;
+  border-radius: 25px;
+  background-color: black;
   color: white;
-  letter-spacing: 1.5px;
-  border: 1px solid white;
+  text-decoration: none;
 }
 
-.contenedorPrincipal .contenedorRedes .redes {
-  margin-top: 50px;
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
 }
 
-.contenedorPrincipal .contenedorRedes .redes a img {
-  width: 80px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-
-body {
-  line-height: 1;
-  font-family: "Quicksand-Regular";
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#48254f), color-stop(#3c224d), color-stop(#2e1f4a), color-stop(#201c46), to(#0e1942));
-  background-image: linear-gradient(to right top, #48254f, #3c224d, #2e1f4a, #201c46, #0e1942);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-nav ul {
+footer ul li {
   list-style: none;
 }
 
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-
-/* change colours to suit your needs */
-ins {
-  background-color: #ff9;
-  color: #000;
+footer ul li a {
   text-decoration: none;
 }
 
-/* change colours to suit your needs */
-mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-
-del {
-  text-decoration: line-through;
-}
-
-abbr[title], dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* change border colour to suit your needs */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-input, select {
-  vertical-align: middle;
+footer ul li a img {
+  width: 50px;
 }
 
 @font-face {
@@ -235,5 +222,23 @@ input, select {
 @font-face {
   font-family: "Quicksand-SemiBold";
   src: url("../Fonts/Quicksand-SemiBold.ttf");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand-Regular";
+}
+
+header,
+section,
+footer {
+  margin: 50px 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
