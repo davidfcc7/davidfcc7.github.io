@@ -5,3 +5,32 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+@mixin button__more{
+    background-color: #2e1f4a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.75);
+    border: 2px solid white;
+    font-size: 16px;
+}
+
+@mixin container__button{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    button{
+        @include button__more;
+    }
+}
+
+@mixin button--hover{
+    background-color: white;
+    color: #0e1942;
+    font-weight: bold;
+    transition: .3s;
+}

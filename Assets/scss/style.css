@@ -102,6 +102,38 @@ main .container__content--study ul li img {
   border-radius: 20px;
 }
 
+main .container__content--study .container__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+}
+
+main .container__content--study .container__button button {
+  background-color: #2e1f4a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  margin: 0 auto;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  border: 2px solid white;
+  font-size: 16px;
+}
+
+main .container__content--study .container__button button:hover {
+  background-color: white;
+  color: #0e1942;
+  font-weight: bold;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
 main .container__content--experience .experience--title {
   text-align: center;
 }
@@ -130,6 +162,38 @@ main .container__content--experience ul li {
   padding: 10px;
   border-radius: 25px;
   width: 300px;
+}
+
+main .container__content--experience .container__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+}
+
+main .container__content--experience .container__button button {
+  background-color: #2e1f4a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  margin: 0 auto;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  border: 2px solid white;
+  font-size: 16px;
+}
+
+main .container__content--experience .container__button button:hover {
+  background-color: white;
+  color: #0e1942;
+  font-weight: bold;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 main .container__projects h1 {
@@ -239,5 +303,13 @@ footer {
 
 h1, h2, h3, h4, h5, h6, p {
   color: #fff;
+}
+
+.close {
+  display: none;
+}
+
+.open {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

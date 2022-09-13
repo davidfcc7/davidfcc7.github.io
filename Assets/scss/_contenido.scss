@@ -73,6 +73,12 @@ main{
                 }
             }
         }
+        .container__button{
+            @include container__button;
+            button:hover{
+                @include button--hover;
+            }
+        }
     }
     .container__content--experience{
         .experience--title{
@@ -90,6 +96,12 @@ main{
                 padding: 10px;
                 border-radius: 25px;
                 width: 300px;
+            }
+        }
+        .container__button{
+            @include container__button;
+            button:hover{
+                @include button--hover;
             }
         }
     }

@@ -40,12 +40,18 @@
 
         <section class="container__content--study">
             <h1>Estudios</h1>
-                <ul>
-                    <li><img src="./Assets/Images/diploma-basico-javascript_page-0001.jpg" alt="imagen diploma javascript" title="imagen diploma javascript"></li>
-                    <li><img src="./Assets/Images/diploma-css-grid-layout_page-0001.jpg" alt="imagen diploma css grid layout" title="imagen diploma css grid layout"></li>
-                    <li><img src="./Assets/Images/diploma-flexbox-css-grid_page-0001.jpg" alt="imagen diploma css grid" title="imagen diploma css grid"></li>
-                    <li><img src="./Assets/Images/diploma-git-github_page-0001.jpg" alt="imagen diploma gitHub" title="imagen diploma gitHub"></li>
-                </ul>
+            <ul>
+                <li><img src="./Assets/Images/diploma-basico-javascript_page-0001.jpg" alt="imagen diploma javascript" title="imagen diploma javascript"></li>
+                <li><img src="./Assets/Images/diploma-css-grid-layout_page-0001.jpg" alt="imagen diploma css grid layout" title="imagen diploma css grid layout"></li>
+                <li><img src="./Assets/Images/diploma-flexbox-css-grid_page-0001.jpg" alt="imagen diploma css grid" title="imagen diploma css grid"></li>
+                <li class="element close"><img src="./Assets/Images/diploma-git-github_page-0001.jpg" alt="imagen diploma gitHub" title="imagen diploma gitHub"></li>
+            </ul>
+            <div class="container__button more">
+                <button class="button__more">Ver más</button>
+            </div>
+            <div class="container__button less">
+                <button class="button__more close">Ver menos</button>
+            </div>
         </section>
 
         <section class="container__content--experience">
@@ -76,7 +82,7 @@
                         <p>Trabaje en colaboracion con el área de Marketing realizando Alisis de Datos para mejorar los resultados de interactividad de las campañas publicitarias</p>
                     </div>
                 </li>
-                <li>
+                <li class="element close">
                     <div class="content__experience">
                         <h1>Universidad de Cundinamarca</h1>
                         <h3>Estudiante de Ingenieria de Sistemas</h3>
@@ -85,6 +91,12 @@
                     </div>
                 </li>
             </ul>
+            <div class="container__button more">
+                <button class="button__more">Ver más</button>
+            </div>
+            <div class="container__button less">
+                <button class="button__more close">Ver menos</button>
+            </div>
         </section>
 
         <section class="container__projects">
@@ -108,5 +120,7 @@
             <li><a href="mailto:davidfcc7@gmail" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="corrego de gmail"></a></li>
         </ul>
     </footer>
+    <script src="./Assets/Js/jquery-3.6.0.min.js"></script>
+    <script src="./Assets/Js/hide.js"></script>
 </body>
 </html>
