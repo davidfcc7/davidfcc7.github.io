@@ -12,8 +12,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-		width: 90%;
-		margin: 20px auto;
+	width: 90%;
+	margin: 20px auto;
     figure{
         img{
             width: 70px;
@@ -52,8 +52,9 @@ nav{
 	width: 70%;
 	position: absolute;
 	top: 0;
-	display: none;
-	height: 100vh;
+	right: 0;
+	/* display: none; */
+	height: 600px;
 	transition: .4s;
 	box-shadow: rgba(0, 50, 93, 0.25) 0px 6px 12px -2px, 
 							rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -78,6 +79,32 @@ nav{
 		}
 		li.icon.active::after{
 			content: url(../img/icon-arrow-up.svg);
+		}
+		ul.container-submenu{
+			margin-left: 1rem;
+			display: none;
+			li{
+				margin-bottom: 1rem;
+			}
+			li.todo-list::before{
+				content: url(../img/icon-todo.svg);
+				margin-right: 0.5rem;
+			}
+			li.calendar::before{
+				content: url(../img/icon-calendar.svg);
+				margin-right: 0.5rem;
+			}
+			li.reminder::before{
+				content: url(../img/icon-reminders.svg);
+				margin-right: 0.5rem;
+			}
+			li.planning::before{
+				content: url(../img/icon-planning.svg);
+				margin-right: 0.5rem;
+			}
+			&.active{
+				display: inline-block;
+			}
 		}
 	}
 	&.active{

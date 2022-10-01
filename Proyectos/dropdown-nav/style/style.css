@@ -2,64 +2,41 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   width: 90%;
   margin: 20px auto;
 }
-
 nav figure img {
   width: 70px;
 }
-
 nav .menu-hamburguer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 2px;
   cursor: pointer;
 }
-
 nav .menu-hamburguer span {
   border: 2px solid black;
   width: 20px;
-  -webkit-transition: .4s;
-  transition: .4s;
+  transition: 0.4s;
   z-index: 2;
 }
-
 nav .menu-hamburguer.active span:nth-child(1) {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transition: .4s;
-  transition: .4s;
+  transform: rotate(45deg);
+  transition: 0.4s;
 }
-
 nav .menu-hamburguer.active span:nth-child(2) {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   margin-top: -6px;
-  -webkit-transition: .4s;
-  transition: .4s;
+  transition: 0.4s;
 }
-
 nav .menu-hamburguer.active span:nth-child(3) {
   display: none;
 }
@@ -69,27 +46,19 @@ nav .menu-hamburguer.active span:nth-child(3) {
   width: 70%;
   position: absolute;
   top: 0;
-  display: none;
-  height: 100vh;
-  -webkit-transition: .4s;
-  transition: .4s;
-  -webkit-box-shadow: rgba(0, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-          box-shadow: rgba(0, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  right: 0;
+  /* display: none; */
+  height: 600px;
+  transition: 0.4s;
+  box-shadow: rgba(0, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-
 .container--menu-nav ul.content--menu {
   margin-left: 1rem;
   margin-top: 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 0.7rem;
 }
-
 .container--menu-nav ul.content--menu li {
   list-style: none;
   color: grey;
@@ -98,45 +67,57 @@ nav .menu-hamburguer.active span:nth-child(3) {
   position: relative;
   cursor: pointer;
 }
-
 .container--menu-nav ul.content--menu li.icon::after {
   margin-left: 0.5rem;
   content: url(../img/icon-arrow-down.svg);
   cursor: pointer;
 }
-
 .container--menu-nav ul.content--menu li.icon.active::after {
   content: url(../img/icon-arrow-up.svg);
 }
-
+.container--menu-nav ul.content--menu ul.container-submenu {
+  margin-left: 1rem;
+  display: none;
+}
+.container--menu-nav ul.content--menu ul.container-submenu li {
+  margin-bottom: 1rem;
+}
+.container--menu-nav ul.content--menu ul.container-submenu li.todo-list::before {
+  content: url(../img/icon-todo.svg);
+  margin-right: 0.5rem;
+}
+.container--menu-nav ul.content--menu ul.container-submenu li.calendar::before {
+  content: url(../img/icon-calendar.svg);
+  margin-right: 0.5rem;
+}
+.container--menu-nav ul.content--menu ul.container-submenu li.reminder::before {
+  content: url(../img/icon-reminders.svg);
+  margin-right: 0.5rem;
+}
+.container--menu-nav ul.content--menu ul.container-submenu li.planning::before {
+  content: url(../img/icon-planning.svg);
+  margin-right: 0.5rem;
+}
+.container--menu-nav ul.content--menu ul.container-submenu.active {
+  display: inline-block;
+}
 .container--menu-nav.active {
   display: inline-block;
   right: 0;
-  -webkit-transition: .4s;
-  transition: .4s;
+  transition: 0.4s;
 }
-
 .container--menu-nav ul.content--count {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 1.6rem;
   margin-top: 3rem;
 }
-
 .container--menu-nav ul.content--count li {
   list-style: none;
   color: grey;
   cursor: pointer;
 }
-
 .container--menu-nav ul.content--count a {
   text-align: center;
   text-decoration: none;
@@ -148,20 +129,17 @@ nav .menu-hamburguer.active span:nth-child(3) {
 
 .container--img-header figure img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .container--content {
   margin: 2rem 0;
 }
-
 .container--content .content--title {
   color: black;
   text-align: center;
   margin-bottom: 1rem;
 }
-
 .container--content .content--paragraph {
   margin-bottom: 1rem;
   width: 90%;
@@ -169,16 +147,10 @@ nav .menu-hamburguer.active span:nth-child(3) {
   text-align: center;
   color: #8f8f8f;
 }
-
 .container--content .content--button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .container--content .content--button button {
   background-color: black;
   color: white;
@@ -192,21 +164,14 @@ nav .menu-hamburguer.active span:nth-child(3) {
 .container--afiliates {
   margin: 5rem 0.2rem;
 }
-
 .container--afiliates figure {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   gap: 1rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.container--afiliates figure img {
+  object-fit: contain;
 }
 
-.container--afiliates figure img {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
 /*# sourceMappingURL=style.css.map */
