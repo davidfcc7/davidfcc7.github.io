@@ -10,7 +10,7 @@ html(lang="es")
 
 			nav 
 				figure 
-					img(src="./img/logo.svg" alt="Logo snap")
+					img(src="./img/logo.svg" alt="Logo snap" class="blur")
 				.menu-hamburguer 
 					span 
 					span 
@@ -22,35 +22,39 @@ html(lang="es")
 					div  
 					div  
 				ul.content--menu
-					li.icon Features
-					ul.container-submenu 
-						li.todo-list Todo List
-						li.calendar Calendar
-						li.reminder Reminders
-						li.planning Planning
-					li.icon Company
-					ul.container-submenu
-						li History
-						li Our Team
-						li Blog
-					li Careers
-					li About
+					li.icon.features 
+						p.ico.features.bold Features
+						ul.container-submenu.features 
+							li.todo-list Todo List
+							li.calendar Calendar
+							li.reminder Reminders
+							li.planning Planning
+					li.icon.company
+						p.ico.company.bold Company 
+						ul.container-submenu.company
+							li History
+							li Our Team
+							li Blog
+					li  
+						p.bold Careers
+					li
+						p.bold About
 				ul.content--count 
 					li Login 
 					li 
 						a(href="") Register
 
-			.container--img-header
+			.container--img-header.blur
 				figure 
 					img(src="./img/image-hero-mobile.png", alt="")
 
-			.container--content 
+			.container--content.blur 
 				h1.content--title Make remote work 
 				p.content--paragraph get your team in sync, no matter your location. Dtreamline processes, create team rituals, and watch productivity soar.
 				.content--button 
 					button Learn more 
 
-			.container--afiliates 
+			.container--afiliates.blur 
 				figure 
 					img(src="./img/client-databiz.svg", alt="icono databiz")
 					img(src="./img/client-audiophile.svg", alt="icono audiophile")

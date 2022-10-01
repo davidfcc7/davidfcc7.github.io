@@ -6,6 +6,14 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.blur.active {
+  filter: blur(4px);
+}
+
+.bold {
+  font-weight: bold;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -47,7 +55,8 @@ nav .menu-hamburguer.active span:nth-child(3) {
   position: absolute;
   top: 0;
   right: 0;
-  /* display: none; */
+  z-index: 1;
+  display: none;
   height: 600px;
   transition: 0.4s;
   box-shadow: rgba(0, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -67,39 +76,57 @@ nav .menu-hamburguer.active span:nth-child(3) {
   position: relative;
   cursor: pointer;
 }
-.container--menu-nav ul.content--menu li.icon::after {
+.container--menu-nav ul.content--menu li.icon.features ul.container-submenu.features {
+  margin-left: 1rem;
+  display: none;
+}
+.container--menu-nav ul.content--menu li.icon.features ul.container-submenu.features li {
+  margin: 1rem 0;
+}
+.container--menu-nav ul.content--menu li.icon.features ul.container-submenu.features li.todo-list::before {
+  content: url(../img/icon-todo.svg);
+  margin-right: 0.5rem;
+}
+.container--menu-nav ul.content--menu li.icon.features ul.container-submenu.features li.calendar::before {
+  content: url(../img/icon-calendar.svg);
+  margin-right: 0.5rem;
+}
+.container--menu-nav ul.content--menu li.icon.features ul.container-submenu.features li.reminder::before {
+  content: url(../img/icon-reminders.svg);
+  margin-right: 0.5rem;
+}
+.container--menu-nav ul.content--menu li.icon.features ul.container-submenu.features li.planning::before {
+  content: url(../img/icon-planning.svg);
+  margin-right: 0.5rem;
+}
+.container--menu-nav ul.content--menu li.icon.features ul.container-submenu.features.active {
+  display: inline-block;
+}
+.container--menu-nav ul.content--menu p.ico.features::after {
   margin-left: 0.5rem;
   content: url(../img/icon-arrow-down.svg);
   cursor: pointer;
 }
-.container--menu-nav ul.content--menu li.icon.active::after {
+.container--menu-nav ul.content--menu p.ico.features.active::after {
   content: url(../img/icon-arrow-up.svg);
 }
-.container--menu-nav ul.content--menu ul.container-submenu {
+.container--menu-nav ul.content--menu li.icon.company ul.container-submenu.company {
   margin-left: 1rem;
   display: none;
 }
-.container--menu-nav ul.content--menu ul.container-submenu li {
-  margin-bottom: 1rem;
+.container--menu-nav ul.content--menu li.icon.company ul.container-submenu.company li {
+  margin: 1rem 0;
 }
-.container--menu-nav ul.content--menu ul.container-submenu li.todo-list::before {
-  content: url(../img/icon-todo.svg);
-  margin-right: 0.5rem;
-}
-.container--menu-nav ul.content--menu ul.container-submenu li.calendar::before {
-  content: url(../img/icon-calendar.svg);
-  margin-right: 0.5rem;
-}
-.container--menu-nav ul.content--menu ul.container-submenu li.reminder::before {
-  content: url(../img/icon-reminders.svg);
-  margin-right: 0.5rem;
-}
-.container--menu-nav ul.content--menu ul.container-submenu li.planning::before {
-  content: url(../img/icon-planning.svg);
-  margin-right: 0.5rem;
-}
-.container--menu-nav ul.content--menu ul.container-submenu.active {
+.container--menu-nav ul.content--menu li.icon.company ul.container-submenu.company.active {
   display: inline-block;
+}
+.container--menu-nav ul.content--menu p.ico.company::after {
+  margin-left: 0.5rem;
+  content: url(../img/icon-arrow-down.svg);
+  cursor: pointer;
+}
+.container--menu-nav ul.content--menu p.ico.company.active::after {
+  content: url(../img/icon-arrow-up.svg);
 }
 .container--menu-nav.active {
   display: inline-block;

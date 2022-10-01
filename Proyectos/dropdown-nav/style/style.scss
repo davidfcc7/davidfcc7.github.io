@@ -8,6 +8,14 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
+.blur.active{
+	filter: blur(4px);
+}
+
+.bold{
+	font-weight: bold;
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -53,7 +61,8 @@ nav{
 	position: absolute;
 	top: 0;
 	right: 0;
-	/* display: none; */
+	z-index: 1;
+	display: none;
 	height: 600px;
 	transition: .4s;
 	box-shadow: rgba(0, 50, 93, 0.25) 0px 6px 12px -2px, 
@@ -72,39 +81,62 @@ nav{
 			position: relative;
 			cursor: pointer;
 		}
-		li.icon::after{
+		li.icon.features{
+			ul.container-submenu.features{
+				margin-left: 1rem;
+				display: none;
+				li{
+					margin: 1rem 0;
+				}
+				li.todo-list::before{
+					content: url(../img/icon-todo.svg);
+					margin-right: 0.5rem;
+				}
+				li.calendar::before{
+					content: url(../img/icon-calendar.svg);
+					margin-right: 0.5rem;
+				}
+				li.reminder::before{
+					content: url(../img/icon-reminders.svg);
+					margin-right: 0.5rem;
+				}
+				li.planning::before{
+					content: url(../img/icon-planning.svg);
+					margin-right: 0.5rem;
+				}
+				&.active{
+					display: inline-block;
+				}
+			}
+		}
+		p.ico.features::after{
 			margin-left: 0.5rem;
 			content: url(../img/icon-arrow-down.svg);
 			cursor: pointer;
 		}
-		li.icon.active::after{
+		p.ico.features.active::after{
 			content: url(../img/icon-arrow-up.svg);
 		}
-		ul.container-submenu{
-			margin-left: 1rem;
-			display: none;
-			li{
-				margin-bottom: 1rem;
+
+		li.icon.company{
+			ul.container-submenu.company{
+				margin-left: 1rem;
+				display: none;
+				li{
+					margin: 1rem 0;
+				}
+				&.active{
+					display: inline-block;
+				}
 			}
-			li.todo-list::before{
-				content: url(../img/icon-todo.svg);
-				margin-right: 0.5rem;
-			}
-			li.calendar::before{
-				content: url(../img/icon-calendar.svg);
-				margin-right: 0.5rem;
-			}
-			li.reminder::before{
-				content: url(../img/icon-reminders.svg);
-				margin-right: 0.5rem;
-			}
-			li.planning::before{
-				content: url(../img/icon-planning.svg);
-				margin-right: 0.5rem;
-			}
-			&.active{
-				display: inline-block;
-			}
+		}
+		p.ico.company::after{
+			margin-left: 0.5rem;
+			content: url(../img/icon-arrow-down.svg);
+			cursor: pointer;
+		}
+		p.ico.company.active::after{
+			content: url(../img/icon-arrow-up.svg);
 		}
 	}
 	&.active{
@@ -183,5 +215,11 @@ nav{
 		img{
 			object-fit: contain;
 		}
+	}
+}
+
+@mixin movil-large{
+	@media screen and (min-width:520px){
+		@content;
 	}
 }
