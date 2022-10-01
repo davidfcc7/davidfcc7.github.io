@@ -52,7 +52,7 @@ nav .container--menu-web .container-options ul li p ul {
 nav .container--menu-web .container-options ul li p.feature {
   position: relative;
 }
-nav .container--menu-web .container-options ul li p.feature .container-submenu.features {
+nav .container--menu-web .container-options ul li .container-submenu.features {
   display: none;
 }
 nav .container--menu-web .container-options ul li p.company {
