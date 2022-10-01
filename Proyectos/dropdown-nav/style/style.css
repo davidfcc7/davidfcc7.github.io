@@ -24,11 +24,79 @@ nav {
 nav figure img {
   width: 70px;
 }
+nav .container--menu-web {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  font-size: 1rem;
+}
+nav .container--menu-web .container-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+nav .container--menu-web .container-options ul li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+nav .container--menu-web .container-options ul li p {
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+nav .container--menu-web .container-options ul li p ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+nav .container--menu-web .container-options ul li p.feature {
+  position: relative;
+}
+nav .container--menu-web .container-options ul li p.feature .container-submenu.features {
+  display: none;
+}
+nav .container--menu-web .container-options ul li p.company {
+  position: relative;
+}
+nav .container--menu-web .container-options ul li p.feature::after,
+nav .container--menu-web .container-options ul li p.company::after {
+  content: url(../img/icon-arrow-down.svg);
+  margin-left: 0.4rem;
+}
+nav .container--menu-web .container-options ul li.todo-list::before {
+  content: url(../img/icon-todo.svg);
+  margin-right: 0.5rem;
+}
+nav .container--menu-web .container-options ul li.calendar::before {
+  content: url(../img/icon-calendar.svg);
+  margin-right: 0.5rem;
+}
+nav .container--menu-web .container-options ul li.reminder::before {
+  content: url(../img/icon-reminders.svg);
+  margin-right: 0.5rem;
+}
+nav .container--menu-web .container-options ul li.planning::before {
+  content: url(../img/icon-planning.svg);
+  margin-right: 0.5rem;
+}
+nav .container--menu-web .container-login {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+nav .container--menu-web .container-login p {
+  cursor: pointer;
+}
 nav .menu-hamburguer {
   display: flex;
   flex-direction: column;
   gap: 2px;
   cursor: pointer;
+}
+@media screen and (min-width: 600px) {
+  nav .menu-hamburguer {
+    display: none;
+  }
 }
 nav .menu-hamburguer span {
   border: 2px solid black;

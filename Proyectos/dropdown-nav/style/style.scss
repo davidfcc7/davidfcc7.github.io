@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
+@import './mixin';
 
 
 *{
@@ -27,10 +28,79 @@ nav{
             width: 70px;
         }
     }
+	.container--menu-web{
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		align-items: center;
+		font-size: 1rem;
+		.container-options{
+			display: flex;
+			justify-content: space-between;
+			gap: 1rem;
+			ul{
+				li{
+					list-style: none;
+					margin-bottom: 1rem;
+					p{
+						cursor: pointer;
+						margin-bottom: 1rem;
+						ul{
+							position: absolute;
+							top: 0;
+							left: 0;
+						}
+					}
+					p.feature{
+						position: relative;
+						.container-submenu.features {
+							display: none;
+						}
+					}
+					p.company{
+						position: relative;
+					}
+					p.feature::after, 
+					p.company::after{
+						content: url(../img/icon-arrow-down.svg);
+						margin-left: 0.4rem;
+					}
+				}
+				li.todo-list::before{
+					content: url(../img/icon-todo.svg);
+					margin-right: 0.5rem;
+				}
+				li.calendar::before{
+					content: url(../img/icon-calendar.svg);
+					margin-right: 0.5rem;
+				}
+				li.reminder::before{
+					content: url(../img/icon-reminders.svg);
+					margin-right: 0.5rem;
+				}
+				li.planning::before{
+					content: url(../img/icon-planning.svg);
+					margin-right: 0.5rem;
+				}
+			}
+			
+		}
+		.container-login{
+			display: flex;
+			justify-content: space-between;
+			gap: 1rem;
+			p{
+				cursor: pointer;
+			}
+		}
+	}
     .menu-hamburguer{
         display: flex;
         flex-direction: column;
         gap: 2px;
+		@include movil-large{
+			display: none;
+		}
         cursor: pointer;
         span{
             border: 2px solid black;
@@ -66,7 +136,7 @@ nav{
 	height: 600px;
 	transition: .4s;
 	box-shadow: rgba(0, 50, 93, 0.25) 0px 6px 12px -2px, 
-							rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+				rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 	ul.content--menu{
 		margin-left: 1rem;
 		margin-top: 4rem;
@@ -218,8 +288,4 @@ nav{
 	}
 }
 
-@mixin movil-large{
-	@media screen and (min-width:520px){
-		@content;
-	}
-}
+
