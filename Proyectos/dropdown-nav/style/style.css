@@ -228,31 +228,79 @@ nav .menu-hamburguer.active span:nth-child(3) {
   border-radius: 1.6rem;
 }
 
-.container--img-header figure img {
+@media screen and (min-width: 50em) {
+  .container--img-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.container--img-header figure .movil {
   width: 100%;
   object-fit: contain;
 }
-
-.container--content {
+@media screen and (min-width: 50em) {
+  .container--img-header figure .movil {
+    display: none;
+  }
+}
+.container--img-header figure .web {
+  display: none;
+}
+@media screen and (min-width: 50em) {
+  .container--img-header figure .web {
+    display: flex;
+    width: 60%;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+}
+.container--img-header .container--content {
   margin: 2rem 0;
 }
-.container--content .content--title {
+@media screen and (min-width: 50em) {
+  .container--img-header .container--content {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.container--img-header .container--content .content--title {
   color: black;
   text-align: center;
   margin-bottom: 1rem;
 }
-.container--content .content--paragraph {
+@media screen and (min-width: 50em) {
+  .container--img-header .container--content .content--title {
+    font-size: 3.2rem;
+    text-align: start;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.container--img-header .container--content .content--title.remote {
+  margin-bottom: 1.6rem;
+}
+.container--img-header .container--content .content--paragraph {
   margin-bottom: 1rem;
   width: 90%;
   margin: 0 auto 2rem;
   text-align: center;
   color: #8f8f8f;
 }
-.container--content .content--button {
+@media screen and (min-width: 50em) {
+  .container--img-header .container--content .content--paragraph {
+    font-size: 1.4rem;
+    text-align: start;
+    margin: 0 3rem 2rem;
+  }
+}
+.container--img-header .container--content .content--button {
   display: flex;
   justify-content: center;
 }
-.container--content .content--button button {
+.container--img-header .container--content .content--button button {
   background-color: black;
   color: white;
   border: none;

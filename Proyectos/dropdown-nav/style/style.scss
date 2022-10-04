@@ -242,42 +242,80 @@ nav{
 
 
 .container--img-header{
+	@include movil-large{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+	}
 	figure{
-		img{
+		.movil{
 			width: 100%;
 			object-fit: contain;
+			@include movil-large{
+				display: none;
+			}
+		}
+		.web{
+			display: none;
+			@include movil-large{
+				display: flex;
+				width: 60%;
+				object-fit: contain;
+				margin: 0 auto;
+			}
+		}
+	}
+	.container--content{
+		margin: 2rem 0;
+		@include movil-large{
+			width: 80%;
+			margin: 0 auto;
+		}
+		.content--title{
+			color: black;
+			text-align: center;
+			margin-bottom: 1rem;
+			@include movil-large{
+				font-size: 3.2rem;
+				text-align: start;
+				width: 80%;
+				margin: 0 auto;
+			}
+		}
+		.content--title.remote{
+			margin-bottom: 1.6rem;
+		}
+		.content--paragraph{
+			margin-bottom: 1rem;
+			width: 90%;
+			margin: 0 auto 2rem;
+			text-align: center;
+			color: rgb(143, 143, 143);
+			@include movil-large{
+				font-size: 1.4rem;
+				text-align: start;
+				margin: 0 3rem 2rem;
+			}
+		}
+		.content--button{
+			display: flex;
+			justify-content: center;
+			button{
+				background-color: black;
+				color: white;
+				border: none;
+				padding: 1rem 2rem;
+				border-radius: 1rem;
+				font-size: 0.8rem;
+				font-weight: bold;
+			}
 		}
 	}
 }
 
-.container--content{
-	margin: 2rem 0;
-	.content--title{
-		color: black;
-		text-align: center;
-		margin-bottom: 1rem;
-	}
-	.content--paragraph{
-		margin-bottom: 1rem;
-		width: 90%;
-		margin: 0 auto 2rem;
-		text-align: center;
-		color: rgb(143, 143, 143);
-	}
-	.content--button{
-		display: flex;
-		justify-content: center;
-		button{
-			background-color: black;
-			color: white;
-			border: none;
-			padding: 1rem 2rem;
-			border-radius: 1rem;
-			font-size: 0.8rem;
-			font-weight: bold;
-		}
-	}
-}
+
 
 .container--afiliates{
 	margin: 5rem 0.2rem;
