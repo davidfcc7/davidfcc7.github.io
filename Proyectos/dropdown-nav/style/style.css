@@ -30,6 +30,12 @@ nav .container--menu-web {
   width: 100%;
   align-items: center;
   font-size: 1rem;
+  display: none;
+}
+@media screen and (min-width: 50em) {
+  nav .container--menu-web {
+    display: flex;
+  }
 }
 nav .container--menu-web .container-options {
   display: flex;
@@ -93,7 +99,7 @@ nav .menu-hamburguer {
   gap: 2px;
   cursor: pointer;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 50em) {
   nav .menu-hamburguer {
     display: none;
   }
