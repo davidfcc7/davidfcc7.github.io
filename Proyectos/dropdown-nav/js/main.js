@@ -19,4 +19,11 @@ $(document).ready(function(){
 		$('li.icon ~ p.ico').toggleClass('active');
 	})
 
+	$('.feature').click(function(){
+		$('.features').toggleClass('active');
+	})
+
+	$('.company').click(function(){
+		$('.companys').toggleClass('active');
+	})
 });

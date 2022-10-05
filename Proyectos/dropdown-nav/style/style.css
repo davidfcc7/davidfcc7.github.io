@@ -19,18 +19,19 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 90%;
-  margin: 20px auto;
+  margin: 2rem auto;
 }
 nav figure img {
-  width: 70px;
+  width: 100%;
+  object-fit: contain;
 }
 nav .container--menu-web {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  width: 90%;
   align-items: center;
   font-size: 1rem;
   display: none;
+  justify-content: space-between;
 }
 @media screen and (min-width: 50em) {
   nav .container--menu-web {
@@ -39,16 +40,16 @@ nav .container--menu-web {
 }
 nav .container--menu-web .container-options {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
   gap: 1rem;
+  margin-left: 2rem;
 }
 nav .container--menu-web .container-options ul li {
   list-style: none;
-  margin-bottom: 1rem;
 }
 nav .container--menu-web .container-options ul li p {
   cursor: pointer;
-  margin-bottom: 1rem;
 }
 nav .container--menu-web .container-options ul li p ul {
   position: absolute;
@@ -60,6 +61,15 @@ nav .container--menu-web .container-options ul li p.feature {
 }
 nav .container--menu-web .container-options ul li .container-submenu.features {
   display: none;
+}
+nav .container--menu-web .container-options ul li .container-submenu.companys {
+  display: none;
+}
+nav .container--menu-web .container-options ul li .container-submenu.features.active {
+  display: block;
+}
+nav .container--menu-web .container-options ul li .container-submenu.companys.active {
+  display: block;
 }
 nav .container--menu-web .container-options ul li p.company {
   position: relative;
@@ -85,13 +95,25 @@ nav .container--menu-web .container-options ul li.planning::before {
   content: url(../img/icon-planning.svg);
   margin-right: 0.5rem;
 }
-nav .container--menu-web .container-login {
+nav .container--menu-web ul li {
+  list-style: none;
+}
+nav .container--menu-web ul li .container-login ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 1rem;
+  margin-left: 2rem;
 }
-nav .container--menu-web .container-login p {
+nav .container--menu-web ul li .container-login ul li:nth-child(2) {
+  border: 0.1rem solid black;
+  padding: 0.7rem;
+  border-radius: 0.7rem;
   cursor: pointer;
+}
+nav .container--menu-web ul li .container-login ul li:nth-child(2):hover {
+  background-color: black;
+  color: white;
 }
 nav .menu-hamburguer {
   display: flex;
