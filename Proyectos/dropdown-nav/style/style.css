@@ -75,6 +75,7 @@ nav .container--menu-web .container-options {
 
 nav .container--menu-web .container-options ul li {
   list-style: none;
+  cursor: pointer;
 }
 
 nav .container--menu-web .container-options ul li p {
@@ -153,6 +154,10 @@ nav .container--menu-web ul li .container-login ul {
           align-items: center;
   gap: 1rem;
   margin-left: 2rem;
+}
+
+nav .container--menu-web ul li .container-login ul li {
+  cursor: pointer;
 }
 
 nav .container--menu-web ul li .container-login ul li:nth-child(2) {

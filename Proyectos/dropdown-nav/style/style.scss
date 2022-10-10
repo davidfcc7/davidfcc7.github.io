@@ -48,6 +48,7 @@ nav{
 			ul{
 				li{
 					list-style: none;
+					cursor: pointer;
 					p{
 						cursor: pointer;
 						ul{
@@ -111,6 +112,7 @@ nav{
 						gap: 1rem;
 						margin-left: 2rem;
 						li{
+							cursor: pointer;
 							&:nth-child(2){
 								border: 0.1rem solid black;
 								padding: 0.7rem;
