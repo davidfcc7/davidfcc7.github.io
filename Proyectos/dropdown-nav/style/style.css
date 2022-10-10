@@ -69,12 +69,13 @@ nav .container--menu-web .container-options {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   margin-left: 2rem;
 }
 
 nav .container--menu-web .container-options ul li {
   list-style: none;
+  margin-bottom: .3rem;
   cursor: pointer;
 }
 
@@ -88,28 +89,21 @@ nav .container--menu-web .container-options ul li p ul {
   left: 0;
 }
 
-nav .container--menu-web .container-options ul li p.feature {
-  position: relative;
-}
-
-nav .container--menu-web .container-options ul li .container-submenu.features {
-  display: none;
-}
-
-nav .container--menu-web .container-options ul li .container-submenu.companys {
-  display: none;
-}
-
-nav .container--menu-web .container-options ul li .container-submenu.features.active {
-  display: block;
-}
-
-nav .container--menu-web .container-options ul li .container-submenu.companys.active {
-  display: block;
-}
-
+nav .container--menu-web .container-options ul li p.feature,
 nav .container--menu-web .container-options ul li p.company {
   position: relative;
+}
+
+nav .container--menu-web .container-options ul li .container-submenu.features,
+nav .container--menu-web .container-options ul li .container-submenu.companys {
+  display: none;
+  position: absolute;
+  margin-top: 1rem;
+}
+
+nav .container--menu-web .container-options ul li .container-submenu.features.active,
+nav .container--menu-web .container-options ul li .container-submenu.companys.active {
+  display: block;
 }
 
 nav .container--menu-web .container-options ul li p.feature::after,
@@ -405,13 +399,12 @@ nav .menu-hamburguer.active span:nth-child(3) {
 }
 
 .container--img-header .container--content {
-  margin: 2rem 0;
+  margin: 4rem 0;
 }
 
 @media screen and (min-width: 50em) {
   .container--img-header .container--content {
     width: 80%;
-    margin: 0 auto;
   }
 }
 
@@ -423,7 +416,7 @@ nav .menu-hamburguer.active span:nth-child(3) {
 
 @media screen and (min-width: 50em) {
   .container--img-header .container--content .content--title {
-    font-size: 3.2rem;
+    font-size: 3rem;
     text-align: start;
     width: 80%;
     margin: 0 auto;

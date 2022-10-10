@@ -43,11 +43,12 @@ nav{
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
-			gap: 1rem;
+			gap: 2rem;
 			margin-left: 2rem;
 			ul{
 				li{
 					list-style: none;
+					margin-bottom: .3rem;
 					cursor: pointer;
 					p{
 						cursor: pointer;
@@ -57,23 +58,20 @@ nav{
 							left: 0;
 						}
 					}
-					p.feature{
-						position: relative;
-					}
-					.container-submenu.features {
-						display: none;
-					}
-					.container-submenu.companys {
-						display: none;
-					}
-					.container-submenu.features.active {
-						display: block;
-					}
-					.container-submenu.companys.active {
-						display: block;
-					}
+					p.feature,
 					p.company{
 						position: relative;
+					
+					}
+					.container-submenu.features,
+					.container-submenu.companys {
+						display: none;
+						position: absolute;
+						margin-top: 1rem;
+					}
+					.container-submenu.features.active,
+					.container-submenu.companys.active {
+						display: block;
 					}
 					p.feature::after, 
 					p.company::after{
@@ -299,17 +297,16 @@ nav{
 		}
 	}
 	.container--content{
-		margin: 2rem 0;
+		margin: 4rem 0;
 		@include movil-large{
 			width: 80%;
-			margin: 0 auto;
 		}
 		.content--title{
 			color: black;
 			text-align: center;
 			margin-bottom: 1rem;
 			@include movil-large{
-				font-size: 3.2rem;
+				font-size: 3rem;
 				text-align: start;
 				width: 80%;
 				margin: 0 auto;
