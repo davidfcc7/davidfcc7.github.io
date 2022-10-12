@@ -331,7 +331,15 @@ h1, h2, h3, h4, h5, h6, p {
   background-image: linear-gradient(to right top, #000, #000, #000, #000, #000);
 }
 
+.dark--mode.actived h1, .dark--mode.actived h2, .dark--mode.actived h3, .dark--mode.actived h4, .dark--mode.actived h5, .dark--mode.actived h6, .dark--mode.actived p, .dark--mode.actived span, .dark--mode.actived b {
+  color: white;
+}
+
 .dark--mode.actived .dark {
+  background-color: white;
+}
+
+.dark--mode.actived .light {
   background-color: white;
 }
 
