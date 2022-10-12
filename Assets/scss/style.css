@@ -312,4 +312,63 @@ h1, h2, h3, h4, h5, h6, p {
 .open {
   display: block;
 }
+
+.light-mode.activel {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#fff), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#fff));
+  background-image: linear-gradient(to right top, #fff, #fff, #fff, #fff, #fff);
+}
+
+.light-mode.activel h1, .light-mode.activel h2, .light-mode.activel h3, .light-mode.activel h4, .light-mode.activel h5, .light-mode.activel h6, .light-mode.activel p, .light-mode.activel span, .light-mode.activel b {
+  color: black;
+}
+
+.light-mode.activel .light {
+  background-color: rgba(0, 0, 0, 0.329);
+}
+
+.dark--mode.actived {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#000), color-stop(#000), color-stop(#000), color-stop(#000), to(#000));
+  background-image: linear-gradient(to right top, #000, #000, #000, #000, #000);
+}
+
+.dark--mode.actived .dark {
+  background-color: white;
+}
+
+section.dark-mode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.dark-mode .light,
+section.dark-mode .dark,
+section.dark-mode .normal {
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  border-radius: .3rem;
+  -webkit-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.dark-mode .light img,
+section.dark-mode .dark img,
+section.dark-mode .normal img {
+  width: 2rem;
+}
 /*# sourceMappingURL=style.css.map */

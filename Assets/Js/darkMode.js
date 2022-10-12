@@ -1,0 +1,12 @@
+$(document).ready(function(){
+    $('.light').click(function(){
+        $('.light-mode').toggleClass('activel');
+    });
+    $('.dark').click(function(){
+        $('.dark--mode').toggleClass('actived');
+    });
+    $('.normal').click(function(){
+        $('body').removeClass('actived');
+        $('body').removeClass('activel');
+    });
+});
