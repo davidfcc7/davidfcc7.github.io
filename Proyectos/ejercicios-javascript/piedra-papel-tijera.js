@@ -2,7 +2,7 @@ var piedra=0,papel=1,tijera=2;
 var min=0,max=2;
 var random=Math.floor(Math.random()*(max-min+1)+min);
 
-/* function juego (usuario, maquina){
+function juego (usuario, maquina){
     if ((usuario === 0)&&(maquina === 2)||(usuario === 1)&&(maquina === 0)||(usuario === 2)&&(maquina === 1)){
         console.log("gana usuario");
     }
@@ -13,7 +13,7 @@ var random=Math.floor(Math.random()*(max-min+1)+min);
         console.log("gana maquina");
     }
 }
-juego(1,random); */
+juego(1,random);
 
 function juegoSwitch (usuario, maquina){
     //con true los casos van a suceder
