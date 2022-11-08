@@ -30,8 +30,8 @@ function juegoSwitch (usuario, maquina){
         case (usuario === maquina):
             console.log("Empate");
             break;
-            default:
-                console.log("Gana Maquina");
+        default:
+            console.log("Gana Maquina");
     }
 }
 
