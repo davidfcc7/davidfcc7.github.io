@@ -5,7 +5,6 @@ body{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    background-image: linear-gradient(to right top, #48254f, #3c224d, #2e1f4a, #201c46, #0e1942);
 }
 header{
     display: grid;
@@ -14,7 +13,7 @@ header{
         img{
             width: 200px;
             border-radius: 50%;
-            border: 5px solid #3c224d;
+            border: 2px solid #3c224d;
         }
     }
     .container__content--perfil{
@@ -130,6 +129,7 @@ main{
             background-color: black;
             color: white;
             text-decoration: none;
+            font-size: 16px;
         }
     }
 }

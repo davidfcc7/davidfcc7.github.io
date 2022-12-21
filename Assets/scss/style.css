@@ -2,8 +2,6 @@ body {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#48254f), color-stop(#3c224d), color-stop(#2e1f4a), color-stop(#201c46), to(#0e1942));
-  background-image: linear-gradient(to right top, #48254f, #3c224d, #2e1f4a, #201c46, #0e1942);
 }
 
 header {
@@ -15,7 +13,7 @@ header {
 header .container__img--perfil img {
   width: 200px;
   border-radius: 50%;
-  border: 5px solid #3c224d;
+  border: 2px solid #3c224d;
 }
 
 header .container__content--perfil {
@@ -113,16 +111,13 @@ main .container__content--study .container__button {
 }
 
 main .container__content--study .container__button button {
-  background-color: #2e1f4a;
+  background-color: #000000;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 25px;
   margin: 0 auto;
   cursor: pointer;
-  -webkit-box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
-  border: 2px solid white;
   font-size: 16px;
 }
 
@@ -175,16 +170,13 @@ main .container__content--experience .container__button {
 }
 
 main .container__content--experience .container__button button {
-  background-color: #2e1f4a;
+  background-color: #000000;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 25px;
   margin: 0 auto;
   cursor: pointer;
-  -webkit-box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
-  border: 2px solid white;
   font-size: 16px;
 }
 
@@ -238,6 +230,7 @@ main .CV a {
   background-color: black;
   color: white;
   text-decoration: none;
+  font-size: 16px;
 }
 
 footer ul {
@@ -292,7 +285,7 @@ footer ul li a img {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Quicksand-Regular";
+  font-family: monospace;
 }
 
 header,
@@ -301,8 +294,24 @@ footer {
   margin: 50px 0;
 }
 
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
 h1, h2, h3, h4, h5, h6, p {
-  color: #fff;
+  color: black;
 }
 
 .close {
@@ -311,72 +320,5 @@ h1, h2, h3, h4, h5, h6, p {
 
 .open {
   display: block;
-}
-
-.light-mode.activel {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#fff), color-stop(#fff), color-stop(#fff), color-stop(#fff), to(#fff));
-  background-image: linear-gradient(to right top, #fff, #fff, #fff, #fff, #fff);
-}
-
-.light-mode.activel h1, .light-mode.activel h2, .light-mode.activel h3, .light-mode.activel h4, .light-mode.activel h5, .light-mode.activel h6, .light-mode.activel p, .light-mode.activel span, .light-mode.activel b {
-  color: black;
-}
-
-.light-mode.activel .light {
-  background-color: rgba(0, 0, 0, 0.329);
-}
-
-.dark--mode.actived {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#000), color-stop(#000), color-stop(#000), color-stop(#000), to(#000));
-  background-image: linear-gradient(to right top, #000, #000, #000, #000, #000);
-}
-
-.dark--mode.actived h1, .dark--mode.actived h2, .dark--mode.actived h3, .dark--mode.actived h4, .dark--mode.actived h5, .dark--mode.actived h6, .dark--mode.actived p, .dark--mode.actived span, .dark--mode.actived b {
-  color: white;
-}
-
-.dark--mode.actived .dark {
-  background-color: white;
-}
-
-.dark--mode.actived .light {
-  background-color: white;
-}
-
-section.dark-mode {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-section.dark-mode .light,
-section.dark-mode .dark,
-section.dark-mode .normal {
-  width: 3rem;
-  height: 3rem;
-  background-color: white;
-  border-radius: .3rem;
-  -webkit-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-section.dark-mode .light img,
-section.dark-mode .dark img,
-section.dark-mode .normal img {
-  width: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

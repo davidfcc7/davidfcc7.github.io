@@ -27,15 +27,27 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Quicksand-Regular";
+  font-family: monospace;
 }
 header,
 section,
 footer{
   margin: 50px 0;
 }
+h1{
+  font-size: 32px;
+}
+h2{
+  font-size: 28px;
+}
+h3{
+  font-size: 24px;
+}
+p{
+  font-size: 16px;
+}
 h1,h2,h3,h4,h5,h6,p{
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .close{
   display: none;
