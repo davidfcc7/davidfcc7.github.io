@@ -1,27 +1,43 @@
 @import './mediaQuery';
 @import './mixin';
 
-body{
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-header{
+
+.container__perfil{
     display: grid;
-    justify-items: center;
-    .container__img--perfil{
-        img{
-            width: 200px;
-            border-radius: 50%;
-            border: 2px solid #3c224d;
-        }
-    }
+    grid-template-columns: 60% 40%;
+    height: auto;
+    background-color: rgb(26, 26, 26);
+    padding-block: 16px;
+    margin: 0;
+    align-items: center;
     .container__content--perfil{
         display: flex;
         flex-direction: column;
         gap: 10px;
         text-align: center;
         margin: 20px 0;
+        h1,h2,h3{
+            color: white;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            gap: 16px;
+            padding-block: 16px;
+            li{
+                img{
+                    width: 40px;
+                }
+            }
+        }
+    }
+    .container__img--perfil{
+        img{
+            width: 200px;
+            border-radius: 50%;
+            
+        }
     }
 }
 
