@@ -1,5 +1,6 @@
 @import './mediaQuery';
 @import './mixin';
+@import './global';
 
 
 .container__perfil{
@@ -10,6 +11,7 @@
     padding-block: 16px;
     margin: 0;
     align-items: center;
+    margin-bottom: 64px;
     .container__content--perfil{
         display: flex;
         flex-direction: column;
@@ -24,11 +26,23 @@
             list-style: none;
             justify-content: center;
             gap: 16px;
-            padding-block: 16px;
+            padding-block: 12px;
             li{
                 img{
                     width: 40px;
                 }
+            }
+        }
+        .CV{
+            display: flex;
+            justify-content: center;
+            a{
+                padding: 10px 20px;
+                border-radius: 25px;
+                background-color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                font-weight: bold;
             }
         }
     }
@@ -147,18 +161,7 @@ main{
             }
         }
     }
-    .CV{
-        display: flex;
-        justify-content: center;
-        a{
-            padding: 20px;
-            border-radius: 25px;
-            background-color: black;
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
-    }
+    
 }
 
 footer{

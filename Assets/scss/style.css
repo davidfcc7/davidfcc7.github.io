@@ -1,3 +1,61 @@
+@font-face {
+  font-family: "Quicksand-Bold";
+  src: url("../Fonts/Quicksand-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand-Light";
+  src: url("../Fonts/Quicksand-Light.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand-Medium";
+  src: url("../Fonts/Quicksand-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("../Fonts/Quicksand-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand-SemiBold";
+  src: url("../Fonts/Quicksand-SemiBold.ttf");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+h1 {
+  font-size: clamp(24px, 5vw, 32px);
+}
+
+h2 {
+  font-size: clamp(20px, 5vw, 28px);
+}
+
+h3 {
+  font-size: clamp(16px, 5vw, 24px);
+}
+
+p,
+a {
+  font-size: clamp(12px, 5vw, 20px);
+}
+
+.close {
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
 .container__perfil {
   display: -ms-grid;
   display: grid;
@@ -10,6 +68,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 64px;
 }
 
 .container__perfil .container__content--perfil {
@@ -38,11 +97,29 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 16px;
-  padding-block: 16px;
+  padding-block: 12px;
 }
 
 .container__perfil .container__content--perfil ul li img {
   width: 40px;
+}
+
+.container__perfil .container__content--perfil .CV {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container__perfil .container__content--perfil .CV a {
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .container__perfil .container__img--perfil img {
@@ -252,24 +329,6 @@ main .container__projects ul li img {
   border-radius: 20px;
 }
 
-main .CV {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main .CV a {
-  padding: 20px;
-  border-radius: 25px;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-}
-
 footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,12 +384,6 @@ footer ul li a img {
   font-family: monospace;
 }
 
-header,
-section,
-footer {
-  margin: 50px 0;
-}
-
 h1 {
   font-size: clamp(24px, 5vw, 32px);
 }
@@ -343,7 +396,8 @@ h3 {
   font-size: clamp(16px, 5vw, 24px);
 }
 
-p {
+p,
+a {
   font-size: clamp(12px, 5vw, 20px);
 }
 
