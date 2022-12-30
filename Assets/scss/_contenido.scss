@@ -69,14 +69,17 @@
     }
 }
 
-main{
+.container__skills{
+    margin-bottom: 64px;
+    display: grid;
+    grid-template-columns: 40% 60%;
     .container__content--aspirations{
         text-align: center;
         h1{
-            padding-bottom: 16px;
+            margin-bottom: 16px;
         }
         p{
-            text-align: center;
+            text-align: justify;
             width: 90%;
             margin: 0 auto;
         }
@@ -99,6 +102,19 @@ main{
             }
         }
     }
+}
+
+@include medium {
+    .container__content--aspirations{
+        margin-bottom: 64px;
+    }
+    .container__content--aspirations,
+    .container__content--skills{
+        grid-column: 1 / -1;
+    }
+}
+main{
+    
     .container__content--study{
         h1{
             text-align: center;

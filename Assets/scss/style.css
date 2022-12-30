@@ -149,25 +149,33 @@ a {
   }
 }
 
-main .container__content--aspirations {
+.container__skills {
+  margin-bottom: 64px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+}
+
+.container__skills .container__content--aspirations {
   text-align: center;
 }
 
-main .container__content--aspirations h1 {
-  padding-bottom: 16px;
+.container__skills .container__content--aspirations h1 {
+  margin-bottom: 16px;
 }
 
-main .container__content--aspirations p {
-  text-align: center;
+.container__skills .container__content--aspirations p {
+  text-align: justify;
   width: 90%;
   margin: 0 auto;
 }
 
-main .container__content--skills h1 {
+.container__skills .container__content--skills h1 {
   text-align: center;
 }
 
-main .container__content--skills ul {
+.container__skills .container__content--skills ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,12 +188,22 @@ main .container__content--skills ul {
       flex-wrap: wrap;
 }
 
-main .container__content--skills ul li {
+.container__skills .container__content--skills ul li {
   list-style: none;
 }
 
-main .container__content--skills ul li img {
+.container__skills .container__content--skills ul li img {
   width: 50px;
+}
+
+@media (max-width: 50em) {
+  .container__content--aspirations {
+    margin-bottom: 64px;
+  }
+  .container__content--aspirations,
+  .container__content--skills {
+    grid-column: 1 / -1;
+  }
 }
 
 main .container__content--study h1 {
