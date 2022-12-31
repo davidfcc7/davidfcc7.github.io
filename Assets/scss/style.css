@@ -206,6 +206,72 @@ a {
   }
 }
 
+.container__tabs .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 64px;
+  gap: 20px;
+}
+
+.container__tabs .tabs .tabs__button {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.container__tabs .tabs .tabs__button:hover {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+  border-radius: 0;
+}
+
+.container__tabs .tabs__content {
+  display: none;
+}
+
+.container__tabs .active {
+  display: block;
+}
+
+@media (max-width: 50em) {
+  .container__tabs .tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container__tabs .tabs .tabs__button {
+    text-align: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .container__tabs .tabs .tabs__button:hover {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border-bottom: 2px solid #1a1a1a;
+    border-radius: 0;
+    font-weight: bold;
+  }
+  .container__tabs .tabs__content {
+    display: none;
+  }
+  .container__tabs .active {
+    display: block;
+  }
+}
+
 main .container__content--study h1 {
   text-align: center;
 }
