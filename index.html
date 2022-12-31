@@ -27,6 +27,7 @@
             <img src="./Assets/Images/perfil.jpeg" alt="">
         </figure>
     </header>
+
     <main>
         <section class="container__skills">
             <section class="container__content--aspirations">
@@ -58,8 +59,8 @@
             <div id="tab-1" class="tabs__content active">
                 <section class="container__content--experience">
                     <h1 class="experience--title">Experiencia Laboral</h1>
-                    <ul>
-                        <li>
+                    <ul id="card__carousel">
+                        <li class="card">
                             <div class="content__experience">
                                 <h1>ATH (Grupo Aval)</h1>
                                 <h3>Diseñador Web y Administrador de Contenido</h3>
@@ -68,7 +69,7 @@
                                 <p>Trabaje con los portales Fiduciarios de Grupo Aval utilizando herramientas como Html, Css3, Sass, Bootstrap y Liferay</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="card">
                             <div class="content__experience">
                                 <h1>Ink Digital</h1>
                                 <h3>Diseñador Web y Soporte</h3>
@@ -76,7 +77,7 @@
                                 <p>Desempeñé el cargo como diseñador E-commerce principalmente, tambien colaboré en el diseño de paginas de aterrizaje, campañas publicitarias y administre servidores Apache, use herramientas como Wordpress, divi, elementor, cPanel, Owasp, GitHub, Whm, Ubuntu y Botstrap</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="card">
                             <div class="content__experience">
                                 <h1>Brutal Digital Agency</h1>
                                 <h3>Creador de campañas publicitarias</h3>
@@ -84,7 +85,7 @@
                                 <p>Trabaje en colaboracion con el área de Marketing realizando Alisis de Datos para mejorar los resultados de interactividad de las campañas publicitarias</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="card">
                             <div class="content__experience">
                                 <h1>Universidad de Cundinamarca</h1>
                                 <h3>Estudiante de Ingenieria de Sistemas</h3>
@@ -94,6 +95,8 @@
                         </li>
                     </ul>
                 </section>
+                <button id="prev__button"><</button>
+                <button id="next__button">></button>
             </div>
             <div id="tab-2" class="tabs__content"> 
                 <section class="container__projects">

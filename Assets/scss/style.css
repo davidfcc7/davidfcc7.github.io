@@ -282,8 +282,6 @@ main .container__content--study ul {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -342,8 +340,6 @@ main .container__content--experience ul {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -397,8 +393,6 @@ main .container__projects ul {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
