@@ -14,7 +14,7 @@ tabs__button.forEach(button=>{
     })
 })
 
-/* funcionalidad del slider con vanilla javascript */
+/* funcionalidad del slider con vanilla javascript (cambia de una vista) */
 
 const card__carousel=document.getElementById('card__carousel')
 const prev__button=document.getElementById('prev__button')
@@ -44,7 +44,7 @@ function updateCarousel(){
         if(i===valorInicial){
             card.style.display='block';
         }
-        if(i===valorInicial){
+        else if(i!==valorInicial){
             card.style.display='none';
         }
     }

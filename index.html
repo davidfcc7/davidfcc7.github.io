@@ -50,15 +50,35 @@
 
         <section class="container__tabs">
             <section class="tabs">
-                <a href="#tab-1" class="tabs__button" data-tab-content="tab-1">Experiencia</a>
-                <a href="#tab-2" class="tabs__button" data-tab-content="tab-2">Proyectos</a>
-                <a href="#tab-3" class="tabs__button" data-tab-content="tab-3">Estudios</a>
+                <a href="#tab-1" class="tabs__button" data-tab-content="tab-1">Proyectos</a>
+                <a href="#tab-2" class="tabs__button" data-tab-content="tab-2">Experiencia</a>
             </section>
             
 
             <div id="tab-1" class="tabs__content active">
+                <section class="container__content--projects">
+                    <h1 class="experience--title">Proyectos</h1>
+                    <ul id="card__carousel">
+                        <li class="card">
+                            <img src="./Assets/Images/diploma-basico-javascript_page-0001.jpg" alt="imagen diploma javascript" title="imagen diploma javascript">
+                        </li>
+                        <li class="card">
+                            <img src="./Assets/Images/diploma-css-grid-layout_page-0001.jpg" alt="imagen diploma css grid layout" title="imagen diploma css grid layout">
+                        </li>
+                        <li class="card">
+                            <img src="./Assets/Images/diploma-flexbox-css-grid_page-0001.jpg" alt="imagen diploma css grid" title="imagen diploma css grid">
+                        </li>
+                        <li class="card">
+                            <img src="./Assets/Images/diploma-git-github_page-0001.jpg" alt="imagen diploma gitHub" title="imagen diploma gitHub">
+                        </li>
+                    </ul>
+                </section>
+                <button id="prev__button"><</button>
+                <button id="next__button">></button>
+            </div>
+            <div id="tab-2" class="tabs__content">
                 <section class="container__content--experience">
-                    <h1 class="experience--title">Experiencia Laboral</h1>
+                    <h1>Experiencia Laboral</h1>
                     <ul id="card__carousel">
                         <li class="card">
                             <div class="content__experience">
@@ -95,31 +115,10 @@
                         </li>
                     </ul>
                 </section>
-                <button id="prev__button"><</button>
-                <button id="next__button">></button>
-            </div>
-            <div id="tab-2" class="tabs__content"> 
-                <section class="container__projects">
-                    <h1>Proyectos</h1>
-                </section>
-            </div>
-            <div id="tab-3" class="tabs__content">
-                <section class="container__content--study">
-                    <h1>Estudios</h1>
-                    <ul>
-                        <li><img src="./Assets/Images/diploma-basico-javascript_page-0001.jpg" alt="imagen diploma javascript" title="imagen diploma javascript"></li>
-                        <li><img src="./Assets/Images/diploma-css-grid-layout_page-0001.jpg" alt="imagen diploma css grid layout" title="imagen diploma css grid layout"></li>
-                        <li><img src="./Assets/Images/diploma-flexbox-css-grid_page-0001.jpg" alt="imagen diploma css grid" title="imagen diploma css grid"></li>
-                        <li><img src="./Assets/Images/diploma-git-github_page-0001.jpg" alt="imagen diploma gitHub" title="imagen diploma gitHub"></li>
-                    </ul>
-                </section>
             </div>
         </section>
         
     </main>
-    <footer>
-        
-    </footer>
-    <script src="./Assets/Js/main.js"></script>
+    <script src="./Assets/Js/main.js" defer></script>
 </body>
 </html>

@@ -137,6 +137,49 @@
     }
     .tabs__content{
         display: none;
+        position: relative;
+        .container__content--projects{
+            h1{
+                text-align: center;
+            }
+            .experience--title{
+                text-align: center;
+                margin-bottom: 64px;
+                @include medium{
+                    margin-bottom: 32px;
+                }
+            }
+            ul{
+                @include section__knowledge--list;
+                li{
+                    list-style: none;
+                    text-align: center;
+                    img{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        #prev__button,
+        #next__button{
+            background-color: white;
+            border: none;
+            color: #1a1a1a;
+            font-size: 64px;
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+            @include medium{
+                top: 56%;
+                font-size: 32px;
+            }
+        }
+        #prev__button{
+            left: 20%;
+        }
+        #next__button{
+            right: 20%;
+        }
     }
     .active{
         display: block;
@@ -166,96 +209,6 @@
         }
         .active{
             display: block;
-        }
-    }
-}
-
-
-
-
-
-
-
-main{
-    
-    .container__content--study{
-        h1{
-            text-align: center;
-        }
-        ul{
-            @include section__knowledge--list;
-            li{
-                list-style: none;
-                img{
-                    width: 300px;
-                    border-radius: 20px;
-                }
-            }
-        }
-        .container__button{
-            @include container__button;
-            button:hover{
-                @include button--hover;
-            }
-        }
-    }
-    .container__content--experience{
-        .experience--title{
-            text-align: center;
-        }
-        h1,h3,h4{
-            padding-bottom: 16px;
-            font-weight: bold;
-        }
-        ul{
-            @include section__knowledge--list;
-            li{
-                list-style: none;
-                border: 1px solid lightgrey;
-                padding: 10px;
-                border-radius: 25px;
-                width: 300px;
-            }
-        }
-        .container__button{
-            @include container__button;
-            button:hover{
-                @include button--hover;
-            }
-        }
-    }
-    .container__projects{
-        h1{
-            text-align: center;
-            padding-bottom: 16px;
-        }
-        ul{
-            @include section__knowledge--list;
-            li{
-                list-style: none;
-                img{
-                    width: 300px;
-                    border-radius: 20px;
-                }
-            }
-        }
-    }
-    
-}
-
-footer{
-    ul{
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        li{
-            list-style: none;
-            a{
-                text-decoration: none;
-                img{
-                    width: 50px;
-                }
-            }
         }
     }
 }
