@@ -51,3 +51,36 @@ function updateCarousel(){
 }
 
 updateCarousel()
+
+/* funcionalidad acordios de experiencia */
+
+var titleExperience = document.querySelectorAll('.title-experience'); 
+var contentExperience = document.querySelectorAll('.content-experience'); 
+
+titleExperience.forEach((title) => { 
+    title.addEventListener('click', (event) => { 
+        event.preventDefault(); 
+        var header = event.target; 
+        var content = header.nextElementSibling; 
+        /* var arrowDown = header.querySelector('.arrow-down'); */ 
+        /* var arrowUp = header.querySelector('.arrow-up');  */
+        if(content.style.display === 'block'){ 
+            content.style.display = 'none'; 
+            /* arrowDown.style.display = 'inline-block'; 
+            arrowUp.style.display = 'none'; */ 
+        }else { 
+            contentExperience.forEach((content) => { 
+                content.style.display = 'none'; 
+            }); 
+            /* acordion.forEach((title) =>{ 
+                var arrowDown = title.querySelector('.arrow-down'); 
+                var arrowUp = title.querySelector('.arrow-up'); 
+                arrowDown.style.display = 'inline-block'; 
+                arrowUp.style.display = 'none'; 
+            }); */ 
+            content.style.display = 'block'; 
+            /* arrowDown.style.display = 'none'; 
+            arrowUp.style.display = 'inline-block';  */
+        } 
+    }); 
+});
