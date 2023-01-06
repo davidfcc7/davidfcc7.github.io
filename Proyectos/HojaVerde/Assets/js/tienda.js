@@ -118,8 +118,9 @@ function botonComprarClicked () {
   console.log(shoppingCartItems);
   console.log('Total: '+total);
   console.log(containerTableDetailsProducts.values)
-  /* const productWhatsapp = 'https://wa.me/3058804870/?text=' + elementsTitle;
-  window.location.href = productWhatsapp */
+  const productWhatsapp = 'https://wa.me/3058804870/?text=' + elements;
+  /* window.location.href = productWhatsapp; */
+  console.log(productWhatsapp);
 }
 
 
