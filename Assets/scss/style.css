@@ -56,6 +56,22 @@ a {
   display: block;
 }
 
+.tabs__button {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.tabs__button:hover {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+  border-radius: 0;
+}
+
 .container__perfil {
   display: -ms-grid;
   display: grid;
@@ -206,6 +222,10 @@ a {
   }
 }
 
+.container__tabs {
+  margin-bottom: 64px;
+}
+
 .container__tabs .tabs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,29 +237,9 @@ a {
   gap: 20px;
 }
 
-.container__tabs .tabs .tabs__button {
-  text-decoration: none;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  background-color: #1a1a1a;
-  color: white;
-}
-
-.container__tabs .tabs .tabs__button:hover {
-  background-color: #ffffff;
-  color: #1a1a1a;
-  border-bottom: 2px solid #1a1a1a;
-  border-radius: 0;
-}
-
 .container__tabs .tabs__content {
   display: none;
   position: relative;
-}
-
-.container__tabs .tabs__content .container__content--projects h1 {
-  text-align: center;
 }
 
 .container__tabs .tabs__content .container__content--projects .experience--title {
@@ -253,7 +253,7 @@ a {
   }
 }
 
-.container__tabs .tabs__content .container__content--projects ul {
+.container__tabs .tabs__content .container__content--projects #card__carousel {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,13 +266,34 @@ a {
           justify-content: center;
 }
 
-.container__tabs .tabs__content .container__content--projects ul li {
+.container__tabs .tabs__content .container__content--projects #card__carousel .card {
   list-style: none;
   text-align: center;
 }
 
-.container__tabs .tabs__content .container__content--projects ul li img {
+.container__tabs .tabs__content .container__content--projects #card__carousel .card .img-project {
   width: 50%;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 50em) {
+  .container__tabs .tabs__content .container__content--projects #card__carousel .card .button-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+  }
 }
 
 .container__tabs .tabs__content .container__content--experience .title {
@@ -294,10 +315,12 @@ a {
   border-bottom: 2px solid lightgray;
   margin-bottom: 32px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .container__tabs .tabs__content .container__content--experience #card__carousel .card .content-experience {
   display: none;
+  padding-inline: 16px;
 }
 
 .container__tabs .tabs__content .container__content--experience #card__carousel .card .content-experience h3 {
@@ -312,13 +335,14 @@ a {
   font-size: 64px;
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   cursor: pointer;
 }
 
 @media (max-width: 50em) {
   .container__tabs .tabs__content #prev__button,
   .container__tabs .tabs__content #next__button {
-    top: 56%;
     font-size: 32px;
   }
 }
@@ -422,5 +446,21 @@ a {
 
 .open {
   display: block;
+}
+
+.tabs__button {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.tabs__button:hover {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+  border-radius: 0;
 }
 /*# sourceMappingURL=style.css.map */
