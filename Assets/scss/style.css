@@ -390,6 +390,25 @@ a {
   }
 }
 
+.container__certificates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  row-gap: 50px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  padding-inline: 50px;
+}
+
+.container__certificates__img {
+  width: 300px;
+}
+
 @font-face {
   font-family: "Quicksand-Bold";
   src: url("../Fonts/Quicksand-Bold.ttf");
