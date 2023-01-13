@@ -32,20 +32,20 @@
 }
 
 h1 {
-  font-size: clamp(24px, 5vw, 32px);
+  font-size: clamp(20px, 5vw, 24px);
 }
 
 h2 {
-  font-size: clamp(20px, 5vw, 28px);
+  font-size: clamp(18px, 5vw, 22px);
 }
 
 h3 {
-  font-size: clamp(16px, 5vw, 24px);
+  font-size: clamp(16px, 5vw, 20px);
 }
 
 p,
 a {
-  font-size: clamp(12px, 5vw, 20px);
+  font-size: clamp(12px, 5vw, 16px);
 }
 
 .close {
@@ -424,20 +424,20 @@ a {
 }
 
 h1 {
-  font-size: clamp(24px, 5vw, 32px);
+  font-size: clamp(20px, 5vw, 24px);
 }
 
 h2 {
-  font-size: clamp(20px, 5vw, 28px);
+  font-size: clamp(18px, 5vw, 22px);
 }
 
 h3 {
-  font-size: clamp(16px, 5vw, 24px);
+  font-size: clamp(16px, 5vw, 20px);
 }
 
 p,
 a {
-  font-size: clamp(12px, 5vw, 20px);
+  font-size: clamp(12px, 5vw, 16px);
 }
 
 .close {
