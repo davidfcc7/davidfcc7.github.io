@@ -9,134 +9,44 @@
 </head>
 <body class="background">
     <div class="card-profile">
-        <div class="card-profile-photo">
-            <figure class="container__img--perfil">
+        <div class="card-profile-container">
+            <figure class="card-profile-photo">
                 <img src="./Assets/Images/perfil.jpeg" alt="">
             </figure>
-        </div>
-    </div>
-
-    
-
-
-
-    <header class="container__perfil">
-        <section class="container__content--perfil">
-            <h1>David Felipe Caicedo Canchón</h1>
-            <h2>Ingeniero de Sistemas</h2>
-            <h3>Desarrollador frontend</h3>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/david-felipe-caicedo-canchón-b41410a2/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="icono de linkedin"></a></li>
-                <li><a href="https://github.com/davidfcc7" target="_blank"><img src="https://img.icons8.com/glyph-neue/256/FFFFFF/github.png" alt="icono de github"></a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=573058804870" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3536/3536445.png" alt="icono whatsapp"></a></li>
-                <li><a href="mailto:davidfcc7@gmail" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="icono de gmail"></a></li>
+            <ul class="card-profile-socials">
+                <li class="social"> 
+                    <a href="https://www.linkedin.com/in/david-felipe-caicedo-canchón-b41410a2/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="icono de linkedin">
+                    </a>
+                </li>
+                <li class="social">
+                    <a href="https://github.com/davidfcc7" target="_blank">
+                        <img src="https://img.icons8.com/glyph-neue/256/FFFFFF/github.png" alt="icono de github">
+                    </a>
+                </li>
+                <li class="social">
+                    <a href="https://api.whatsapp.com/send?phone=573058804870" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536445.png" alt="icono whatsapp">
+                    </a>
+                </li>
+                <li class="social">
+                    <a href="mailto:davidfcc7@gmail" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="icono de gmail">
+                    </a>
+                </li>
             </ul>
-            <section class="CV">
-                <a href="./Assets/Documents/Hoja-de-vida-David.pdf" target="_blank" download>Descargar Hoja de Vida</a>
-            </section>
-        </section>
-        
-    </header>
-
-    <main>
-        <section class="container__skills">
-            <section class="container__content--aspirations">
-                <h1>Aspiraciones</h1>
-                <p>Deseo convertirme en un buen desarrollador frontend por eso dedico mi tiempo libre a estudiar y aprender nuevas cosas que me puedan ayudar a llegar a mi objetivo.</p>
-            </section>
-            <section class="container__content--skills">
-                <h1>Habilidades</h1>
-                <ul>
-                    <li class="html"><img src="./Assets/Images/figma.png" alt="icono de figma" title="icono de figma"></li>
-                    <li class="html"><img src="./Assets/Images/html5.png" alt="icono html5" title="icono de html5"></li>
-                    <li class="css"><img src="./Assets/Images/css3.png" alt="icono css3" title="icono de css3"></li>
-                    <li class="sass"><img src="./Assets/Images/sass.png" alt="icono sass" title="icono de sass"></li>
-                    <li class="illustrator"><img src="./Assets/Images/illustrator.png" alt="icono illustrator" title="icono de illustrator"></li>
-                    <li class="javaScript"><img src="./Assets/Images/javascript.png" alt="icono javascript" title="icono de JavaScript"></li>
-                    <li class="jQuery"><img src="./Assets/Images/jquery.png" alt="icono jquery" title="icono de JQuery"></li>
-                </ul>
-            </section>
-        </section>
-
-        <section class="container__tabs ">
-            <section class="tabs">
-                <a href="#tab-1" class="tabs__button" data-tab-content="tab-1">Proyectos</a>
-                <a href="#tab-2" class="tabs__button" data-tab-content="tab-2">Experiencia</a>
-                <a href="#tab-3" class="tabs__button" data-tab-content="tab-3">Certificados</a>
-            </section>
-            
-
-            <div id="tab-1" class="tabs__content active">
-                <section class="container__content--projects">
-                    <h1 class="experience--title">Proyectos</h1>
-                    <ul id="card__carousel">
-                        <li class="card">
-                            <img class="img-project" src="./Assets/Images/proyectos/project-snap.png" alt="index de un proyecto" title="imagen proyecto snap">
-                            <div class="button-nav">
-                                <a class="tabs__button" href="./Proyectos/dropdown-nav/index.html" target="_blank">Ver Proyecto</a>
-                                <a class="tabs__button" href="https://github.com/davidfcc7/davidfcc7.github.io/tree/main/Proyectos/dropdown-nav" target="_blank">Ver Código</a>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <img class="img-project" src="./Assets/Images/proyectos/proyecto-css-grid.png" alt="index de un proyecto" title="imagen proyecto food">
-                            <div class="button-nav">
-                                <a class="tabs__button" href="./Proyectos/proyecto-css-grid/index.html" target="_blank">Ver Proyecto</a>
-                                <a class="tabs__button" href="https://github.com/davidfcc7/davidfcc7.github.io/tree/main/Proyectos/proyecto-css-grid" target="_blank">Ver Código</a>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-                <button id="prev__button"><</button>
-                <button id="next__button">></button>
-            </div>
-            <div id="tab-2" class="tabs__content">
-                <section class="container__content--experience">
-                    <h1 class="title">Experiencia Laboral</h1>
-                    <ul id="card__carousel">
-                        <li class="card">
-                            <h1 class="title-experience">ATH (Grupo Aval) Noviembre 2021 - Actualmente</h1>
-                            <div class="content-experience">
-                                <h3>Diseñador Web y Administrador de Contenido</h3>
-                                <p>Desempeño el cargo de diseñador realizando maquetacion de paginas web y de aterrizaje para el Banco Popular, utilizo herramientas como Html, Css3, Preprocesador Sass, JavaScript, Jquery y WCM IBM, tambien utilizo Illustrator y figma.</p>
-                                <p>Trabaje con los portales Fiduciarios de Grupo Aval utilizando herramientas como Html, Css3, Sass, Bootstrap y Liferay</p>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <h1 class="title-experience">Brutal Digital Agency Junio 2019 - Noviembre 2019</h1>
-                            <div class="content-experience">
-                                <h3>Creador de campañas publicitarias</h3>
-                                <p>Trabaje en colaboracion con el área de Marketing realizando Analisis de Datos para mejorar los resultados de interactividad de las campañas publicitarias</p>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <h1 class="title-experience">Ink Digital Marzo 2018 - Julio 2021</h1>
-                            <div class="content-experience">
-                                <h3>Diseñador Web y Soporte</h3>
-                                <p>Desempeñé el cargo como diseñador E-commerce principalmente, tambien colaboré en el diseño de paginas de aterrizaje, campañas publicitarias y administre servidores Apache, use herramientas como Wordpress, divi, elementor, cPanel, Owasp, GitHub, Whm, Ubuntu y Botstrap</p>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <h1 class="title-experience">Universidad de Cundinamarca Febrero 2017 - Febrero 2020</h1>
-                            <div class="content-experience">
-                                <h3>Estudiante de Ingenieria de Sistemas</h3>
-                                <p>Realice la contruccion de un prototipo de trampa electronica inteligente para la captura y toma de imagenes de mariposas para el reconocimiento de especies con Inteligencia Artificial, utilice herramientas como Matlab, Python, Redes Neuronales Convolucionales y Raspberry Pi</p>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-            <div id="tab-3" class="tabs__content">
-                <section class="container__certificates">
-                    <img class="container__certificates__img" src="./Assets/Images/diploma-basico-javascript_page-0001.jpg" alt="certificado en JavaScript" title="javaScript">
-                    <img class="container__certificates__img" src="./Assets/Images/diploma-css-grid-layout_page-0001.jpg" alt="certificado de css grid layout" title="css grid layout">
-                    <img class="container__certificates__img" src="./Assets/Images/diploma-definitivohtml-css_page-0001.jpg" alt="certificado en html y css" title="html y css">
-                    <img class="container__certificates__img" src="./Assets/Images/diploma-git-github_page-0001.jpg" alt="certificado en git / github" title="git y github">
-                    <img class="container__certificates__img" src="./Assets/Images/diploma-mobile-first_page-0001.jpg" alt="certificado en mobile first" title="mobile first">
-                </section>
-            </div>
-        </section>
-        
-    </main>
+        </div>
+        <div class="card-profile-text">
+            <p class="card-profile-text-name">David Felipe Caicedo Canchón</p>
+            <p class="card-profile-text-proffesion">Ingeniero de Sistemas</p>
+            <p class="card-profile-text-speciality">Desarrollador Front end</p>
+        </div>
+        <ul class="card-profile-options">
+            <li class="option"><a href="#tab-1" class="tabs__button" data-tab-content="tab-1">Proyectos</a></li>
+            <li class="option"><a href="#tab-2" class="tabs__button" data-tab-content="tab-2">Experiencia</a></li>
+            <li class="option"><a href="#tab-3" class="tabs__button" data-tab-content="tab-3">Aprendizaje</a></li>
+        </ul>
+    </div>
     <script src="./Assets/Js/main.js" defer></script>
 </body>
 </html>
