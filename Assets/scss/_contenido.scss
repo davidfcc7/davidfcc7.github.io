@@ -2,6 +2,9 @@
 @import './mixin';
 @import './global';
 
+.background{
+    background-color: #1a1a1a;
+}
 
 .container__perfil{
     display: grid;

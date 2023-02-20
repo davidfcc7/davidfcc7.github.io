@@ -72,6 +72,10 @@ a {
   border-radius: 0;
 }
 
+.background {
+  background-color: #1a1a1a;
+}
+
 .container__perfil {
   display: -ms-grid;
   display: grid;
