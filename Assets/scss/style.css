@@ -1,34 +1,11 @@
-@font-face {
-  font-family: "Quicksand-Bold";
-  src: url("../Fonts/Quicksand-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Quicksand-Light";
-  src: url("../Fonts/Quicksand-Light.ttf");
-}
-
-@font-face {
-  font-family: "Quicksand-Medium";
-  src: url("../Fonts/Quicksand-Medium.ttf");
-}
-
-@font-face {
-  font-family: "Quicksand-Regular";
-  src: url("../Fonts/Quicksand-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Quicksand-SemiBold";
-  src: url("../Fonts/Quicksand-SemiBold.ttf");
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shantell+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shantell+Sans:wght@300;400;500;600;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: monospace;
+  font-family: 'Roboto', sans-serif;
 }
 
 .background {
@@ -76,6 +53,12 @@
   }
 }
 
+@media (max-width: 25em) {
+  .card-profile {
+    grid-column: 1 / -1;
+  }
+}
+
 .card-profile-container {
   background-color: #3B83BD;
   border-top-left-radius: 26px;
@@ -98,7 +81,8 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-block: 50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .card-profile-socials {
@@ -117,16 +101,24 @@
 }
 
 .card-profile-socials li.social a img {
-  width: 50px;
+  width: 30px;
 }
 
 .card-profile-text {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .card-profile-text-name, .card-profile-text-proffesion, .card-profile-text-speciality {
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
+  color: #ffffff;
+}
+
+.card-profile-description {
+  padding-inline: 50px;
+  margin-bottom: 50px;
+  text-align: justify;
+  font-size: 16px;
 }
 
 .card-profile-options {
@@ -152,37 +144,28 @@
   border-radius: 10px;
 }
 
+@media (max-width: 25em) {
+  .card-profile-options {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+}
+
 /* ------------------------------------------------------------------------------------------------ */
-@font-face {
-  font-family: "Quicksand-Bold";
-  src: url("../Fonts/Quicksand-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Quicksand-Light";
-  src: url("../Fonts/Quicksand-Light.ttf");
-}
-
-@font-face {
-  font-family: "Quicksand-Medium";
-  src: url("../Fonts/Quicksand-Medium.ttf");
-}
-
-@font-face {
-  font-family: "Quicksand-Regular";
-  src: url("../Fonts/Quicksand-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Quicksand-SemiBold";
-  src: url("../Fonts/Quicksand-SemiBold.ttf");
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: monospace;
+  font-family: 'Roboto', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
