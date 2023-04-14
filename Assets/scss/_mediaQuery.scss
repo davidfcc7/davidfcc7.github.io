@@ -1,15 +1,39 @@
-@mixin large {
-  @media (max-width: 75em) {
-    @content;
+@media (max-width: 100em) {
+  
+}
+@media (max-width: 90em) {
+  
+}
+@media (max-width: 80em) {
+  
+}
+@media (max-width: 70em) {
+  .g-column-4-9-70em{
+    grid-column: 4/9;
   }
 }
-@mixin medium {
-    @media (max-width: 50em) {
-      @content;
-    }
+@media (max-width: 60em) {
+  
 }
-@mixin small {
-  @media (max-width: 25em) {
-    @content;
+@media (max-width: 50em) {
+  .g-column-2-12-50em{
+    grid-column: 2/12;
   }
+  .m-inline-10-50em{
+    margin-inline: 10px;
+  }
+}
+@media (max-width: 40em) {
+  .g-column-1--1-40em{
+    grid-column: 1/-1;
+  }
+}
+@media (max-width: 30em) {
+  
+}
+@media (max-width: 20em) {
+  
+}
+@media (max-width: 10em) {
+  
 }
