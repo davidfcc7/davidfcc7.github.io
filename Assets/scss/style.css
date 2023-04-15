@@ -33,31 +33,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.card-profile-socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 16px;
-  margin-bottom: 20px;
-}
-
-.card-profile-socials li.social {
-  list-style: none;
-}
-
-.card-profile-socials li.social a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.card-profile-socials li.social a i {
-  font-size: 32px;
-  color: #ffffff;
-}
-
 .card-profile-description {
   padding-inline: 20px;
   margin-bottom: 50px;
@@ -343,6 +318,10 @@
   color: #482ad0;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 /* Display */
 .d-block {
   display: block;
@@ -386,7 +365,19 @@
   font-size: 24px;
 }
 
+.fs-4 {
+  font-size: 32px;
+}
+
 /* Grid*/
+.gap-1 {
+  gap: 8px;
+}
+
+.gap-2 {
+  gap: 16px;
+}
+
 .g-column-1--1 {
   grid-column: 1/-1;
 }
@@ -427,6 +418,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/* List */
+.ls-none {
+  list-style: none;
 }
 
 /* Margin */
@@ -483,6 +479,10 @@
 /* Text */
 .ta-center {
   text-align: center;
+}
+
+.td-none {
+  text-decoration: none;
 }
 
 /* width */

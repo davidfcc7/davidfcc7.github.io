@@ -91,6 +91,9 @@
 .color-8{
     color: $color-8;
 }
+.cursor-pointer{
+    cursor: pointer;
+}
 /* Display */
 .d-block{
     display: block;
@@ -117,7 +120,16 @@
 .fs-3{
     font-size: 24px;
 }
+.fs-4{
+    font-size: 32px;
+}
 /* Grid*/
+.gap-1{
+    gap: 8px;
+}
+.gap-2{
+    gap: 16px;
+}
 .g-column-1--1{
     grid-column: 1/-1;
 }
@@ -143,6 +155,10 @@
 /* Justify*/
 .jc-center{
     justify-content: center;
+}
+/* List */
+.ls-none{
+    list-style: none;
 }
 /* Margin */
 .m-inline-10{
@@ -185,6 +201,9 @@
 /* Text */
 .ta-center{
     text-align: center;
+}
+.td-none{
+    text-decoration: none;
 }
 /* width */
 .w-1{

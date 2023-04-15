@@ -2,23 +2,6 @@
 @import './global';
 
 .card-profile{
-    &-socials{
-        display: flex;
-        justify-content: center;
-        gap: 16px;
-        margin-bottom: 20px;
-        li.social{
-            list-style: none;
-            a{
-                text-decoration: none;
-                cursor: pointer;
-                i{
-                    font-size: 32px;
-                    color: #ffffff;
-                }
-            }
-        }
-    }
     &-description{
         padding-inline: 20px;
         margin-bottom: 50px;
