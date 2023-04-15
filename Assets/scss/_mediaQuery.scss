@@ -9,7 +9,7 @@
 }
 @media (max-width: 70em) {
   .g-column-4-9-70em{
-    grid-column: 4/9;
+    grid-column: 4/9 !important;
   }
 }
 @media (max-width: 60em) {
@@ -17,15 +17,27 @@
 }
 @media (max-width: 50em) {
   .g-column-2-12-50em{
-    grid-column: 2/12;
+    grid-column: 2/12 !important;
   }
-  .m-inline-10-50em{
-    margin-inline: 10px;
+  .mi-1-50em{
+    margin-inline: 8px !important;
   }
 }
 @media (max-width: 40em) {
   .g-column-1--1-40em{
-    grid-column: 1/-1;
+    grid-column: 1/-1 !important;
+  }
+  .jc-center-40em{
+    justify-content: center !important;
+  } 
+  .ai-center-40em{
+    align-items: center !important;
+  } 
+  .fd-column-40em{
+    flex-direction: column !important;
+  } 
+  .gap-3-40em{
+    gap: 24px !important;
   }
 }
 @media (max-width: 30em) {

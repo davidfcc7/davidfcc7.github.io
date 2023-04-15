@@ -1,37 +1,6 @@
 @import './mediaQuery';
 @import './global';
 
-.card-profile{
-    &-description{
-        padding-inline: 20px;
-        margin-bottom: 50px;
-        text-align: center;
-        font-size: 16px;
-    }
-    &-options{
-        display: flex;
-        justify-content: space-evenly;
-        margin-bottom: 50px;
-        .option{
-            list-style: none;
-            .tabs__button{
-                text-decoration: none;
-                color: #ffffff;
-                font-weight: bold;
-                background-color: #3B83BD;
-                padding: 10px;
-                border-radius: 4px;
-            }
-        }
-        /* @include small{
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            gap: 30px;
-        } */
-    }
-}
-
 .navbar-prev-index{
     display: grid;
     grid-column: 1 / -1;
