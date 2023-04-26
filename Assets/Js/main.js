@@ -1,15 +1,15 @@
 /* funcionalidad de tabs con vanilla javascript */
 
-const tabs__button=document.querySelectorAll('.tabs__button')
-const tabs__content=document.querySelectorAll('.tabs__content')
+const tabs__button=document.querySelectorAll('.tabs__button');
+const tabs__content=document.querySelectorAll('.tabs__content');
 
 tabs__button.forEach(button=>{
     button.addEventListener('click',()=>{
         const tabContentId=button.dataset.tabContent
         const tabContent=document.getElementById(tabContentId)
         tabs__content.forEach(content=>{
-            content.classList.remove('active')
-            tabContent.classList.add('active')
+            content.style.display = "none";
+            tabContent.style.display = "block";
         })
     })
 })
@@ -52,7 +52,7 @@ function updateCarousel(){
 
 updateCarousel()
 
-/* funcionalidad acordios de experiencia */
+/* funcionalidad acordion de experiencia */
 
 var titleExperience = document.querySelectorAll('.title-experience'); 
 var contentExperience = document.querySelectorAll('.content-experience'); 

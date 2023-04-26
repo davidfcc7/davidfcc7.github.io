@@ -16,6 +16,9 @@
   
 }
 @media (max-width: 50em) {
+  .g-column-2-6-50em{
+    grid-column: 2/6;
+  }
   .g-column-2-12-50em{
     grid-column: 2/12 !important;
   }
@@ -41,7 +44,9 @@
   }
 }
 @media (max-width: 30em) {
-  
+  .g-column-2-12-30em{
+    grid-column: 2/12;
+  }
 }
 @media (max-width: 20em) {
   

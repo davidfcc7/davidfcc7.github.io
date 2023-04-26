@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,35 +9,43 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>Projects</title>
 </head>
-<body class="background">
-    <nav class="navbar-prev-index">
-        <a class="navbar-prev-index_link" href="./index.html">
-            <i class="ri-home-5-line icon-home"></i>
-            <p class="navbar-prev-index_home">
+
+<body class="bg-color-3">
+    <nav class="d-grid g-column-1--1 h-calc-1 jc-center ai-center">
+        <a class="td-none d-flex fd-column ai-center" href="./index.html">
+            <i class="ri-home-5-line fs-4 color-2 mt-1 ta-center"></i>
+            <p class="fs-3 color-2">
                 Home
             </p>
         </a>
     </nav>
-    <div class="block">
-        <a href="./Proyectos/proyecto-css-grid/index.html" target="_blank" class="block_project">
-            <figure>
-                <img src="./Assets/Images/proyectos/proyecto-css-grid.png" alt="imagen de proyecto">
-            </figure>
-            <p class="block_description">
-                Herramientas: Html, Css, Sass, Movile First
-            </p>
-        </a>
-    </div>
 
-    <div class="block-1">
-        <a href="./Proyectos/dropdown-nav/index.html" target="_blank" class="block_project">
-            <figure>
-                <img src="./Assets/Images/proyectos/project-snap.png" alt="imagen de proyecto">
-            </figure>
-            <p class="block_description">
-                Herramientas: Html, Css, Sass, Movile First, JavaScript
-            </p>
-        </a>
+    <div class="tabs">
+        <ul class="d-flex jc-space-around ls-none mblock-3">
+            <li class="bg-color-2 tabs__button color-3 cursor-pointer pblock-3 w-4p ta-center br-1" data-tab-content="tab1">Proyectos</li>
+            <li class="bg-color-2 tabs__button color-3 cursor-pointer pblock-3 w-4p ta-center br-1" data-tab-content="tab2">Componentes</li>
+        </ul>
+
+        <div class="tabs__container">
+            <div class="tabs__content active" id="tab1">
+                <div class="d-flex jc-center fw-wrap pblock-5 gap-2">
+                    <a href="./Proyectos/proyecto-css-grid/index.html" target="_blank"
+                        class="td-none d-flex fd-column ai-center">
+                        <img class="w-3" src="./Assets/Images/proyectos/proyecto-css-grid.png" alt="imagen de proyecto">
+                    </a>
+    
+                    <a href="./Proyectos/dropdown-nav/index.html" target="_blank"
+                        class="td-none d-flex fd-column ai-center">
+                        <img class="w-3" src="./Assets/Images/proyectos/project-snap.png" alt="imagen de proyecto">
+                    </a>
+                </div>
+            </div>
+            <div class="tabs__content" id="tab2">
+                <h1 class="color-2">Esto será una seccion de componentes</h1>
+            </div>
+        </div>
     </div>
+    <script src="./Assets/Js/main.js"></script>
 </body>
+
 </html>
