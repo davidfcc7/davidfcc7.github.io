@@ -341,6 +341,10 @@
 }
 
 /* Margin */
+.m-0-auto {
+  margin: 0 auto;
+}
+
 .m-inline-10 {
   margin-inline: 10px;
 }
