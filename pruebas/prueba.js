@@ -90,3 +90,69 @@ for(const plan in planesPlatzi){
         console.log(`Mi plan es: ${Basic} y ${planesPlatzi[plan]}`);
     } 
 }
+
+/* ¿Qué es un ciclo? */
+/* Es una forma de realizar tareas repetitivas */
+
+/* ¿Qué tipos de ciclos existen en JavaScript? */
+/* For, While */
+
+/* ¿Qué es un ciclo infinito y por qué es un problema? */
+/* Es un ciclo sin fin, que no tiene forma de retornar un resultado, es un problema por que no permite la finalizacion del codigo y no permite realizar las siguientes tareas */
+
+/* ¿Puedo mezclar ciclos y condicionales? */
+/* Si */
+
+/* Replica el comportamiento de los siguientes ciclos for utilizando ciclos while: */
+
+for (let i = 0; i < 5; i++) {
+    console.log("El valor de i es: " + i);
+}
+
+for (let i = 10; i >= 2; i--) {
+    console.log("El valor de i es: " + i);
+}
+
+var i = 0;
+while(i < 5){
+    console.log("El valor de i es: " + i);
+    i++;
+}
+
+var i = 10;
+while(i >= 2){
+    console.log("El valor de i es: " + i);
+    i--;
+}
+
+/* Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar. */
+
+var usuario = prompt("Cuanto es 2 + 2 ?").valueOf();
+var usuarioNum = parseInt(usuario);
+
+while(true){
+    if(usuarioNum == 4){
+        alert("Fantastico! respuesta correcta");
+        break;
+    } else {
+        usuario = prompt("Respuesta incorrecta, inténtalo de nuevo. Cuanto es 2 + 2 ?");
+        usuarioNum = parseInt(usuario);
+    }
+}
+
+/* ¿Qué es un array? */
+/* Un arreglo es un conjunto de elementos del mismo tipo */
+
+/* ¿Qué es un objeto? */
+/* Es un conjunto de atributos asignados a un solo elemento */
+
+/* ¿Cuándo es mejor usar objetos o arrays? */
+/* los objetos son utilizados cuando se desea utilizar un sistema similar a una base de datos ya que se puede llamar una clave que a su vez trae un valor, miestras que los arreglos
+se llaman segun la posicion del elemento */
+
+/* ¿Puedo mezclar arrays con objetos o incluso objetos con arrays? */
+/* si */
+
+/* Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento. */
+/* Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo). */
+/* Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo). */
