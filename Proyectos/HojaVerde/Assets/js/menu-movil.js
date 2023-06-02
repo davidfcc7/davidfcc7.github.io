@@ -6,4 +6,8 @@ $(document).ready(() => {
     $('.icono-home-cart').click(() => {
         $('.cart-products').toggleClass('active');
     })
+
+    $('.icono-home-search').click(() => {
+        $('.search-products').toggleClass('active');
+    })
 })

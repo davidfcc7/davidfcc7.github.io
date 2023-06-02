@@ -114,13 +114,22 @@ function updateShoppingCartTotal() {
     updateShoppingCartTotal();
   }
 
-function botonComprarClicked () {
-  console.log(shoppingCartItems);
-  console.log('Total: '+total);
-  console.log(containerTableDetailsProducts.values)
-  const productWhatsapp = 'https://wa.me/3058804870/?text=' + elements;
-  /* window.location.href = productWhatsapp; */
-  console.log(productWhatsapp);
-}
+  function botonComprarClicked () {
+    let message = 'Hola, me gustaría comprar estos productos: ';
+    
+    shoppingCartItems.forEach((shoppingCartItem) => {
+      const productTitle = shoppingCartItem.querySelector('.shoppingCartItemTitle').textContent;
+      const productPrice = shoppingCartItem.querySelector('.productPriceCart').textContent;
+      const productQuantity = shoppingCartItem.querySelector('.units-product-cart').value;
+      
+      message += productTitle + ' - ' + productQuantity + ' unidad(es) - ' + productPrice + '/n';
+    });
+  
+    message += 'Total: ' + total;
+    
+    const productWhatsapp = 'https://wa.me/3058804870/?text=' + encodeURIComponent(message);
+    window.open(productWhatsapp);
+  }
+  
 
 

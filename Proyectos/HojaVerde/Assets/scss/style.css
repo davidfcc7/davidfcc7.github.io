@@ -10,6 +10,10 @@
 
 * {
   font-family: 'Roboto-Regular';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 header {
@@ -77,6 +81,13 @@ header .nav-menu .menu-movil ul.list-menu.active {
   transition: .4s;
 }
 
+header .nav-menu .icon-cart-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+
 header .nav-menu figure {
   margin: 0;
   padding: 0;
@@ -101,6 +112,10 @@ header .nav-menu .icono-home-cart figure svg {
 }
 
 header .nav-menu .icono-home-cart figure img {
+  width: 25px;
+}
+
+header .nav-menu .icono-home-search img {
   width: 25px;
 }
 
@@ -203,11 +218,14 @@ main .card-products .product .add-to-cart {
 }
 
 main .cart-products {
-  position: absolute;
+  position: fixed;
   visibility: hidden;
   background-color: white;
-  top: 10%;
+  top: 48px;
   width: 100%;
+  height: 100vh;
+  overflow: auto;
+  overflow-y: scroll;
 }
 
 main .cart-products .title-cart {

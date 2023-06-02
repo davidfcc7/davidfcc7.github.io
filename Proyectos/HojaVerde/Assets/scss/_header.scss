@@ -46,6 +46,10 @@ header{
                 transition: .4s;
             }
         }
+        .icon-cart-search{
+            display: flex;
+            gap: 8px;
+        }
         figure{
             margin: 0;
             padding: 0;
@@ -64,6 +68,11 @@ header{
                 img{
                     width: 25px;
                 }
+            }
+        }
+        .icono-home-search{
+            img{
+                width: 25px;
             }
         }
     }
