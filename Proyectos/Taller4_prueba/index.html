@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Estilos para el slider y los controles */
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            flex: 0 0 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .slide-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-size: 18px;
+        }
+
+        .slider-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        /* Estilos para los botones */
+        button {
+            border: none;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        /* Estilos para los bullets */
+        .bullets {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .bullet {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .active-bullet {
+            background-color: #333;
+        }
+    </style>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide active">
+                <img src="https://cdn.pixabay.com/photo/2023/05/15/08/52/flower-7994489_1280.jpg" alt="Imagen 1">
+                <div class="slide-text">Texto para Imagen 1</div>
+            </div>
+            <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2023/07/28/10/17/machinery-8154964_640.jpg" alt="Imagen 2">
+                <div class="slide-text">Texto para Imagen 2</div>
+            </div>
+            <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2023/08/02/12/39/bird-8165143_640.jpg" alt="Imagen 3">
+                <div class="slide-text">Texto para Imagen 3</div>
+            </div>
+            <!-- Agrega más slides aquí -->
+        </div>
+        <div class="slider-controls">
+            <button class="prev-btn">Anterior</button>
+            <button class="pause-btn">Pausar</button>
+            <button class="play-btn">Reanudar</button>
+            <button class="next-btn">Siguiente</button>
+            <div class="bullets">
+                <!-- Los bullets se generan dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const slides = document.querySelectorAll(".slide");
+            const bulletsContainer = document.querySelector(".bullets");
+            let currentSlide = 0;
+            let autoPlayInterval;
+        
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    if (i === index) {
+                        slide.style.display = "block";
+                    } else {
+                        slide.style.display = "none";
+                    }
+                });
+        
+                // Actualizar bullets
+                const bullets = document.querySelectorAll(".bullet");
+                bullets.forEach((bullet, i) => {
+                    bullet.classList.remove("active-bullet");
+                    if (i === index) {
+                        bullet.classList.add("active-bullet");
+                    }
+                });
+            }
+        
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+                resetAutoPlay();
+            }
+        
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(currentSlide);
+                resetAutoPlay();
+            }
+        
+            function pauseAutoPlay() {
+                clearInterval(autoPlayInterval);
+            }
+        
+            function resetAutoPlay() {
+                clearInterval(autoPlayInterval);
+                autoPlayInterval = setInterval(nextSlide, 5000);
+            }
+        
+            function startAutoPlay() {
+                autoPlayInterval = setInterval(nextSlide, 5000);
+            }
+        
+            // Crear bullets
+            for (let i = 0; i < slides.length; i++) {
+                const bullet = document.createElement("div");
+                bullet.classList.add("bullet");
+                if (i === 0) {
+                    bullet.classList.add("active-bullet");
+                }
+                bullet.addEventListener("click", () => {
+                    showSlide(i);
+                    currentSlide = i;
+                    resetAutoPlay();
+                });
+                bulletsContainer.appendChild(bullet);
+            }
+        
+            // Iniciar el slider
+            showSlide(currentSlide);
+            startAutoPlay();
+        
+            // Eventos de botones
+            document.querySelector(".prev-btn").addEventListener("click", () => {
+                prevSlide();
+            });
+        
+            document.querySelector(".next-btn").addEventListener("click", () => {
+                nextSlide();
+            });
+        
+            document.querySelector(".pause-btn").addEventListener("click", () => {
+                pauseAutoPlay();
+            });
+        
+            document.querySelector(".play-btn").addEventListener("click", () => {
+                startAutoPlay();
+            });
+        });
+        
+    </script>
+</body>
+
+</html>
