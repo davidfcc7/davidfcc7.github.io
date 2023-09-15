@@ -1,5 +1,6 @@
 /* import React from "react";  */
 /* importacion nombrada y el nombre dentro de los corchetes se utiliza en el codigo de jsx*/
+import PropTypes from "prop-types";
 
 const MyButton = () =>{
     const title="Click Aquí";
@@ -12,13 +13,39 @@ const MyButton = () =>{
     };
     return <button className={classTitle2.padding}>{title}</button>
 }
+
+
+
 const Online = () =>{
     const text = "Online";
     const styles = "f-size-48 color-text text-center"
     return(
-        <p className={styles}>{text}</p>
+        <p className={styles}>{text}</p> 
     )
 }
+
+//* los props se utilizan para pasar varios valores por un mismo componente
+//* la propiedad props refiere a un objeto por ende podemos usar sus propiedades internas de objeto
+const TextDinamic = ({text}) =>{
+    const styleText = "text-center color-text f-size-48 p-24" ;
+    const styleFont = {
+        text: "text-center", 
+        color: "green",  
+        font: "f-size-24-important",
+        padding: "p-24"
+    };
+    const modifyFont = `${styleText} ${styleFont.font} ${styleFont.color}`;
+
+    
+    return <p className={modifyFont}>{text}</p>
+}
+
+//* indica que los PropTypes son obligatorios para que la funcionalidad sea efectiva, el usuario debe llenar obligaroriamente las propiedades de text en el componente invocado se puede usar mas de un pop por componente pero si sedeclara debe ser obligatorio que se llame en el componente invocado
+
+TextDinamic.propTypes = {
+    text: PropTypes.string.isRequired,
+}
+
 
 
 
@@ -67,6 +94,13 @@ const App = () => {
                         ))
                     }
                 </ul>
+            </section>
+            <section>
+                    <TextDinamic text="Texto 1" />
+                    <TextDinamic text="Texto 2" />
+                    <TextDinamic text="Texto 3" />
+                    <TextDinamic text="Texto 4" />
+                    <TextDinamic text="Texto 5" />
             </section>
         </>
         );

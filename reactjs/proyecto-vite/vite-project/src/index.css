@@ -6,8 +6,14 @@
 .color-text{
   color: red;
 }
+.green{
+  color: green !important;
+}
 .text-center{
   text-align: center;
+}
+.f-size-24-important{
+  font-size: 24px !important;
 }
 .f-size-48{
   font-size: 48px;
