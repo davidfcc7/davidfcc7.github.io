@@ -1,0 +1,13 @@
+$colors: ("Color1": "#FFFFFF",
+"color2": "#3C747BAB",
+"color3": "#448892",
+"color4": "#55A738");
+
+@each $name, $code in $colors{
+    .#{$name}{
+        color: $code;
+    }
+    .bg-#{$name}{
+        background-color: $code;
+    }
+}
