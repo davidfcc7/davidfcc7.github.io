@@ -1,34 +1,167 @@
-.Color1 {
-  color: "#FFFFFF";
+* {
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* --------------- Vars -------------------- */
+/* --------------- Maps -------------------- */
+/* --------------- Call Maps -------------------- */
+/* Colors */
+.color1 {
+  color: #FFFFFF;
 }
 
-.bg-Color1 {
-  background-color: "#FFFFFF";
+.bg-color1 {
+  background-color: #FFFFFF;
 }
 
 .color2 {
-  color: "#3C747BAB";
+  color: rgba(60, 116, 123, 0.6705882353);
 }
 
 .bg-color2 {
-  background-color: "#3C747BAB";
+  background-color: rgba(60, 116, 123, 0.6705882353);
 }
 
 .color3 {
-  color: "#448892";
+  color: #448892;
 }
 
 .bg-color3 {
-  background-color: "#448892";
+  background-color: #448892;
 }
 
 .color4 {
-  color: "#55A738";
+  color: #55A738;
 }
 
 .bg-color4 {
-  background-color: "#55A738";
+  background-color: #55A738;
 }
-.size1 {
-  font-size: 18px;
+
+/* Sizes */
+.p-xxxs {
+  padding: 8px;
+}
+
+.br-xxxs {
+  border-radius: 8px;
+}
+
+.p-xxs {
+  padding: 10px;
+}
+
+.br-xxs {
+  border-radius: 10px;
+}
+
+.p-xs {
+  padding: 12px;
+}
+
+.br-xs {
+  border-radius: 12px;
+}
+
+.p-s {
+  padding: 14px;
+}
+
+.br-s {
+  border-radius: 14px;
+}
+
+.p-m {
+  padding: 16px;
+}
+
+.br-m {
+  border-radius: 16px;
+}
+
+.p-l {
+  padding: 24px;
+}
+
+.br-l {
+  border-radius: 24px;
+}
+
+.p-xl {
+  padding: 32px;
+}
+
+.br-xl {
+  border-radius: 32px;
+}
+
+.p-xxl {
+  padding: 40px;
+}
+
+.br-xxl {
+  border-radius: 40px;
+}
+
+.p-xxxl {
+  padding: 48px;
+}
+
+.br-xxxl {
+  border-radius: 48px;
+}
+
+.p-xxxxl {
+  padding: 56px;
+}
+
+.br-xxxxl {
+  border-radius: 56px;
+}
+
+.p-xxxxxl {
+  padding: 64px;
+}
+
+.br-xxxxxl {
+  border-radius: 64px;
+}
+
+.p-xxxxxxl {
+  padding: 72px;
+}
+
+.br-xxxxxxl {
+  border-radius: 72px;
+}
+
+/* --------------- Mixins -------------------- */
+/* Margin Bottom */
+/* --------------- Styles Page -------------------- */
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  font-size: 16px;
+}
+
+main {
+  grid-column: 1/-1;
+}
+
+.section {
+  position: relative;
+}
+.section-container-img img {
+  width: 100%;
+}
+.section-container-information {
+  width: max-content;
+  position: absolute;
+  bottom: 72px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }

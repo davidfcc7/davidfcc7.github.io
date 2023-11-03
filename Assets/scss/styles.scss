@@ -1,0 +1,90 @@
+/* --------------- Vars -------------------- */
+
+$size-root: 16px;
+
+/* --------------- Maps -------------------- */
+
+$colors: (
+"color1": #FFFFFF,
+"color2": #3C747BAB,
+"color3": #448892,
+"color4": #55A738
+);
+
+$sizes:(
+    "xxxs": $size-root * 0.5,
+    "xxs": $size-root * 0.625,
+    "xs": $size-root * 0.75,
+    "s": $size-root * 0.875,
+    "m": $size-root * 1,
+    "l": $size-root * 1.5,
+    "xl": $size-root * 2,
+    "xxl": $size-root * 2.5,
+    "xxxl": $size-root * 3,
+    "xxxxl": $size-root * 3.5,
+    "xxxxxl": $size-root * 4,
+    "xxxxxxl": $size-root * 4.5
+
+);
+
+/* --------------- Call Maps -------------------- */
+
+/* Colors */
+@each $name, $code in $colors{
+    .#{$name}{
+        color: $code;
+    }
+    .bg-#{$name}{
+        background-color: $code;
+    }
+}
+/* Sizes */
+@each $name, $code in $sizes{
+    .p-#{$name}{
+        padding: $code;
+    }
+    .br-#{$name}{
+        border-radius: $code;
+    }
+}
+
+/* --------------- Mixins -------------------- */
+
+
+/* Margin Bottom */
+@mixin bottom($size) {
+    bottom: map-get($sizes, $size);
+}
+
+/* --------------- Styles Page -------------------- */
+
+body{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    font-size: $size-root;
+}
+main{
+    grid-column: 1 / -1;
+}
+.section{
+    position: relative;
+
+    &-container-img{
+        img{
+            width: 100%;
+        }
+    }
+
+    &-container-information{
+        width: max-content;
+        position: absolute;
+        @include bottom("xxxxxxl");
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+}
+
+
+
+
