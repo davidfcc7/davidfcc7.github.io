@@ -27,9 +27,21 @@ $sizes:(
 
 );
 
+$sizes-mq:(
+    "xxs": 320px,
+    "xs": 375px,
+    "s": 425px,
+    "m": 768px,
+    "l": 1024px,
+    "xl": 1440px,
+);
+
+$direction:(top,bottom,left,right,block,inline);
+
 /* --------------- Call Maps -------------------- */
 
 /* Colors */
+/* Clave - Valor */
 @each $name, $code in $colors{
     .#{$name}{
         color: $code;
@@ -51,22 +63,72 @@ $sizes:(
 /* --------------- Mixins -------------------- */
 
 
-/* Margin Bottom */
-@mixin bottom($size) {
-    bottom: map-get($sizes, $size);
+
+/* Margin */
+@mixin margin($size, $direction) {
+    $value: map-get($sizes, $size);
+
+    
+
+    @if $direction == top {
+        margin-top: $value;
+    } @else if $direction == bottom {
+        margin-bottom: $value;
+    } @else if $direction == left {
+        margin-left: $value;
+    } @else if $direction == right {
+        margin-right: $value;
+    } @else if $direction == block {
+        margin-block: $value;
+    } @else if $direction == inline {
+        margin-inline: $value;
+    } @else {
+        @warn "Dirección no válida: #{$direction}. Usar top, bottom, left, right, block o inline.";
+    }
 }
+
+/* Padding */
+@mixin padding($size, $direction) {
+    $value: map-get($sizes, $size);
+
+    
+
+    @if $direction == top {
+        padding-top: $value;
+    } @else if $direction == bottom {
+        padding-bottom: $value;
+    } @else if $direction == left {
+        padding-left: $value;
+    } @else if $direction == right {
+        padding-right: $value;
+    } @else if $direction == block {
+        padding-block: $value;
+    } @else if $direction == inline {
+        padding-inline: $value;
+    } @else {
+        @warn "Dirección no válida: #{$direction}. Usar top, bottom, left o right.";
+    }
+}
+
+/* --------------- Media Querys -------------------- */
+
+
 
 /* --------------- Styles Page -------------------- */
 
-body{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+body,
+html{
     font-size: $size-root;
 }
+
 main{
-    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
+
 .section{
+    display: grid;
+    grid-column: 1/-1;
     position: relative;
 
     &-container-img{
@@ -78,12 +140,60 @@ main{
     &-container-information{
         width: max-content;
         position: absolute;
-        @include bottom("xxxxxxl");
+        bottom: 0;
+        @include margin("xxxxxxl", bottom);
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
     }
+
+    &-container__hv{
+        width: max-content;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -10px;
+        @include padding("xxxs", block);
+        @include padding("l", inline);
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+    }
 }
+
+.section-container-tabs{
+    display: grid;
+    grid-column: 2/-2;
+    @include margin("xl", top);
+
+    &-list{
+        display: flex;
+        justify-content: space-around;
+        @include padding("xl", bottom);
+
+        li{
+            list-style: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.section-container-btn{
+    display: grid;
+    justify-items: center;
+    grid-column: 1/-1;
+    @include padding("xl", block);
+
+    &__action{
+        @include padding("m", block);
+        @include padding("xl", inline);
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+
 
 
 

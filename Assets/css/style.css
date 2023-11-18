@@ -9,6 +9,7 @@
 /* --------------- Maps -------------------- */
 /* --------------- Call Maps -------------------- */
 /* Colors */
+/* Clave - Valor */
 .color1 {
   color: #FFFFFF;
 }
@@ -139,19 +140,23 @@
 }
 
 /* --------------- Mixins -------------------- */
-/* Margin Bottom */
+/* Margin */
+/* Padding */
+/* --------------- Media Querys -------------------- */
 /* --------------- Styles Page -------------------- */
-body {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+body,
+html {
   font-size: 16px;
 }
 
 main {
-  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .section {
+  display: grid;
+  grid-column: 1/-1;
   position: relative;
 }
 .section-container-img img {
@@ -160,8 +165,50 @@ main {
 .section-container-information {
   width: max-content;
   position: absolute;
-  bottom: 72px;
+  bottom: 0;
+  margin-bottom: 72px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+}
+.section-container__hv {
+  width: max-content;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -10px;
+  padding-block: 8px;
+  padding-inline: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section-container-tabs {
+  display: grid;
+  grid-column: 2/-2;
+  margin-top: 32px;
+}
+.section-container-tabs-list {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 32px;
+}
+.section-container-tabs-list li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.section-container-btn {
+  display: grid;
+  justify-items: center;
+  grid-column: 1/-1;
+  padding-block: 32px;
+}
+.section-container-btn__action {
+  padding-block: 16px;
+  padding-inline: 32px;
+  text-decoration: none;
+  font-weight: bold;
 }
