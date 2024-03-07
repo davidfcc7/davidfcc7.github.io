@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style-project-tab.css">
+</head>
+
+<body>
+  <label for="filtroDebito">Débito</label>
+  <input type="checkbox" id="filtroDebito" onchange="filtrarProductos()">
+  
+  <label for="filtroCredito">Crédito</label>
+  <input type="checkbox" id="filtroCredito" onchange="filtrarProductos()">
+
+  <ul id="listaProductos">
+    <li data-tipo="credito">Producto A</li>
+    <li data-tipo="debito">Producto B</li>
+    <li data-tipo="debitoCredito">Producto C</li>
+    <!-- Otros productos... -->
+  </ul>
+
+
+  <script src="./js-project-tab.js"></script>
+</body>
+
+</html>
