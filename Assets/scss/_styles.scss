@@ -8,7 +8,8 @@ $colors: (
 "color1": #FFFFFF,
 "color2": #3C747BAB,
 "color3": #448892,
-"color4": #55A738
+"color4": #55A738,
+"color5": #eff3f4
 );
 
 $sizes:(
@@ -65,9 +66,28 @@ $direction:(top,bottom,left,right,block,inline);
 
 /* --------------- Mixins -------------------- */
 
+/* Color */
 
+@mixin color($colorName){
+    @if map-has-key($colors, $colorName){
+        color: map-get($colors, $colorName);
+    }@else {
+        @warn "color no encontrado";
+    }
+}
+
+/* Background color */
+
+@mixin bgColor($colorName){
+    @if map-has-key($colors, $colorName){
+        background-color: map-get($colors, $colorName);
+    }@else {
+        @warn "color no encontrado";
+    }
+}
 
 /* Margin */
+
 @mixin margin($size, $direction) {
     $value: map-get($sizes, $size);
 
@@ -85,16 +105,17 @@ $direction:(top,bottom,left,right,block,inline);
         margin-block: $value;
     } @else if $direction == inline {
         margin-inline: $value;
+    } @else if $direction == " " {
+        margin: $value;
     } @else {
         @warn "Dirección no válida: #{$direction}. Usar top, bottom, left, right, block o inline.";
     }
 }
 
 /* Padding */
+
 @mixin padding($size, $direction) {
     $value: map-get($sizes, $size);
-
-    
 
     @if $direction == top {
         padding-top: $value;
@@ -108,12 +129,15 @@ $direction:(top,bottom,left,right,block,inline);
         padding-block: $value;
     } @else if $direction == inline {
         padding-inline: $value;
+    } @else if $direction == " " {
+        padding: $value; 
     } @else {
         @warn "Dirección no válida: #{$direction}. Usar top, bottom, left o right.";
     }
 }
 
 /* Font Size */
+
 @mixin fs($size) {
     $value: map-get($sizes, $size);
     font-size: $value;
@@ -125,20 +149,133 @@ $direction:(top,bottom,left,right,block,inline);
 
 /* --------------- Styles Page -------------------- */
 
+/* --------------- Coponents -------------------- */
+
+@mixin component1($background, $width, $padding, $gap, $borderRadius, $boxShadow){
+    background-color: $background;
+    width: $width;
+    padding: $padding;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: $gap;
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+}
+
 body,
 html{
     @include fs("m");
+    @include bgColor(color5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
-main{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+.container{
+    @include component1(map-get($colors, color1), 400px, map-get($sizes, m), map-get($sizes, xs), map-get($sizes, m), 0 0 10px rgba(0, 0, 0, 0.1));
+
+    header{
+        display: flex;
+        
+        .profile{
+            width: 150px;
+
+            img{
+                position: relative;
+                width: 100%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                border-radius: 16px;
+                margin-top: -50%;
+                border: 6px solid white;
+            }
+        }
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        
+        h3{
+            text-align: center;
+        }
+    }
+
+    .social-links{
+        display: flex;
+        gap: 16px;
+        @include padding("m", "bottom");
+        a{
+            text-decoration: none;
+            @include padding("xxxs"," ");
+            background-color: #fafafa;
+            display: flex;
+            width: 48px;
+            height: 48px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #eee;
+            color: #616161;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+
+            font-size: 20px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+
+            &:hover{
+                border: 1px solid #7e577e;
+            }
+
+            &:hover > * {
+                color: #7e577e;
+            }
+        }
+    }
+
+    .tabs-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .tabs{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            gap: 16px;
+            @include padding("m", "bottom");
+
+            li{
+                @include padding("xxxs"," ");
+                background-color: #fafafa;
+                border-radius: 8px;
+                cursor: pointer;
+
+                &:hover{
+                    border: 1px solid #7e577e;
+                }
+    
+                &:hover > * {
+                    color: #7e577e;
+                }
+            }
+        }
+    }
+
+    .tab-content{
+        display: none;
+    }
+
+    .tab-active{
+        display: block;
+    }
 }
-
-
-
-
-
-
 
 

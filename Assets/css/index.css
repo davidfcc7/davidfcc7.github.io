@@ -43,6 +43,14 @@
   background-color: #55A738;
 }
 
+.color5 {
+  color: #eff3f4;
+}
+
+.bg-color5 {
+  background-color: #eff3f4;
+}
+
 /* Sizes */
 .p-xxxs {
   padding: 8px;
@@ -189,17 +197,118 @@
 }
 
 /* --------------- Mixins -------------------- */
+/* Color */
+/* Background color */
 /* Margin */
 /* Padding */
 /* Font Size */
 /* --------------- Media Querys -------------------- */
 /* --------------- Styles Page -------------------- */
+/* --------------- Coponents -------------------- */
 body,
 html {
   font-size: 16px;
+  background-color: #eff3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
-main {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+.container {
+  background-color: #FFFFFF;
+  width: 400px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container header {
+  display: flex;
+}
+.container header .profile {
+  width: 150px;
+}
+.container header .profile img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+  margin-top: -50%;
+  border: 6px solid white;
+}
+.container .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.container .about h3 {
+  text-align: center;
+}
+.container .social-links {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+.container .social-links a {
+  text-decoration: none;
+  padding: 8px;
+  background-color: #fafafa;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  color: #616161;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.container .social-links a:hover {
+  border: 1px solid #7e577e;
+}
+.container .social-links a:hover > * {
+  color: #7e577e;
+}
+.container .tabs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .tabs-container .tabs {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+.container .tabs-container .tabs li {
+  padding: 8px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.container .tabs-container .tabs li:hover {
+  border: 1px solid #7e577e;
+}
+.container .tabs-container .tabs li:hover > * {
+  color: #7e577e;
+}
+.container .tab-content {
+  display: none;
+}
+.container .tab-active {
+  display: block;
 }
