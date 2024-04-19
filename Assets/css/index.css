@@ -218,7 +218,7 @@ html {
 
 .container {
   background-color: #FFFFFF;
-  width: 400px;
+  width: 300px;
   padding: 16px;
   display: flex;
   flex-direction: column;
