@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'icon';
+    src: url('../icons/icon.eot'); /* IE9 Compat Modes */
+    src: url('../icons/icon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../icons/icon.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../icons/icon.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../icons/icon.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../icons/icon.svg#icon') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class*="icon"] {
+    font-family: 'icon';
+    font-style: normal;
+    font-weight: normal; 
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// .icon:before {
+//     content: "\E001"; /* Usa el código Unicode correspondiente aquí */
+// }
+
+// .icon2:before {
+//     content: "\E002";
+// }

@@ -1,0 +1,28 @@
+/* --------------- Call Maps -------------------- */
+
+/* Colors */
+/* Clave - Valor */
+@each $name, $code in $colors {
+    .#{$name} {
+        color: $code;
+    }
+
+    .bg-#{$name} {
+        background-color: $code;
+    }
+}
+
+/* Sizes */
+@each $name, $code in $sizes {
+    .p-#{$name} {
+        padding: $code;
+    }
+
+    .br-#{$name} {
+        border-radius: $code;
+    }
+
+    .fs-#{$name} {
+        font-size: $code;
+    }
+}
