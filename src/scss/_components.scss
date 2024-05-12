@@ -1,0 +1,14 @@
+/* --------------- Coponents -------------------- */
+
+@mixin component1($background, $width, $padding, $gap, $borderRadius, $boxShadow) {
+    background-color: $background;
+    width: $width;
+    padding: $padding;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: $gap;
+    border-radius: $borderRadius; 
+    box-shadow: $boxShadow;
+}
