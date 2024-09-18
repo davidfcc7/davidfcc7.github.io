@@ -1,61 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Mi Portafolio</title>
-    <link href="styles.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Patrick+Hand&display=swap" rel="stylesheet">
-  </head>
 
-  <body>
-    <!-- Seccion del perfil -->
-    <section class="perfil">
-      <img class="header-img" src="./images/profile.jpg" alt="imagen de sujeto con traje" title="imagen de perfil">
-      <h2 class="header">David Caicedo</h2>
-      <h1 class="subtitle">Front End Developer</h1>
-    </section>
-    <!-- Seccion de los tabs -->
-    <section class="information">
-      <ul class="navigation">
-        <li class="nav-item">
-          <a href="#container-intro" class="nav-item--about" aria-label="Tab de descripción del perfil">Acerca de</a>
-        </li>
-        <li class="nav-item">
-          <a href="#container-experience" class="nav-item--experience" aria-label="Tab de descripción de la experiencia">Experiencia</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item-hv" href="./documentos/Hoja.de.vida.David-front-end.pdf" target="_blank" aria-label="Botón para ver la hoja de vida">Descargar HV</a>
-        </li>
-      </ul>
-      <div class="container">
-        <div class="content active" id="container-intro">
-          <p>Soy un desarrollador web con experiencia en el sector bancario, especializado en front-end. Con una sólida formación en ingeniería de sistemas, poseo habilidades en diseño, marketing, análisis de datos e infraestructura. Mi objetivo es convertirme en un excelente desarrollador front-end, aprovechando mi interés en el diseño y la creatividad. Además, estoy comprometido con el aprendizaje continuo, incluyendo el perfeccionamiento de mis habilidades en inglés y el desarrollo de mi capacidad creativa.</p>
-        </div>
-        <div class="content" id="container-experience">
-          <div class="content-experience">
-            <h3>A Toda Hora S.A, Bogotá</h3>
-            <h4>Febrero de 2022 – presente</h4>
-            <p>Desarrollo de páginas web, con buenas prácticas en la
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Mi Portafolio</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Patrick+Hand&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Seccion del perfil -->
+  <section class="perfil">
+    <img class="header-img" src="./images/profile.jpg" alt="imagen de sujeto con traje" title="imagen de perfil">
+    <h2 class="header">David Caicedo</h2>
+    <h1 class="subtitle">Front End Developer</h1>
+  </section>
+  <!-- Seccion de los tabs -->
+  <section class="information">
+    <ul class="navigation">
+      <li class="nav-item" id="nav-item">
+        <a class="nav-item--about" aria-label="Tab de descripción del perfil" data-tab="container-intro">Acerca de</a>
+      </li>
+      <li class="nav-item" id="nav-item">
+        <a class="nav-item--experience" aria-label="Tab de descripción de la experiencia" data-tab="container-experience">Experiencia</a>
+      </li>
+      <li class="nav-item" id="nav-item">
+        <a class="nav-item-hv" href="./documentos/Hoja.de.vida.David-front-end.pdf" target="_blank"
+          aria-label="Botón para ver la hoja de vida">Descargar HV</a>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="content active" id="container-intro">
+        <p>Soy un desarrollador web con experiencia en el sector bancario, especializado en front-end. Con una sólida
+          formación en ingeniería de sistemas, poseo habilidades en diseño, marketing, análisis de datos e
+          infraestructura. Mi objetivo es convertirme en un excelente desarrollador front-end, aprovechando mi interés
+          en el diseño y la creatividad. Además, estoy comprometido con el aprendizaje continuo, incluyendo el
+          perfeccionamiento de mis habilidades en inglés y el desarrollo de mi capacidad creativa.</p>
+      </div>
+      <div class="content" id="container-experience">
+        <div class="content-experience">
+          <h3>A Toda Hora S.A, Bogotá</h3>
+          <h4>Febrero de 2022 – presente</h4>
+          <p>Desarrollo de páginas web, con buenas prácticas en la
             semántica HTML5, creación de funciones, mixins y uso de
             maps en Sass y Pug, conocimiento de Gulp para ejecutar
             procesos, manejo de Vanilla JavaScript para
             funcionalidades y captura de datos desde archivos JSON,
             implementación y mantenimiento de páginas web el
             WebSphere Portal.</p>
-          </div>
-          <div class="content-experience">
-            <h3>A Toda Hora S.A, Bogotá</h3>
-            <h4>Noviembre de 2021 – octubre 2021</h4>
-            <p>Mantenimiento de páginas web en Liferay y diseño de
+        </div>
+        <div class="content-experience">
+          <h3>A Toda Hora S.A, Bogotá</h3>
+          <h4>Noviembre de 2021 – octubre 2021</h4>
+          <p>Mantenimiento de páginas web en Liferay y diseño de
             componentes con bootstrap.</p>
-          </div>
-          <div class="content-experience">
-            <h3>Ink Agencia Digital, Bogotá</h3>
-            <h4>marzo de 2019 - julio de 2021</h4>
-            <p>Desarrollo de páginas web E-commerce utilizando
+        </div>
+        <div class="content-experience">
+          <h3>Ink Agencia Digital, Bogotá</h3>
+          <h4>marzo de 2019 - julio de 2021</h4>
+          <p>Desarrollo de páginas web E-commerce utilizando
             elementor, wordpress, woocommerce y buen
             posicionamiento SEO en buscadores, Análisis de datos
             para el diseño y ejecución de estrategias de marketing y
@@ -63,23 +71,25 @@
             servidores Linux para levantamiento de páginas web y
             migración de las mismas con las bases de datos
             correspondientes.</p>
-          </div>
         </div>
       </div>
-    </section>
-    <!-- Sección de las redes sociales -->
-    <section class="social-media">
-      <div>
-        <a href="https://github.com/davidfcc7" target="_blank" title="Github" aria-label="Botón al repositorio de Git">
-          <img src="images/github-logo.png" alt="Icono de un gato siluetiado" title="Logo de Git"/>
-        </a>
-      </div>
-      <div>
-        <a href="https://www.linkedin.com/in/davidfcaicedo/" target="_blank" title="Linkedin" aria-label="Botón al Linkedin personal">
-          <img src="images/linkedin.png" alt="Icono de una letra i y n" title="Logo de Linkedin"/>
-        </a>
-      </div>
-    </section>
-    <script src="index.js" type="text/javascript"></script>
-  </body>
+    </div>
+  </section>
+  <!-- Sección de las redes sociales -->
+  <section class="social-media">
+    <div>
+      <a href="https://github.com/davidfcc7" target="_blank" title="Github" aria-label="Botón al repositorio de Git">
+        <img src="images/github-logo.png" alt="Icono de un gato siluetiado" title="Logo de Git" />
+      </a>
+    </div>
+    <div>
+      <a href="https://www.linkedin.com/in/davidfcaicedo/" target="_blank" title="Linkedin"
+        aria-label="Botón al Linkedin personal">
+        <img src="images/linkedin.png" alt="Icono de una letra i y n" title="Logo de Linkedin" />
+      </a>
+    </div>
+  </section>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
 </html>
